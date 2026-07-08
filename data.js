@@ -64,6 +64,14 @@ const reviews = [
     date: "July 8, 2026"
   },
   {
+    id: 7,
+    title: "Callaway Golf 2026 XR Complete Set Review: Premium Performance",
+    excerpt: "The Callaway 2026 XR complete golf set delivers pro-level quality with a premium driver, fairway woods, hybrids, irons, wedges, and putter. A top-tier package at $1,599.99.",
+    image: "https://placehold.co/600x400/1a3a5c/fff?text=Callaway+2026+XR",
+    link: "https://www.amazon.com/CG-PK-XR-Complete-Set/dp/B0FH5VVFVK?crid=2VDTOSVX6EUML&dib=eyJ2IjoiMSJ9.vzetvR-6dr0o5xb3CMIkdFARI8HhdxuquBqInyxyDAbIj25FiRyDU4wGguBo16ocX5PlYqbBG9IDKfJPvq9wNPgchVw8DQoO6glCXDqynvzvaF-C8xehpKOb31oDikfhrFWyVsjIZQ3n1sSfI0VJvY3FDAtbXCSgFAkpCzDkAsb4YwrfHzyCV4KrUDCOqdFp_jUq6ivj9Tyr3DAZzQmzsBz5Trf9aXttTSb_Lg0ZIUA.c-FpD8MkHkKJLdvmVV8sj8jJlUVIuBXUdD0gZPPQs_k&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bclub%2Bset&qid=1783516586&sprefix=most%2Bexpensive%2Bgolf%2Caps%2C219&sr=8-9&th=1&linkCode=ll2&tag=techbot00-20&linkId=9450922e15738663a90ac976788b8961&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
     id: 8,
     title: "EZGO RXV Elite Electric Golf Cart Review",
     excerpt: "The EZGO RXV Elite offers a smooth ride and impressive range. Here's our full hands-on review after a month of testing.",
@@ -99,7 +107,7 @@ const blogPosts = [
     date: "July 8, 2026"
   },
   {
-    id: 6,
+    id: 7,
     title: "PGM NSR V 18-Piece Complete Golf Club Set Review: Premium Performance for $990",
     excerpt: "The PGM NSR V set includes an adjustable loft titanium driver, precision-weighted fairway woods, forged irons, CNC milled putter, and stand bag. A complete bag for serious golfers.",
     image: "https://placehold.co/600x400/2a3a4a/fff?text=PGM+NSR+V+Set",
@@ -107,14 +115,23 @@ const blogPosts = [
     date: "July 8, 2026"
   },
   {
-    id: 7,
+    id: 8,
+    title: "Callaway Golf 2026 XR Complete Set Review: Premium Performance",
+    excerpt: "The Callaway 2026 XR complete golf set delivers pro-level quality with a premium driver, fairway woods, hybrids, irons, wedges, and putter. A top-tier package at $1,599.99.",
+    image: "https://placehold.co/600x400/1a3a5c/fff?text=Callaway+2026+XR",
+    link: "https://www.amazon.com/CG-PK-XR-Complete-Set/dp/B0FH5VVFVK?crid=2VDTOSVX6EUML&dib=eyJ2IjoiMSJ9.vzetvR-6dr0o5xb3CMIkdFARI8HhdxuquBqInyxyDAbIj25FiRyDU4wGguBo16ocX5PlYqbBG9IDKfJPvq9wNPgchVw8DQoO6glCXDqynvzvaF-C8xehpKOb31oDikfhrFWyVsjIZQ3n1sSfI0VJvY3FDAtbXCSgFAkpCzDkAsb4YwrfHzyCV4KrUDCOqdFp_jUq6ivj9Tyr3DAZzQmzsBz5Trf9aXttTSb_Lg0ZIUA.c-FpD8MkHkKJLdvmVV8sj8jJlUVIuBXUdD0gZPPQs_k&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bclub%2Bset&qid=1783516586&sprefix=most%2Bexpensive%2Bgolf%2Caps%2C219&sr=8-9&th=1&linkCode=ll2&tag=techbot00-20&linkId=9450922e15738663a90ac976788b8961&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 9,
+    title: "5 Best Golf Cart Upgrades for 2026",
     excerpt: "From lithium batteries to LED lighting, here are the top upgrades to transform your golf cart this year.",
     image: "https://placehold.co/600x400/2d5a27/fff?text=Upgrades",
     link: "#",
     date: "July 3, 2026"
   },
   {
-    id: 8,
+    id: 10,
     title: "Golf Cart Maintenance Guide: Keep Your Cart Running",
     excerpt: "Regular maintenance extends the life of your golf cart. Follow our seasonal checklist.",
     image: "https://placehold.co/600x400/1a3a5c/fff?text=Maintenance",
@@ -122,7 +139,7 @@ const blogPosts = [
     date: "June 25, 2026"
   },
   {
-    id: 9,
+    id: 11,
     title: "Electric vs Gas Golf Carts: Pros and Cons",
     excerpt: "We break down the costs, performance, and environmental impact of each option.",
     image: "https://placehold.co/600x400/3a3a3a/fff?text=Electric+vs+Gas",
@@ -130,7 +147,7 @@ const blogPosts = [
     date: "June 18, 2026"
   },
   {
-    id: 10,
+    id: 12,
     title: "Essential Golf Supplies Every Golfer Needs",
     excerpt: "From premium golf balls to the perfect stand bag, here's what to pack for your next round.",
     image: "https://placehold.co/600x400/5a2a1a/fff?text=Golf+Supplies",
