@@ -115,7 +115,7 @@ const blogPosts = [
     date: "July 8, 2026"
   },
   {
-    id: 9,
+    id: 10,
     title: "PGM 27-Piece Complete Golf Set Review: USGA Certified Premium Kit",
     excerpt: "The PGM 27-piece set is R&A and USGA certified with adjustable driver, woods, hybrids, irons, wedges, putter, and stand bag. A pro-level complete bag at $1,999.99.",
     image: "https://placehold.co/600x400/2a2a3a/fff?text=PGM+27-Piece",
@@ -123,7 +123,15 @@ const blogPosts = [
     date: "July 8, 2026"
   },
   {
-    id: 10,
+    id: 9,
+    title: "TaylorMade Qi Max Irons Review: Graphite Regular Left-Hand 5-PW+AW Set",
+    excerpt: "The TaylorMade Qi Max irons deliver premium performance with graphite regular shafts in a left-hand 5-PW+AW set. Top-tier feel and forgiveness at $1,199.99.",
+    image: "https://placehold.co/600x400/2a4a5a/fff?text=TaylorMade+Qi+Max",
+    link: "https://www.amazon.com/dp/B0G2TCMHH3?pd_rd_i=B0G2TCMHH3&pd_rd_w=cnneO&content-id=amzn1.sym.4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_p=4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_r=1CM33SQD9GSAEA3B2EFB&pd_rd_wg=rqEDA&pd_rd_r=64fcb83f-cdac-4c4b-a2b9-b34c06615515&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=techbot00-20&linkId=6f2e125ab096970d2b66a89a592ee4c6&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 11,
     title: "5 Best Golf Cart Upgrades for 2026",
     excerpt: "From lithium batteries to LED lighting, here are the top upgrades to transform your golf cart this year.",
     image: "https://placehold.co/600x400/2d5a27/fff?text=Upgrades",
