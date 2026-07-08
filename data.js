@@ -9,6 +9,14 @@ const reviews = [
   },
   {
     id: 2,
+    title: "X-ARK 4-Seater Electric Golf Cart Review: 60-Mile Range Off-Road Beast",
+    excerpt: "The X-ARK packs a 5000W motor, 23.5\" all-terrain tires, 60-mile range, and a 10\" touch screen. Premium off-road performance at $12,999.",
+    image: "https://placehold.co/600x400/2a4a2a/fff?text=X-ARK",
+    link: "https://www.amazon.com/gp/product/B0DSZY626D?smid=A2Y02GNHP5ZYV6&psc=1&linkCode=ll2&tag=techbot00-20&linkId=f51530d3722cfcc167cd11cb21db105d&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 3,
     title: "ATS POWER Electric Golf Cart Review: 48V 5KW Beast for $7,999",
     excerpt: "The ATS POWER electric golf cart packs a 48V 5KW AC motor, hits 25 MPH, and features 4-wheel hydraulic disc brakes. A serious contender for the price.",
     image: "https://placehold.co/600x400/4a4a4a/fff?text=ATS+POWER",
