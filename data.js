@@ -76,6 +76,14 @@ const reviews = [
 const blogPosts = [
   {
     id: 6,
+    title: "GO UP Stylish & Lightweight Electric Golf Caddie Review: Dual System",
+    excerpt: "The GOUP dual golf cart system includes two lithium-powered electric caddies with LED displays and insulated coolers. Lightweight and professional-grade at $7,500.",
+    image: "https://placehold.co/600x400/5a5a3a/fff?text=GO+UP+Caddie",
+    link: "https://www.amazon.com/dp/B0GR9JYP7M?psc=1&pd_rd_i=B0GR9JYP7M&pd_rd_w=aKjlR&content-id=amzn1.sym.4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_p=4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_r=XPGKE3XZWN7KKJ4HXR9P&pd_rd_wg=ouear&pd_rd_r=1b985000-01ca-4486-b02f-487217473beb&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&linkCode=ll2&tag=techbot00-20&linkId=db9edcabe550b970e76e67602ec757b4&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 7,
     title: "5 Best Golf Cart Upgrades for 2026",
     excerpt: "From lithium batteries to LED lighting, here are the top upgrades to transform your golf cart this year.",
     image: "https://placehold.co/600x400/2d5a27/fff?text=Upgrades",
@@ -83,7 +91,7 @@ const blogPosts = [
     date: "July 3, 2026"
   },
   {
-    id: 7,
+    id: 8,
     title: "Golf Cart Maintenance Guide: Keep Your Cart Running",
     excerpt: "Regular maintenance extends the life of your golf cart. Follow our seasonal checklist.",
     image: "https://placehold.co/600x400/1a3a5c/fff?text=Maintenance",
@@ -91,7 +99,7 @@ const blogPosts = [
     date: "June 25, 2026"
   },
   {
-    id: 8,
+    id: 9,
     title: "Electric vs Gas Golf Carts: Pros and Cons",
     excerpt: "We break down the costs, performance, and environmental impact of each option.",
     image: "https://placehold.co/600x400/3a3a3a/fff?text=Electric+vs+Gas",
@@ -99,7 +107,7 @@ const blogPosts = [
     date: "June 18, 2026"
   },
   {
-    id: 9,
+    id: 10,
     title: "Essential Golf Supplies Every Golfer Needs",
     excerpt: "From premium golf balls to the perfect stand bag, here's what to pack for your next round.",
     image: "https://placehold.co/600x400/5a2a1a/fff?text=Golf+Supplies",
