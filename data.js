@@ -62,6 +62,14 @@ const reviews = [
     image: "https://placehold.co/600x400/4a2a1a/fff?text=X-ARK+4-Seater",
     link: "https://www.amazon.com/X-ARK-4-Seater-Electric-All-Terrain-High-Power/dp/B0DSZY626D?crid=BMET4VGSPW27&dib=eyJ2IjoiMSJ9.KXLGWdc9NO9-sBb3O8NS_8lw2U4D69pGVpy5x0qWcAk41s42-t2euJhInM3InYZCj-oYaOiXG_LFOlETwylBOOsxFGPsu5rpvGkdaEOBxdTVc3Vot_oGd1GrjIgAkhIHcdynA4QIIAykWXo89VKwDQKMDPmyls1N-dZ_e-h1LR8yYDBW3tDXJf_nty2AIcCCkg_-_EIfDFnT4APvs5d_vEDz1awMnVjuW7Jy-0sSa4vohPVX_J1QNP33PqNRDG48y9dOnDK2LUEVux-GJXK3NENlAuINpimrxngENWnmsWc.8FsapR0XQ0rbs3d2t4Lg2JG1YIK7kjz8taPeGOzdRNU&dib_tag=se&keywords=most+expensive+golf+cart&qid=1783517017&s=sporting-goods&sprefix=most+expensive+golf+cart%2Csporting%2C218&sr=1-4&linkCode=ll2&tag=techbot00-20&linkId=8f2430ec94b9a632da8e0734272dad1e&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
+  },
+  {
+    id: 13,
+    title: "ATS POWER 4-Seater Electric Golf Cart Review: Waterproof Beast",
+    excerpt: "The ATS POWER 4-seater is a waterproof electric golf cart built for all-weather performance. A rugged option for serious off-road golf cart enthusiasts.",
+    image: "https://placehold.co/600x400/2a4a3a/fff?text=ATS+POWER+4-Seater",
+    link: "https://www.amazon.com/ATS-POWER-4-Seater-Electric-Waterproof/dp/B0GXKK7PSY?dib=eyJ2IjoiMSJ9.KXLGWdc9NO9-sBb3O8NS_8lw2U4D69pGVpy5x0qWcAk41s42-t2euJhInM3InYZCj-oYaOiXG_LFOlETwylBOOsxFGPsu5rpvGkdaEOBxdTVc3Vot_oGd1GrjIgAkhIHcdynA4QIIAykWXo89VKwDQKMDPmyls1N-dZ_e-h1LR8yYDBW3tDXJf_nty2AIcCCkg_-_EIfDFnT4APvs5d_vEDz1awMnVjuW7Jy-0sSa4vohPVX_J1QNP33PqNRDG48y9dOnDK2LUEVux-GJXK3NENlAuINpimrxngENWnmsWc.8FsapR0XQ0rbs3d2t4Lg2JG1YIK7kjz8taPeGOzdRNU&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bcart&qid=1783517141&s=sporting-goods&sr=1-12&th=1&linkCode=ll2&tag=techbot00-20&linkId=d8199c61944c15160998f1278a31e1fd&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
   }
 ];
 
