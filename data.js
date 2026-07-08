@@ -32,7 +32,15 @@ const reviews = [
     date: "July 8, 2026"
   },
   {
-    id: 3,
+    id: 5,
+    title: "GO UP Sightseeing/Patrol Golf Cart Review: 48V 105AH Lithium with Touchscreen",
+    excerpt: "The GO UP sightseeing vehicle features a 48V 105AH lithium battery, 10.1\" touchscreen, 4+2 seating, and double-wishbone suspension. Versatile for $12,050.",
+    image: "https://placehold.co/600x400/4a5a3a/fff?text=GO+UP+Sightseeing",
+    link: "https://www.amazon.com/dp/B0GL1RC7L1?psc=1&pd_rd_i=B0GL1RC7L1&pd_rd_w=aKjlR&content-id=amzn1.sym.4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_p=4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_r=XPGKE3XZWN7KKJ4HXR9P&pd_rd_wg=ouear&pd_rd_r=1b985000-01ca-4486-b02f-487217473beb&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&linkCode=ll2&tag=techbot00-20&linkId=fa2d98b93bb7931822096a21ac6de302&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 6,
     title: "GIYI 4-Seater Electric Golf Cart Review: 60V 44-Mile Range for $7,999",
     excerpt: "The GIYI 4-seater boasts a 60V 100Ah battery with 44-mile range, 5KW motor, and a 9-inch IPS display. Fully assembled out of the box.",
     image: "https://placehold.co/600x400/1a1a1a/fff?text=GIYI+4-Seater",
@@ -40,7 +48,7 @@ const reviews = [
     date: "July 8, 2026"
   },
   {
-    id: 4,
+    id: 7,
     title: "EZGO RXV Elite Electric Golf Cart Review",
     excerpt: "The EZGO RXV Elite offers a smooth ride and impressive range. Here's our full hands-on review after a month of testing.",
     image: "https://placehold.co/600x400/2d5a27/fff?text=EZGO+RXV+Elite",
@@ -48,14 +56,16 @@ const reviews = [
     date: "July 5, 2026"
   },
   {
-    id: 5,
+    id: 8,
+    title: "Club Car Onward 4-Passenger Review",
     excerpt: "Club Car's Onward series blends luxury with performance. We put the 4-passenger model through its paces.",
     image: "https://placehold.co/600x400/1a3a5c/fff?text=Club+Car+Onward",
     link: "#",
     date: "July 1, 2026"
   },
   {
-    id: 6,
+    id: 9,
+    title: "Yamaha Drive2 PTV Gas vs Electric Comparison",
     excerpt: "Can't decide between gas and electric? We compare the Yamaha Drive2 PTV in both configurations.",
     image: "https://placehold.co/600x400/3a3a3a/fff?text=Yamaha+Drive2",
     link: "#",
