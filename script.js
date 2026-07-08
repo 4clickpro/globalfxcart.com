@@ -1,37 +1,37 @@
-function createProductCard(product) {
+function createPostCard(post) {
   return `
-    <div class="product-card">
-      <img src="${product.image}" alt="${product.name}">
-      <h3>${product.name}</h3>
-      <p class="price">${product.price}</p>
-      <a href="${product.link}" class="btn" target="_blank">Buy Now</a>
-    </div>
+    <article class="post-card">
+      <a href="${post.link}">
+        <img src="${post.image}" alt="${post.title}">
+        <div class="post-content">
+          <span class="post-date">${post.date}</span>
+          <h3>${post.title}</h3>
+          <p>${post.excerpt}</p>
+          <span class="read-more">Read More →</span>
+        </div>
+      </a>
+    </article>
   `;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const featuredGrid = document.getElementById('featured-products');
-  if (featuredGrid) {
-    const featured = [...products.carts.slice(0, 2), ...products.accessories.slice(0, 1), ...products.supplies.slice(0, 1)];
-    featuredGrid.innerHTML = featured.map(createProductCard).join('');
+  const featuredPosts = document.getElementById('featured-posts');
+  if (featuredPosts) {
+    featuredPosts.innerHTML = reviews.slice(0, 2).map(createPostCard).join('');
   }
 
-  const cartsGrid = document.getElementById('carts-grid');
-  if (cartsGrid) {
-    cartsGrid.innerHTML = products.carts.map(createProductCard).join('');
+  const recentPosts = document.getElementById('recent-posts');
+  if (recentPosts) {
+    recentPosts.innerHTML = blogPosts.slice(0, 2).map(createPostCard).join('');
   }
 
-  const accessoriesGrid = document.getElementById('accessories-grid');
-  if (accessoriesGrid) {
-    accessoriesGrid.innerHTML = [...products.accessories, ...products.supplies].map(createProductCard).join('');
+  const reviewsGrid = document.getElementById('reviews-grid');
+  if (reviewsGrid) {
+    reviewsGrid.innerHTML = reviews.map(createPostCard).join('');
   }
 
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Thank you! We will get back to you soon.');
-      contactForm.reset();
-    });
+  const blogGrid = document.getElementById('blog-grid');
+  if (blogGrid) {
+    blogGrid.innerHTML = blogPosts.map(createPostCard).join('');
   }
 });
