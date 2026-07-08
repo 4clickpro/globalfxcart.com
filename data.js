@@ -86,7 +86,7 @@ const blogPosts = [
     id: 7,
     title: "PGM NSR V 18-Piece Complete Golf Club Set Review: Premium Performance for $990",
     excerpt: "The PGM NSR V set includes an adjustable loft titanium driver, precision-weighted fairway woods, forged irons, CNC milled putter, and stand bag. A complete bag for serious golfers.",
-    image: "https://picsum.photos/seed/golfclubs1/600/400",
+    image: "https://m.media-amazon.com/images/I/81cIff-wv4L._AC_SL1500_.jpg",
     link: "https://www.amazon.com/PGM-Piece-Mens-Complete-Golf/dp/B0F5MTZTF9?crid=2VDTOSVX6EUML&dib=eyJ2IjoiMSJ9.jEs3qHHxod3ikOqrpNK9puvKghYNWurcpfbTY2PFTJfrjp5iC-iVrpSvv2asRZ9yV420PFxBxN7Bhq2Kput2YdKvb1asIa5bXRxbvN8s6U8iwWY3Vf9hHjVpKD_LEFLy6Do-67Xe2jhzxaWOHhvjXWKriEKS30Fi6Ppdb_7x_9RdegXDc3-zKqVURIGkqciZRdyEQwQV1img_gN-vF8_msjDlOHQgBaGjB653jdI_aU.Rn9clKSiyHMVMBmmBNpOv84cycNENZZ0KnL7Qy6Oruk&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bclub%2Bset&qid=1783516457&sprefix=most%2Bexpensive%2Bgolf%2Caps%2C219&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=techbot00-20&linkId=928ba76ea0b6fa84feefc0357686e983&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
@@ -94,7 +94,7 @@ const blogPosts = [
     id: 8,
     title: "Callaway Golf 2026 XR Complete Set Review: Premium Performance",
     excerpt: "The Callaway 2026 XR complete golf set delivers pro-level quality with a premium driver, fairway woods, hybrids, irons, wedges, and putter. A top-tier package at $1,599.99.",
-    image: "https://picsum.photos/seed/golfclubs2/600/400",
+    image: "https://cdn11.bigcommerce.com/s-hgw48x3/images/stencil/1280x1280/products/2541/24197/MAIN__59893.1675898052.jpg?c=2",
     link: "https://www.amazon.com/CG-PK-XR-Complete-Set/dp/B0FH5VVFVK?crid=2VDTOSVX6EUML&dib=eyJ2IjoiMSJ9.vzetvR-6dr0o5xb3CMIkdFARI8HhdxuquBqInyxyDAbIj25FiRyDU4wGguBo16ocX5PlYqbBG9IDKfJPvq9wNPgchVw8DQoO6glCXDqynvzvaF-C8xehpKOb31oDikfhrFWyVsjIZQ3n1sSfI0VJvY3FDAtbXCSgFAkpCzDkAsb4YwrfHzyCV4KrUDCOqdFp_jUq6ivj9Tyr3DAZzQmzsBz5Trf9aXttTSb_Lg0ZIUA.c-FpD8MkHkKJLdvmVV8sj8jJlUVIuBXUdD0gZPPQs_k&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bclub%2Bset&qid=1783516586&sprefix=most%2Bexpensive%2Bgolf%2Caps%2C219&sr=8-9&th=1&linkCode=ll2&tag=techbot00-20&linkId=9450922e15738663a90ac976788b8961&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
@@ -110,7 +110,7 @@ const blogPosts = [
     id: 10,
     title: "PGM 27-Piece Complete Golf Set Review: USGA Certified Premium Kit",
     excerpt: "The PGM 27-piece set is R&A and USGA certified with adjustable driver, woods, hybrids, irons, wedges, putter, and stand bag. A pro-level complete bag at $1,999.99.",
-    image: "https://picsum.photos/seed/golfclubs4/600/400",
+    image: "https://greatergolfhouse.com/cdn/shop/files/a1_02c92df2-97d2-4765-a416-6691fc030f18.jpg?v=1770451078",
     link: "https://www.amazon.com/dp/B0G2PLVT2Z?pd_rd_i=B0G2PLVT2Z&pd_rd_w=PPNNM&content-id=amzn1.sym.4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_p=4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_r=H4MPND4MYNGFP5QFDSAY&pd_rd_wg=PMeyb&pd_rd_r=7e7a20e6-f85c-4632-916e-8221c5f28770&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=techbot00-20&linkId=0c8b218ad63ba2b90d2f57ee676412cd&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
@@ -118,7 +118,7 @@ const blogPosts = [
     id: 11,
     title: "Srixon ZXi Iron Set Review: 4-PW Steel Stiff Right Hand",
     excerpt: "The Srixon ZXi 4-PW iron set delivers premium forged performance with steel stiff shafts. A tour-caliber iron set for serious golfers at $1,399.99.",
-    image: "https://picsum.photos/seed/golfclubs5/600/400",
+    image: "https://ca.dunlopsports.com/cdn/shop/files/SX25-Clubs-Irons-ZX5-1_e2170f9b-2211-40b9-b427-6c4479f50fe2.jpg",
     link: "https://www.amazon.com/dp/B0DT3GGD4C?sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfcmlnaHRfc2hhcmVk&th=1&linkCode=ll2&tag=techbot00-20&linkId=ead9ab90b25247b723a03a608c5866df&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
