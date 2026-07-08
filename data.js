@@ -17,6 +17,14 @@ const reviews = [
   },
   {
     id: 3,
+    title: "GIYI 4-Seater Electric Golf Cart Review: 60V 44-Mile Range for $7,999",
+    excerpt: "The GIYI 4-seater boasts a 60V 100Ah battery with 44-mile range, 5KW motor, and a 9-inch IPS display. Fully assembled out of the box.",
+    image: "https://placehold.co/600x400/1a1a1a/fff?text=GIYI+4-Seater",
+    link: "https://www.amazon.com/gp/product/B0GDFMD6QM?smid=A395BR449SJF5J&psc=1&linkCode=ll2&tag=techbot00-20&linkId=8aa651f3067fe06c62c4fe55c641dcf5&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 4,
     title: "EZGO RXV Elite Electric Golf Cart Review",
     excerpt: "The EZGO RXV Elite offers a smooth ride and impressive range. Here's our full hands-on review after a month of testing.",
     image: "https://placehold.co/600x400/2d5a27/fff?text=EZGO+RXV+Elite",
@@ -24,16 +32,14 @@ const reviews = [
     date: "July 5, 2026"
   },
   {
-    id: 4,
-    title: "Club Car Onward 4-Passenger Review",
+    id: 5,
     excerpt: "Club Car's Onward series blends luxury with performance. We put the 4-passenger model through its paces.",
     image: "https://placehold.co/600x400/1a3a5c/fff?text=Club+Car+Onward",
     link: "#",
     date: "July 1, 2026"
   },
   {
-    id: 5,
-    title: "Yamaha Drive2 PTV Gas vs Electric Comparison",
+    id: 6,
     excerpt: "Can't decide between gas and electric? We compare the Yamaha Drive2 PTV in both configurations.",
     image: "https://placehold.co/600x400/3a3a3a/fff?text=Yamaha+Drive2",
     link: "#",
