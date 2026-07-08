@@ -67,7 +67,7 @@ const reviews = [
     id: 13,
     title: "ATS POWER 4-Seater Electric Golf Cart Review: Waterproof Beast",
     excerpt: "The ATS POWER 4-seater is a waterproof electric golf cart built for all-weather performance. A rugged option for serious off-road golf cart enthusiasts.",
-    image: "https://picsum.photos/seed/golfcart9/600/400",
+    image: "https://golfcartshop.com/cdn/shop/files/ATS_POWER_4-Seater_Electric_Shuttle_Cart_1024x.jpg?v=1783170332",
     link: "https://www.amazon.com/ATS-POWER-4-Seater-Electric-Waterproof/dp/B0GXKK7PSY?dib=eyJ2IjoiMSJ9.KXLGWdc9NO9-sBb3O8NS_8lw2U4D69pGVpy5x0qWcAk41s42-t2euJhInM3InYZCj-oYaOiXG_LFOlETwylBOOsxFGPsu5rpvGkdaEOBxdTVc3Vot_oGd1GrjIgAkhIHcdynA4QIIAykWXo89VKwDQKMDPmyls1N-dZ_e-h1LR8yYDBW3tDXJf_nty2AIcCCkg_-_EIfDFnT4APvs5d_vEDz1awMnVjuW7Jy-0sSa4vohPVX_J1QNP33PqNRDG48y9dOnDK2LUEVux-GJXK3NENlAuINpimrxngENWnmsWc.8FsapR0XQ0rbs3d2t4Lg2JG1YIK7kjz8taPeGOzdRNU&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bcart&qid=1783517141&s=sporting-goods&sr=1-12&th=1&linkCode=ll2&tag=techbot00-20&linkId=d8199c61944c15160998f1278a31e1fd&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   }
@@ -102,7 +102,7 @@ const blogPosts = [
     id: 9,
     title: "TaylorMade Qi Max Irons Review: Graphite Regular Left-Hand 5-PW+AW Set",
     excerpt: "The TaylorMade Qi Max irons deliver premium performance with graphite regular shafts in a left-hand 5-PW+AW set. Top-tier feel and forgiveness at $1,199.99.",
-    image: "https://picsum.photos/seed/golfclubs3/600/400",
+    image: "https://golfusa.com/wp-content/uploads/2026/01/Qi-Max-Iron.jpg",
     link: "https://www.amazon.com/dp/B0G2TCMHH3?pd_rd_i=B0G2TCMHH3&pd_rd_w=cnneO&content-id=amzn1.sym.4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_p=4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_r=1CM33SQD9GSAEA3B2EFB&pd_rd_wg=rqEDA&pd_rd_r=64fcb83f-cdac-4c4b-a2b9-b34c06615515&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=techbot00-20&linkId=6f2e125ab096970d2b66a89a592ee4c6&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
