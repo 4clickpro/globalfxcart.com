@@ -49,6 +49,14 @@ const reviews = [
   },
   {
     id: 7,
+    title: "GO UP 2-Seater Electric Golf Cart Review: Insulated Cooler & 48V 105AH Lithium",
+    excerpt: "The GOUP 2-seater features a 48V 105AH lithium battery, built-in insulated cooler, and a lightweight design. Perfect for solo riders at $7,700.",
+    image: "https://placehold.co/600x400/3a4a2a/fff?text=GO+UP+2-Seater",
+    link: "https://www.amazon.com/dp/B0GMGR7FT4?psc=1&pd_rd_i=B0GMGR7FT4&pd_rd_w=ihEQJ&content-id=amzn1.sym.4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_p=4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_r=SKXF13BAWY7QQYNT69MF&pd_rd_wg=qjxFb&pd_rd_r=cf4ae353-67cd-4e1d-ae16-e09b44146149&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&linkCode=ll2&tag=techbot00-20&linkId=2ae1dc850cc59bad0c904e9c3064ffe2&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 8,
     title: "EZGO RXV Elite Electric Golf Cart Review",
     excerpt: "The EZGO RXV Elite offers a smooth ride and impressive range. Here's our full hands-on review after a month of testing.",
     image: "https://placehold.co/600x400/2d5a27/fff?text=EZGO+RXV+Elite",
@@ -56,7 +64,7 @@ const reviews = [
     date: "July 5, 2026"
   },
   {
-    id: 8,
+    id: 9,
     title: "Club Car Onward 4-Passenger Review",
     excerpt: "Club Car's Onward series blends luxury with performance. We put the 4-passenger model through its paces.",
     image: "https://placehold.co/600x400/1a3a5c/fff?text=Club+Car+Onward",
@@ -64,7 +72,7 @@ const reviews = [
     date: "July 1, 2026"
   },
   {
-    id: 9,
+    id: 10,
     title: "Yamaha Drive2 PTV Gas vs Electric Comparison",
     excerpt: "Can't decide between gas and electric? We compare the Yamaha Drive2 PTV in both configurations.",
     image: "https://placehold.co/600x400/3a3a3a/fff?text=Yamaha+Drive2",
