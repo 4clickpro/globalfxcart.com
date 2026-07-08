@@ -25,6 +25,14 @@ const reviews = [
   },
   {
     id: 4,
+    title: "ATS POWER 4-Seater Shuttle Golf Cart Review: IP67 Waterproof 48V 5KW",
+    excerpt: "The ATS POWER 4-seater shuttle features a 48V 5KW IP67 waterproof motor, 25 MPH top speed, 7-inch multimedia display, and 5-hour quick charging. Built tough at $10,999.",
+    image: "https://placehold.co/600x400/2a2a2a/fff?text=ATS+POWER+4-Seater",
+    link: "https://www.amazon.com/ATS-POWER-4-Seater-Electric-Waterproof/dp/B0GXKSCFXF?pd_rd_w=jH0FW&content-id=amzn1.sym.6640a844-ab24-4352-ac9b-78899e683a5e&pf_rd_p=6640a844-ab24-4352-ac9b-78899e683a5e&pf_rd_r=R33V719CJ95J6FNMPZ6W&pd_rd_wg=QDrom&pd_rd_r=ad719f52-fbaf-4b88-8ad9-d8921818b979&pd_rd_i=B0GXKY1GF4&th=1&linkCode=ll2&tag=techbot00-20&linkId=92b11abde1f40b8b3d9c6fcacb325f43&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 5,
     title: "ATS POWER Electric Golf Cart Review: 48V 5KW Beast for $7,999",
     excerpt: "The ATS POWER electric golf cart packs a 48V 5KW AC motor, hits 25 MPH, and features 4-wheel hydraulic disc brakes. A serious contender for the price.",
     image: "https://placehold.co/600x400/4a4a4a/fff?text=ATS+POWER",
@@ -32,7 +40,7 @@ const reviews = [
     date: "July 8, 2026"
   },
   {
-    id: 5,
+    id: 6,
     title: "GO UP Sightseeing/Patrol Golf Cart Review: 48V 105AH Lithium with Touchscreen",
     excerpt: "The GO UP sightseeing vehicle features a 48V 105AH lithium battery, 10.1\" touchscreen, 4+2 seating, and double-wishbone suspension. Versatile for $12,050.",
     image: "https://placehold.co/600x400/4a5a3a/fff?text=GO+UP+Sightseeing",
