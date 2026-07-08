@@ -3,7 +3,7 @@ const reviews = [
     id: 1,
     title: "GOUP 4-Seater Electric Golf Cart Review: Is It Worth $9,900?",
     excerpt: "The GOUP 4-seater electric golf cart delivers impressive performance with a 48V motor and starry sky roof. Here's our full review.",
-    image: "https://picsum.photos/seed/golfcart1/600/400",
+    image: "https://m.media-amazon.com/images/I/61qCr9L5gRL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/gp/product/B0H395JDLD?smid=A1R8ULCM2PHGT&psc=1&linkCode=ll2&tag=techbot00-20&linkId=95036c0df6df729424f403081afc6ff8&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
@@ -11,7 +11,7 @@ const reviews = [
     id: 6,
     title: "SDLANCH 45-Mile Long Range 60V Golf Cart Review: Heavy Duty 4-Seater",
     excerpt: "The SDLANCH 4-seater offers a 60V system with 45-mile range, 800 lbs capacity, LED lights, and quick charging. A heavy-duty workhorse at $9,800.",
-    image: "https://picsum.photos/seed/golfcart2/600/400",
+    image: "https://m.media-amazon.com/images/I/713n8DxUNxL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/SDLANCH-45-Mile-Long-Range-Electric/dp/B0G2LXSLTP?pd_rd_w=sbFa5&content-id=amzn1.sym.6640a844-ab24-4352-ac9b-78899e683a5e&pf_rd_p=6640a844-ab24-4352-ac9b-78899e683a5e&pf_rd_r=JQBE1W9ESDPG9RSV70CE&pd_rd_wg=05TOR&pd_rd_r=82762e49-ee25-4f3c-8151-91dcc12ae8e6&pd_rd_i=B0G2LXSLTP&psc=1&linkCode=ll2&tag=techbot00-20&linkId=2d1a7cfee9e6a556c077de01bf859192&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
@@ -19,7 +19,7 @@ const reviews = [
     id: 7,
     title: "GIYI 4-Seater Electric Golf Cart Review: 60V 44-Mile Range for $7,999",
     excerpt: "The GIYI 4-seater boasts a 60V 100Ah battery with 44-mile range, 5KW motor, and a 9-inch IPS display. Fully assembled out of the box.",
-    image: "https://picsum.photos/seed/golfcart3/600/400",
+    image: "https://m.media-amazon.com/images/I/81PZzvLNxtL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/gp/product/B0GDFMD6QM?smid=A395BR449SJF5J&psc=1&linkCode=ll2&tag=techbot00-20&linkId=8aa651f3067fe06c62c4fe55c641dcf5&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
@@ -27,7 +27,7 @@ const reviews = [
     id: 8,
     title: "GO UP 2-Seater Electric Golf Cart Review: Insulated Cooler & 48V 105AH Lithium",
     excerpt: "The GOUP 2-seater features a 48V 105AH lithium battery, built-in insulated cooler, and a lightweight design. Perfect for solo riders at $7,700.",
-    image: "https://picsum.photos/seed/golfcart4/600/400",
+    image: "https://m.media-amazon.com/images/I/91lDTE1lBUL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/dp/B0GMGR7FT4?psc=1&pd_rd_i=B0GMGR7FT4&pd_rd_w=ihEQJ&content-id=amzn1.sym.4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_p=4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_r=SKXF13BAWY7QQYNT69MF&pd_rd_wg=qjxFb&pd_rd_r=cf4ae353-67cd-4e1d-ae16-e09b44146149&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&linkCode=ll2&tag=techbot00-20&linkId=2ae1dc850cc59bad0c904e9c3064ffe2&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
@@ -59,7 +59,7 @@ const reviews = [
     id: 12,
     title: "X-ARK 4-Seater Electric All-Terrain Golf Cart Review: High-Power Beast",
     excerpt: "The X-ARK 4-seater is an all-terrain electric golf cart with high-power motor and rugged design. Built for off-road adventures at a premium price point.",
-    image: "https://picsum.photos/seed/golfcart8/600/400",
+    image: "https://m.media-amazon.com/images/I/710pbDN5OoL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/X-ARK-4-Seater-Electric-All-Terrain-High-Power/dp/B0DSZY626D?crid=BMET4VGSPW27&dib=eyJ2IjoiMSJ9.KXLGWdc9NO9-sBb3O8NS_8lw2U4D69pGVpy5x0qWcAk41s42-t2euJhInM3InYZCj-oYaOiXG_LFOlETwylBOOsxFGPsu5rpvGkdaEOBxdTVc3Vot_oGd1GrjIgAkhIHcdynA4QIIAykWXo89VKwDQKMDPmyls1N-dZ_e-h1LR8yYDBW3tDXJf_nty2AIcCCkg_-_EIfDFnT4APvs5d_vEDz1awMnVjuW7Jy-0sSa4vohPVX_J1QNP33PqNRDG48y9dOnDK2LUEVux-GJXK3NENlAuINpimrxngENWnmsWc.8FsapR0XQ0rbs3d2t4Lg2JG1YIK7kjz8taPeGOzdRNU&dib_tag=se&keywords=most+expensive+golf+cart&qid=1783517017&s=sporting-goods&sprefix=most+expensive+golf+cart%2Csporting%2C218&sr=1-4&linkCode=ll2&tag=techbot00-20&linkId=8f2430ec94b9a632da8e0734272dad1e&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
   },
