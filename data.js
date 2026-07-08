@@ -17,6 +17,14 @@ const reviews = [
   },
   {
     id: 3,
+    title: "GO UP 6-Passenger Electric Golf Cart Review: 48V 150AH Lithium Power",
+    excerpt: "The GO UP 4+2 seater seats six with a 48V 150AH lithium battery and one-click start. A spacious option for $12,200.",
+    image: "https://placehold.co/600x400/3a5a2a/fff?text=GO+UP+6-Seater",
+    link: "https://www.amazon.com/dp/B0H3P7839M?psc=1&pd_rd_i=B0H3P7839M&pd_rd_w=PQ4WQ&content-id=amzn1.sym.4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_p=4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_r=RM79HVB1TQDYBEC4DTBH&pd_rd_wg=ZJxVG&pd_rd_r=748bbae6-4029-4bb8-98b0-1fb4d29f3df1&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&linkCode=ll2&tag=techbot00-20&linkId=c62496664c8f25249abffd3789862aa1&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
+    id: 4,
     title: "ATS POWER Electric Golf Cart Review: 48V 5KW Beast for $7,999",
     excerpt: "The ATS POWER electric golf cart packs a 48V 5KW AC motor, hits 25 MPH, and features 4-wheel hydraulic disc brakes. A serious contender for the price.",
     image: "https://placehold.co/600x400/4a4a4a/fff?text=ATS+POWER",
