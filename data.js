@@ -99,8 +99,15 @@ const blogPosts = [
     date: "July 8, 2026"
   },
   {
+    id: 6,
+    title: "PGM NSR V 18-Piece Complete Golf Club Set Review: Premium Performance for $990",
+    excerpt: "The PGM NSR V set includes an adjustable loft titanium driver, precision-weighted fairway woods, forged irons, CNC milled putter, and stand bag. A complete bag for serious golfers.",
+    image: "https://placehold.co/600x400/2a3a4a/fff?text=PGM+NSR+V+Set",
+    link: "https://www.amazon.com/PGM-Piece-Mens-Complete-Golf/dp/B0F5MTZTF9?crid=2VDTOSVX6EUML&dib=eyJ2IjoiMSJ9.jEs3qHHxod3ikOqrpNK9puvKghYNWurcpfbTY2PFTJfrjp5iC-iVrpSvv2asRZ9yV420PFxBxN7Bhq2Kput2YdKvb1asIa5bXRxbvN8s6U8iwWY3Vf9hHjVpKD_LEFLy6Do-67Xe2jhzxaWOHhvjXWKriEKS30Fi6Ppdb_7x_9RdegXDc3-zKqVURIGkqciZRdyEQwQV1img_gN-vF8_msjDlOHQgBaGjB653jdI_aU.Rn9clKSiyHMVMBmmBNpOv84cycNENZZ0KnL7Qy6Oruk&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bclub%2Bset&qid=1783516457&sprefix=most%2Bexpensive%2Bgolf%2Caps%2C219&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=techbot00-20&linkId=928ba76ea0b6fa84feefc0357686e983&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
     id: 7,
-    title: "5 Best Golf Cart Upgrades for 2026",
     excerpt: "From lithium batteries to LED lighting, here are the top upgrades to transform your golf cart this year.",
     image: "https://placehold.co/600x400/2d5a27/fff?text=Upgrades",
     link: "#",
