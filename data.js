@@ -153,5 +153,45 @@ const blogPosts = [
     image: "https://picsum.photos/seed/golfsupplies/600/400",
     link: "#",
     date: "June 15, 2026"
+  },
+  {
+    id: 16,
+    title: "How Much Does It Cost to Rent a Golf Cart in Destin, FL?",
+    excerpt: "Brand new golf cart rentals in Destin, FL start at just $99 per day. Here's a complete guide to daily and weekly pricing for 4, 6, and 8-seat carts.",
+    image: "https://picsum.photos/seed/destinpricing/600/400",
+    link: "#",
+    date: "July 15, 2026"
+  },
+  {
+    id: 17,
+    title: "Do You Need a License to Drive a Golf Cart in Destin & Miramar Beach?",
+    excerpt: "Street-legal golf carts are a great way to get around Destin, FL. Here's what you need to know about driver requirements and road rules.",
+    image: "https://picsum.photos/seed/destinlicense/600/400",
+    link: "#",
+    date: "July 12, 2026"
+  },
+  {
+    id: 18,
+    title: "Best Golf Cart Routes on the Emerald Coast: Destin to Miramar Beach",
+    excerpt: "Discover the best scenic routes, beach access points, and must-visit stops when exploring Destin and Miramar Beach by golf cart.",
+    image: "https://picsum.photos/seed/emeraldcoast/600/400",
+    link: "#",
+    date: "July 8, 2026"
+  },
+  {
+    id: 19,
+    title: "Golf Cart vs Car in Destin: Which Is Better for Your Vacation?",
+    excerpt: "Parking in Destin can be tough in summer. Compare the cost and convenience of renting a golf cart versus driving a car on vacation.",
+    image: "https://picsum.photos/seed/golfcartvscar/600/400",
+    link: "#",
+    date: "July 2, 2026"
+  },
+  {
+    id: 20,
+    title: "How to Plan a Week-Long Golf Cart Rental in Miramar Beach",
+    excerpt: "Weekly golf cart rentals come with free delivery in Miramar Beach, FL. Here's how to book, what to pack, and how to make the most of your week.",
+    image: "https://picsum.photos/seed/miramarweek/600/400",
+    link: "#",
+    date: "June 28, 2026"
   }
 ];
