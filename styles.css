@@ -53,8 +53,8 @@ nav.scrolled {
 }
 
 .logo h1 {
-  font-size: 1.6rem;
-  letter-spacing: 3px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   background: linear-gradient(135deg, var(--accent), #dfc76a);
   -webkit-background-clip: text;
@@ -94,6 +94,176 @@ nav ul li a::after {
 
 nav ul li a:hover { color: var(--accent); }
 nav ul li a:hover::after { width: 100%; }
+
+nav ul li.nav-call a {
+  color: var(--primary);
+  background: var(--accent);
+  padding: 0.55rem 1.2rem;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+nav ul li.nav-call a::after { display: none; }
+
+nav ul li.nav-call a:hover {
+  background: var(--accent-hover);
+  color: var(--primary);
+}
+
+/* ─── Rental Section ─── */
+.rental-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.rental-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.video-wrap {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  aspect-ratio: 16 / 10;
+  background: #000;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.video-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 15, 13, 0.35);
+  border: none;
+  cursor: pointer;
+  color: var(--accent);
+  transition: background var(--transition);
+}
+
+.video-play:hover { background: rgba(10, 15, 13, 0.15); }
+.video-play svg { transition: transform var(--transition); }
+.video-play:hover svg { transform: scale(1.12); }
+.video-play.hidden { display: none; }
+
+.rental-info .hero-badge { margin-bottom: 1.2rem; }
+
+.rental-info h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.rental-info h2 em { color: var(--accent); font-style: italic; }
+
+.rental-info p {
+  font-size: 1.05rem;
+  opacity: 0.8;
+  margin-bottom: 1.6rem;
+}
+
+.rental-info p strong { color: var(--light); }
+
+.rental-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.rental-price .price {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.rental-price .per {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+.rental-features {
+  list-style: none;
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.rental-features li {
+  position: relative;
+  padding-left: 1.8rem;
+  font-size: 0.98rem;
+  opacity: 0.85;
+}
+
+.rental-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover { text-decoration: underline; }
+
+/* ─── Rental Strip (sub-pages) ─── */
+.rental-strip {
+  background: linear-gradient(135deg, var(--secondary) 0%, #0d1812 100%);
+  border-top: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.rental-strip-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.rental-strip-item {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.rental-strip-item strong {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-right: 0.4rem;
+}
+
+.rental-strip .btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .rental-strip-inner { gap: 1rem; padding: 1.2rem 1.5rem; }
+}
 
 /* ─── Hero ─── */
 .hero {
@@ -169,6 +339,12 @@ nav ul li a:hover::after { width: 100%; }
   margin-left: auto;
   margin-right: auto;
   opacity: 0.8;
+}
+
+.hero-content .btn + .btn { margin-left: 0.75rem; }
+
+@media (max-width: 480px) {
+  .hero-content .btn { display: block; width: 100%; margin: 0.5rem 0 !important; }
 }
 
 .btn {
@@ -386,6 +562,254 @@ nav ul li a:hover::after { width: 100%; }
 
 .card:hover .card-link { gap: 0.8rem; }
 
+/* ─── Cart Picker Grid ─── */
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.cart-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all var(--transition);
+  text-align: center;
+}
+
+.cart-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 60px rgba(201, 169, 78, 0.08);
+}
+
+.cart-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.cart-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cart-card:hover .cart-image img { transform: scale(1.08); }
+
+.cart-body { padding: 2rem 1.6rem; }
+
+.cart-body h3 { font-size: 1.4rem; margin-bottom: 0.7rem; }
+
+.cart-body p {
+  font-size: 0.92rem;
+  opacity: 0.65;
+  margin-bottom: 1.4rem;
+  line-height: 1.6;
+}
+
+.cart-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.cart-price .price {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.cart-price .per {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+/* ─── Pricing Grid ─── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.price-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all var(--transition);
+  position: relative;
+}
+
+.price-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+.price-card.featured {
+  border-color: var(--accent);
+  background: linear-gradient(180deg, #16221b 0%, var(--card-bg) 100%);
+  box-shadow: 0 20px 60px rgba(201, 169, 78, 0.12);
+}
+
+.price-tag {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: var(--primary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.price-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.price-card .price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.price-card .price .price {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.price-card .price .per {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+.price-card ul {
+  list-style: none;
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.price-card ul li {
+  position: relative;
+  padding-left: 1.6rem;
+  font-size: 0.92rem;
+  opacity: 0.8;
+}
+
+.price-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ─── Options Grid ─── */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.option-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: all var(--transition);
+}
+
+.option-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-6px);
+}
+
+.option-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--accent);
+}
+
+.option-card p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 1.4rem;
+  line-height: 1.7;
+}
+
+.option-card .rental-features { margin-bottom: 1.6rem; }
+
+/* ─── Reasons Grid ─── */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reason {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2rem 1.6rem;
+  transition: all var(--transition);
+}
+
+.reason:hover {
+  border-color: var(--accent);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(201, 169, 78, 0.08);
+}
+
+.reason-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: var(--accent);
+  opacity: 0.35;
+  display: block;
+  margin-bottom: 0.8rem;
+  line-height: 1;
+}
+
+.reason h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.reason p {
+  font-size: 0.88rem;
+  opacity: 0.65;
+  line-height: 1.6;
+}
+
+.section-header .hero-badge { margin-bottom: 1.2rem; }
+
 /* ─── CTA Banner ─── */
 .cta-banner {
   background: linear-gradient(135deg, var(--secondary) 0%, #0d1812 100%);
@@ -446,6 +870,14 @@ nav ul li a:hover::after { width: 100%; }
   line-height: 1.8;
   opacity: 0.8;
 }
+
+.content-section a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 169, 78, 0.4);
+}
+
+.content-section a:hover { border-bottom-color: var(--accent); }
 
 /* ─── Contact Form ─── */
 .contact-form {
@@ -520,6 +952,18 @@ footer p {
 /* ─── Responsive ─── */
 @media (max-width: 1024px) {
   .stats { grid-template-columns: repeat(2, 1fr); }
+  .rental-grid { gap: 3rem; }
+  .reasons-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 500px; }
+}
+
+@media (max-width: 700px) {
+  .options-grid { grid-template-columns: 1fr; }
+  .reasons-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .rental-grid { grid-template-columns: 1fr; gap: 3rem; }
 }
 
 @media (max-width: 768px) {
@@ -538,6 +982,7 @@ footer p {
   .hero-content h2 { font-size: 2.2rem; }
 
   .section { padding: 4rem 1.5rem; }
+  .rental-section { padding: 4rem 1.5rem; }
 
   .section-header h2 { font-size: 2rem; }
 
@@ -547,6 +992,9 @@ footer p {
   .page-header h2 { font-size: 2rem; }
 
   .stats { grid-template-columns: 1fr; }
+
+  .rental-info h2 { font-size: 1.9rem; }
+  .rental-price .price { font-size: 3.2rem; }
 }
 
 @media (max-width: 480px) {

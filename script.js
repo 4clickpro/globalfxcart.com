@@ -55,4 +55,19 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.classList.toggle('scrolled', window.scrollY > 50);
     });
   }
+
+  // Rental video play button
+  const video = document.getElementById('rentalVideo');
+  const playBtn = document.getElementById('videoPlayBtn');
+  if (video && playBtn) {
+    playBtn.addEventListener('click', () => {
+      video.play();
+    });
+    video.addEventListener('play', () => {
+      playBtn.classList.add('hidden');
+    });
+    video.addEventListener('pause', () => {
+      if (video.ended) playBtn.classList.remove('hidden');
+    });
+  }
 });
