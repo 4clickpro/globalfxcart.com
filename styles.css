@@ -343,6 +343,24 @@ footer a:hover { text-decoration: underline; }
 
 .hero-content .btn + .btn { margin-left: 0.75rem; }
 
+.hero-content .rental-price {
+  justify-content: center;
+  margin-bottom: 1.8rem;
+}
+
+.hero-content .rental-price .price { font-size: 4.5rem; }
+
+.hero-content .rental-features {
+  justify-content: center;
+  margin-bottom: 2.2rem;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.hero-content .rental-features li { opacity: 0.9; }
+
 @media (max-width: 480px) {
   .hero-content .btn { display: block; width: 100%; margin: 0.5rem 0 !important; }
 }
