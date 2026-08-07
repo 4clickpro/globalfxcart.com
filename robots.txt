@@ -20,4 +20,7 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+# llms.txt - structured site guide for AI crawlers
+# https://www.globalfxcart.com/llms.txt
+
 Sitemap: https://www.globalfxcart.com/sitemap.xml

@@ -1,5 +1,21 @@
 const reviews = [
   {
+    id: 15,
+    title: "GIYI 2-Seater Electric Golf Cart Review: 5KW Motor & 44-Mile Range for $7,599",
+    excerpt: "The GIYI 2-seater packs a 5KW motor, 60V 100Ah battery with 44-mile range, advanced MacPherson suspension, and a 9-inch IPS display. A premium 2-seater at $7,599.",
+    image: "https://m.media-amazon.com/images/I/51RI+rtQ38L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/2-Seater-Electric-Advanced-Suspension-Recreational/dp/B0H8P4B53N?crid=18TAGNYC4TYJM&dib=eyJ2IjoiMSJ9.yhxs1pzpRZiSCCUqbf3PawNvVUxWEWS3tqGrFIxxApdtAXqd3ob3jFjLG8p_BMGjt40-JUokDtMyCHa_p-nZAILtZYukJuoHX1PVGj7dP28Wi2vAD7_XSd2V5Yyzbdj9zy2P5Nf0oNbliYNq49ozerJnKaPUz55vsZpTY_vOJF8MRMadGEB3IJ0J-_K5EMiOvpl5CLusd6FioB1uCR5egR19shaDHudv6Z5nygfkOeXAaIPm_rYHHooH6kw1sFqHNL-NYP9HyMFvE-e69_X8FNoLIVM57yX456IMWFU4U5E.xveYK_Y9VkR78gjvmkjVz8Rqg7x2zp5tqDDYnbXG32s&dib_tag=se&keywords=golf%2Bcart&qid=1785983574&sprefix=golf%2B%2Caps%2C311&sr=8-10&th=1&linkCode=ll2&tag=techbot00-20&linkId=c3a5cff79315372faf815d4fa0101141&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 5, 2026"
+  },
+  {
+    id: 14,
+    title: "Dvsripa 1800W 60V Electric Golf Cart Review: 24 MPH & 35-Mile Range",
+    excerpt: "The Dvsripa 1800W 60V 4-wheel electric golf cart hits 24 MPH with a 35-mile range, Bluetooth audio, and an all-terrain chassis that climbs up to 30°.",
+    image: "https://m.media-amazon.com/images/I/61YGqn9ayxL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Dvsripa-Electric-4-Wheel-35Miles-Recreational/dp/B0H9LKSHQG?crid=18TAGNYC4TYJM&dib=eyJ2IjoiMSJ9.U_2D1sLOWxny5rPZJHPIKbkB4ywwHJhjjGIBW67ry884i5HPrFNqTCYWBEO6GaU2xgGCP5Ivi9WZPiGBLl9uJjJkdUlFBLHg7Jaq0O6AT_cz-L206RqjxMt22KREPnXmrgSCS7EAsSOdVTCy26UcsbubDaVn_-0lAB4Td5g0onNGCyHlDFG-1dnCI-lPFnkyOyIuTOtpfiTk2cpfd6kZGVrwhnokz-1Ep6CpZOcxmTeHhg4Y3-Zafru5SXBSpiIoFR27-Cljqj0Ryy7E47P5y1_jIo4WWLio86hUCcYJgos.gZcapYGx6LjWYSvPmIRBtQemh1SgfEiFLkh_sEbFj2g&dib_tag=se&keywords=golf+cart&qid=1785983405&sprefix=golf+,aps,311&sr=8-10&linkCode=sl2&tag=techbot00-20&linkId=c565339779856e64f52e9a45798a4c98&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 5, 2026"
+  },
+  {
     id: 1,
     title: "GOUP 4-Seater Electric Golf Cart Review: Is It Worth $9,900?",
     excerpt: "The GOUP 4-seater electric golf cart delivers impressive performance with a 48V motor and starry sky roof. Here's our full review.",
@@ -32,30 +48,6 @@ const reviews = [
     date: "July 8, 2026"
   },
   {
-    id: 9,
-    title: "EZGO RXV Elite Electric Golf Cart Review",
-    excerpt: "The EZGO RXV Elite offers a smooth ride and impressive range. Here's our full hands-on review after a month of testing.",
-    image: "https://picsum.photos/seed/golfcart5/600/400",
-    link: "#",
-    date: "July 5, 2026"
-  },
-  {
-    id: 10,
-    title: "Club Car Onward 4-Passenger Review",
-    excerpt: "Club Car's Onward series blends luxury with performance. We put the 4-passenger model through its paces.",
-    image: "https://picsum.photos/seed/golfcart6/600/400",
-    link: "#",
-    date: "July 1, 2026"
-  },
-  {
-    id: 11,
-    title: "Yamaha Drive2 PTV Gas vs Electric Comparison",
-    excerpt: "Can't decide between gas and electric? We compare the Yamaha Drive2 PTV in both configurations.",
-    image: "https://picsum.photos/seed/golfcart7/600/400",
-    link: "#",
-    date: "June 28, 2026"
-  },
-  {
     id: 12,
     title: "X-ARK 4-Seater Electric All-Terrain Golf Cart Review: High-Power Beast",
     excerpt: "The X-ARK 4-seater is an all-terrain electric golf cart with high-power motor and rugged design. Built for off-road adventures at a premium price point.",
@@ -75,123 +67,83 @@ const reviews = [
 
 const blogPosts = [
   {
-    id: 6,
-    title: "GO UP Stylish & Lightweight Electric Golf Caddie Review: Dual System",
-    excerpt: "The GOUP dual golf cart system includes two lithium-powered electric caddies with LED displays and insulated coolers. Lightweight and professional-grade at $7,500.",
-    image: "https://picsum.photos/seed/golfcaddie/600/400",
-    link: "https://www.amazon.com/dp/B0GR9JYP7M?psc=1&pd_rd_i=B0GR9JYP7M&pd_rd_w=aKjlR&content-id=amzn1.sym.4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_p=4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_r=XPGKE3XZWN7KKJ4HXR9P&pd_rd_wg=ouear&pd_rd_r=1b985000-01ca-4486-b02f-487217473beb&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&linkCode=ll2&tag=techbot00-20&linkId=db9edcabe550b970e76e67602ec757b4&language=en_US&ref_=as_li_ss_tl",
-    date: "July 8, 2026"
-  },
-  {
-    id: 7,
-    title: "PGM NSR V 18-Piece Complete Golf Club Set Review: Premium Performance for $990",
-    excerpt: "The PGM NSR V set includes an adjustable loft titanium driver, precision-weighted fairway woods, forged irons, CNC milled putter, and stand bag. A complete bag for serious golfers.",
-    image: "https://m.media-amazon.com/images/I/81cIff-wv4L._AC_SL1500_.jpg",
-    link: "https://www.amazon.com/PGM-Piece-Mens-Complete-Golf/dp/B0F5MTZTF9?crid=2VDTOSVX6EUML&dib=eyJ2IjoiMSJ9.jEs3qHHxod3ikOqrpNK9puvKghYNWurcpfbTY2PFTJfrjp5iC-iVrpSvv2asRZ9yV420PFxBxN7Bhq2Kput2YdKvb1asIa5bXRxbvN8s6U8iwWY3Vf9hHjVpKD_LEFLy6Do-67Xe2jhzxaWOHhvjXWKriEKS30Fi6Ppdb_7x_9RdegXDc3-zKqVURIGkqciZRdyEQwQV1img_gN-vF8_msjDlOHQgBaGjB653jdI_aU.Rn9clKSiyHMVMBmmBNpOv84cycNENZZ0KnL7Qy6Oruk&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bclub%2Bset&qid=1783516457&sprefix=most%2Bexpensive%2Bgolf%2Caps%2C219&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=techbot00-20&linkId=928ba76ea0b6fa84feefc0357686e983&language=en_US&ref_=as_li_ss_tl",
-    date: "July 8, 2026"
-  },
-  {
-    id: 8,
-    title: "Callaway Golf 2026 XR Complete Set Review: Premium Performance",
-    excerpt: "The Callaway 2026 XR complete golf set delivers pro-level quality with a premium driver, fairway woods, hybrids, irons, wedges, and putter. A top-tier package at $1,599.99.",
-    image: "https://cdn11.bigcommerce.com/s-hgw48x3/images/stencil/1280x1280/products/2541/24197/MAIN__59893.1675898052.jpg?c=2",
-    link: "https://www.amazon.com/CG-PK-XR-Complete-Set/dp/B0FH5VVFVK?crid=2VDTOSVX6EUML&dib=eyJ2IjoiMSJ9.vzetvR-6dr0o5xb3CMIkdFARI8HhdxuquBqInyxyDAbIj25FiRyDU4wGguBo16ocX5PlYqbBG9IDKfJPvq9wNPgchVw8DQoO6glCXDqynvzvaF-C8xehpKOb31oDikfhrFWyVsjIZQ3n1sSfI0VJvY3FDAtbXCSgFAkpCzDkAsb4YwrfHzyCV4KrUDCOqdFp_jUq6ivj9Tyr3DAZzQmzsBz5Trf9aXttTSb_Lg0ZIUA.c-FpD8MkHkKJLdvmVV8sj8jJlUVIuBXUdD0gZPPQs_k&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bclub%2Bset&qid=1783516586&sprefix=most%2Bexpensive%2Bgolf%2Caps%2C219&sr=8-9&th=1&linkCode=ll2&tag=techbot00-20&linkId=9450922e15738663a90ac976788b8961&language=en_US&ref_=as_li_ss_tl",
-    date: "July 8, 2026"
-  },
-  {
-    id: 9,
-    title: "TaylorMade Qi Max Irons Review: Graphite Regular Left-Hand 5-PW+AW Set",
-    excerpt: "The TaylorMade Qi Max irons deliver premium performance with graphite regular shafts in a left-hand 5-PW+AW set. Top-tier feel and forgiveness at $1,199.99.",
-    image: "https://golfusa.com/wp-content/uploads/2026/01/Qi-Max-Iron.jpg",
-    link: "https://www.amazon.com/dp/B0G2TCMHH3?pd_rd_i=B0G2TCMHH3&pd_rd_w=cnneO&content-id=amzn1.sym.4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_p=4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_r=1CM33SQD9GSAEA3B2EFB&pd_rd_wg=rqEDA&pd_rd_r=64fcb83f-cdac-4c4b-a2b9-b34c06615515&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=techbot00-20&linkId=6f2e125ab096970d2b66a89a592ee4c6&language=en_US&ref_=as_li_ss_tl",
-    date: "July 8, 2026"
-  },
-  {
-    id: 10,
-    title: "PGM 27-Piece Complete Golf Set Review: USGA Certified Premium Kit",
-    excerpt: "The PGM 27-piece set is R&A and USGA certified with adjustable driver, woods, hybrids, irons, wedges, putter, and stand bag. A pro-level complete bag at $1,999.99.",
-    image: "https://greatergolfhouse.com/cdn/shop/files/a1_02c92df2-97d2-4765-a416-6691fc030f18.jpg?v=1770451078",
-    link: "https://www.amazon.com/dp/B0G2PLVT2Z?pd_rd_i=B0G2PLVT2Z&pd_rd_w=PPNNM&content-id=amzn1.sym.4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_p=4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_r=H4MPND4MYNGFP5QFDSAY&pd_rd_wg=PMeyb&pd_rd_r=7e7a20e6-f85c-4632-916e-8221c5f28770&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=techbot00-20&linkId=0c8b218ad63ba2b90d2f57ee676412cd&language=en_US&ref_=as_li_ss_tl",
-    date: "July 8, 2026"
-  },
-  {
-    id: 11,
-    title: "Srixon ZXi Iron Set Review: 4-PW Steel Stiff Right Hand",
-    excerpt: "The Srixon ZXi 4-PW iron set delivers premium forged performance with steel stiff shafts. A tour-caliber iron set for serious golfers at $1,399.99.",
-    image: "https://ca.dunlopsports.com/cdn/shop/files/SX25-Clubs-Irons-ZX5-1_e2170f9b-2211-40b9-b427-6c4479f50fe2.jpg",
-    link: "https://www.amazon.com/dp/B0DT3GGD4C?sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfcmlnaHRfc2hhcmVk&th=1&linkCode=ll2&tag=techbot00-20&linkId=ead9ab90b25247b723a03a608c5866df&language=en_US&ref_=as_li_ss_tl",
-    date: "July 8, 2026"
-  },
-  {
-    id: 12,
-    title: "5 Best Golf Cart Upgrades for 2026",
-    excerpt: "From lithium batteries to LED lighting, here are the top upgrades to transform your golf cart this year.",
-    image: "https://picsum.photos/seed/golfupgrade/600/400",
-    link: "#",
-    date: "July 3, 2026"
-  },
-  {
-    id: 13,
-    title: "Golf Cart Maintenance Guide: Keep Your Cart Running",
-    excerpt: "Regular maintenance extends the life of your golf cart. Follow our seasonal checklist.",
-    image: "https://picsum.photos/seed/golfmaintenance/600/400",
-    link: "#",
-    date: "June 25, 2026"
-  },
-  {
-    id: 14,
-    title: "Electric vs Gas Golf Carts: Pros and Cons",
-    excerpt: "We break down the costs, performance, and environmental impact of each option.",
-    image: "https://picsum.photos/seed/golfcompare/600/400",
-    link: "#",
-    date: "June 18, 2026"
-  },
-  {
-    id: 15,
-    title: "Essential Golf Supplies Every Golfer Needs",
-    excerpt: "From premium golf balls to the perfect stand bag, here's what to pack for your next round.",
-    image: "https://picsum.photos/seed/golfsupplies/600/400",
-    link: "#",
-    date: "June 15, 2026"
+    id: 21,
+    title: "The Ultimate Golf Cart Rental Guide for Destin & Miramar Beach (2026)",
+    excerpt: "Everything you need to know about renting a golf cart in Destin, FL & Miramar Beach, FL: pricing, street-legal rules, delivery, and pro tips.",
+    image: "images/rover-xl6-white.jpg",
+    link: "golf-cart-rental-guide.html",
+    date: "July 20, 2026"
   },
   {
     id: 16,
     title: "How Much Does It Cost to Rent a Golf Cart in Destin, FL?",
     excerpt: "Brand new golf cart rentals in Destin, FL start at just $99 per day. Here's a complete guide to daily and weekly pricing for 4, 6, and 8-seat carts.",
-    image: "https://picsum.photos/seed/destinpricing/600/400",
-    link: "#",
+    image: "images/cart-4seat.webp",
+    link: "golf-cart-rental-cost-destin.html",
     date: "July 15, 2026"
   },
   {
     id: 17,
     title: "Do You Need a License to Drive a Golf Cart in Destin & Miramar Beach?",
     excerpt: "Street-legal golf carts are a great way to get around Destin, FL. Here's what you need to know about driver requirements and road rules.",
-    image: "https://picsum.photos/seed/destinlicense/600/400",
-    link: "#",
+    image: "images/rover-xl6-white.jpg",
+    link: "golf-cart-license-destin.html",
     date: "July 12, 2026"
   },
   {
     id: 18,
     title: "Best Golf Cart Routes on the Emerald Coast: Destin to Miramar Beach",
     excerpt: "Discover the best scenic routes, beach access points, and must-visit stops when exploring Destin and Miramar Beach by golf cart.",
-    image: "https://picsum.photos/seed/emeraldcoast/600/400",
-    link: "#",
+    image: "images/rover-xl6-white.jpg",
+    link: "best-golf-cart-routes-emerald-coast.html",
     date: "July 8, 2026"
   },
   {
     id: 19,
     title: "Golf Cart vs Car in Destin: Which Is Better for Your Vacation?",
     excerpt: "Parking in Destin can be tough in summer. Compare the cost and convenience of renting a golf cart versus driving a car on vacation.",
-    image: "https://picsum.photos/seed/golfcartvscar/600/400",
-    link: "#",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-vs-car-destin.html",
     date: "July 2, 2026"
   },
   {
     id: 20,
     title: "How to Plan a Week-Long Golf Cart Rental in Miramar Beach",
     excerpt: "Weekly golf cart rentals come with free delivery in Miramar Beach, FL. Here's how to book, what to pack, and how to make the most of your week.",
-    image: "https://picsum.photos/seed/miramarweek/600/400",
-    link: "#",
+    image: "images/cart-8seat.jpg",
+    link: "week-long-golf-cart-rental-miramar-beach.html",
     date: "June 28, 2026"
+  },
+  {
+    id: 14,
+    title: "Electric vs Gas Golf Carts: Pros and Cons",
+    excerpt: "We break down the costs, performance, and environmental impact of each option.",
+    image: "images/cart-4seat.webp",
+    link: "electric-vs-gas-golf-carts.html",
+    date: "June 18, 2026"
+  },
+  {
+    id: 13,
+    title: "Golf Cart Maintenance Guide: Keep Your Cart Running",
+    excerpt: "Regular maintenance extends the life of your golf cart. Follow our seasonal checklist.",
+    image: "images/cart-4seat.webp",
+    link: "golf-cart-maintenance-guide.html",
+    date: "June 25, 2026"
+  },
+  {
+    id: 12,
+    title: "5 Best Golf Cart Upgrades for 2026",
+    excerpt: "From lithium batteries to LED lighting, here are the top upgrades to transform your golf cart this year.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-upgrades-2026.html",
+    date: "July 3, 2026"
+  },
+  {
+    id: 15,
+    title: "Essential Golf Supplies Every Golfer Needs",
+    excerpt: "From premium golf balls to the perfect stand bag, here's what to pack for your next round.",
+    image: "images/cart-4seat.webp",
+    link: "essential-golf-supplies.html",
+    date: "June 15, 2026"
   }
 ];

@@ -3,7 +3,7 @@ function createPostCard(post) {
     <article class="card">
       <a href="${post.link}" ${post.link === '#' ? 'onclick="return false"' : ''}>
         <div class="card-image">
-          <img src="${post.image}" alt="${post.title}" loading="lazy">
+          <img src="${post.image}" alt="${post.title}" loading="lazy" onerror="this.onerror=null;this.src='images/rover-xl6-white.jpg';this.alt='Golf cart'">
         </div>
         <div class="card-body">
           <span class="card-date">${post.date}</span>
@@ -54,6 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 50);
     });
+  }
+
+  // Sticky mobile call bar — call or text to book from any page
+  if (!document.querySelector('.sticky-call-bar')) {
+    const bar = document.createElement('div');
+    bar.className = 'sticky-call-bar';
+    bar.innerHTML = '<a href="tel:8502998575" class="call-now">📞 Call (850) 299-8575</a><a href="sms:8502998575" class="text-now">💬 Text Us</a>';
+    document.body.appendChild(bar);
   }
 
   // Rental video play button
