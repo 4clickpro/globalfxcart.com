@@ -7,11 +7,13 @@
  *   - Updates blog.html ItemList JSON-LD
  *   - Adds the page to sitemap.xml
  *   - Writes a report to reports/
+ *   - Commits & pushes to GitHub so Pages deploys automatically
  */
 'use strict';
 
 const fs = require('fs');
 const path = require('path');
+const { execSync, execFileSync } = require('child_process');
 
 const SITE_DIR = __dirname;
 const DATA_FILE = path.join(SITE_DIR, 'data.js');
@@ -19,6 +21,8 @@ const BLOG_FILE = path.join(SITE_DIR, 'blog.html');
 const SITEMAP_FILE = path.join(SITE_DIR, 'sitemap.xml');
 const STATE_FILE = path.join(SITE_DIR, '.blog-state.json');
 const REPORTS_DIR = path.join(SITE_DIR, 'reports');
+const LOCK_FILE = path.join(SITE_DIR, '.generator.lock');
+const LOCK_STALE_MS = 10 * 60 * 1000; // a lock older than 10 min is considered stale
 
 const PHONE = '(850) 299-8575';
 const PHONE_TEL = 'tel:8502998575';
@@ -517,6 +521,69 @@ function writeReport(entry, filename, kind) {
 }
 
 /* ------------------------------------------------------------------ */
+/* Run lock + auto git deploy                                           */
+/* ------------------------------------------------------------------ */
+
+// Atomic lock so overlapping cron entries (0 17 + */30 at 17:00) can't
+// double-publish. Stale locks (crashed process) are reclaimed.
+function acquireLock() {
+  try {
+    const fd = fs.openSync(LOCK_FILE, 'wx');
+    fs.writeSync(fd, String(process.pid));
+    fs.closeSync(fd);
+    return true;
+  } catch (err) {
+    if (err.code !== 'EEXIST') throw err;
+    try {
+      const st = fs.statSync(LOCK_FILE);
+      if (Date.now() - st.mtimeMs > LOCK_STALE_MS) {
+        fs.unlinkSync(LOCK_FILE);
+        return acquireLock();
+      }
+    } catch (e) {
+      if (e.code === 'ENOENT') return acquireLock();
+    }
+    return false;
+  }
+}
+
+function releaseLock() {
+  try { fs.unlinkSync(LOCK_FILE); } catch (e) { /* already gone */ }
+}
+
+// Commit any changed site files and push to origin/main. Self-healing:
+// if a previous push failed, the local commits get pushed on the next run.
+// GIT_TERMINAL_PROMPT=0 ensures cron never hangs waiting for a password.
+function gitCommitAndPush(titles) {
+  const run = (cmd) => execSync(cmd, {
+    cwd: SITE_DIR,
+    stdio: 'pipe',
+    env: Object.assign({}, process.env, { GIT_TERMINAL_PROMPT: '0' }),
+  });
+  const runGit = (args) => execFileSync('git', args, {
+    cwd: SITE_DIR,
+    stdio: 'pipe',
+    env: Object.assign({}, process.env, { GIT_TERMINAL_PROMPT: '0' }),
+  });
+  try {
+    run('git add -A');
+    const dirty = run('git status --porcelain').toString().trim();
+    if (dirty) {
+      const msg = `Auto-publish: ${titles.join(' | ') || 'content update'}`;
+      runGit(['commit', '-m', msg]); // execFileSync: no shell, so $ stays literal
+    }
+    const ahead = parseInt(run('git rev-list --count origin/main..main').toString().trim(), 10) || 0;
+    if (ahead === 0) return 'no unpushed changes';
+    run('git push origin main');
+    return `pushed ${ahead} commit(s) to origin/main — Pages deploying`;
+  } catch (err) {
+    const detail = ((err.stderr || '') + (err.stdout || '')).toString().split('\n').filter(Boolean).slice(0, 3).join(' | ');
+    console.log('[git] WARNING — site updated locally, retry next run: ' + detail);
+    return 'error (see above)';
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* Main                                                                */
 /* ------------------------------------------------------------------ */
 
@@ -576,28 +643,41 @@ function publishOne(state) {
 }
 
 function main() {
-  const state = loadState();
-  ensureCounter(state);
-
-  const now = Date.now();
-  if (!state.nextDue) state.nextDue = nextDueSlot(now);
-
-  let published = [];
-  let guard = 0;
-  while (now >= state.nextDue && published.length < MAX_CATCHUP && guard < 50) {
-    published.push(publishOne(state));
-    state.nextDue = nextDueSlot(state.nextDue + 1000); // advance to the following slot
-    guard++;
-  }
-  saveState(state);
-
-  if (published.length === 0) {
-    console.log(`Nothing due yet. Next slot: ${new Date(state.nextDue).toString()}`);
+  if (!acquireLock()) {
+    console.log('Another generator run is in progress — skipping.');
     return;
   }
-  console.log(`Published ${published.length} post(s) (catch-up for any missed slots):`);
-  published.forEach(p => console.log('  - ' + p));
-  console.log(`Next slot: ${new Date(state.nextDue).toString()}`);
+  try {
+    const state = loadState();
+    ensureCounter(state);
+
+    const now = Date.now();
+    if (!state.nextDue) state.nextDue = nextDueSlot(now);
+
+    let published = [];
+    let guard = 0;
+    while (now >= state.nextDue && published.length < MAX_CATCHUP && guard < 50) {
+      published.push(publishOne(state));
+      state.nextDue = nextDueSlot(state.nextDue + 1000); // advance to the following slot
+      guard++;
+    }
+    saveState(state);
+
+    const titles = published.map(p => p.split(': ').slice(1).join(': '));
+    const gitResult = gitCommitAndPush(titles);
+
+    if (published.length === 0) {
+      console.log(`Nothing due yet. Next slot: ${new Date(state.nextDue).toString()}`);
+      console.log('[git] ' + gitResult);
+      return;
+    }
+    console.log(`Published ${published.length} post(s) (catch-up for any missed slots):`);
+    published.forEach(p => console.log('  - ' + p));
+    console.log(`Next slot: ${new Date(state.nextDue).toString()}`);
+    console.log('[git] ' + gitResult);
+  } finally {
+    releaseLock();
+  }
 }
 
 main();
