@@ -525,7 +525,13 @@ function writeReport(entry, filename, kind) {
 /* ------------------------------------------------------------------ */
 
 // Atomic lock so overlapping cron entries (0 17 + */30 at 17:00) can't
-// double-publish. Stale locks (crashed process) are reclaimed.
+// double-publish. Stale locks are reclaimed only if the holder PID is dead
+// (or the lock is very old and the PID is unreadable).
+function lockHolderAlive(pid) {
+  if (!pid) return false;
+  try { process.kill(pid, 0); return true; } catch (e) { return e.code === 'EPERM'; }
+}
+
 function acquireLock() {
   try {
     const fd = fs.openSync(LOCK_FILE, 'wx');
@@ -535,13 +541,22 @@ function acquireLock() {
   } catch (err) {
     if (err.code !== 'EEXIST') throw err;
     try {
+      const holderPid = parseInt(fs.readFileSync(LOCK_FILE, 'utf8').trim(), 10);
       const st = fs.statSync(LOCK_FILE);
-      if (Date.now() - st.mtimeMs > LOCK_STALE_MS) {
+      if (!lockHolderAlive(holderPid) && Date.now() - st.mtimeMs > 60 * 1000) {
         fs.unlinkSync(LOCK_FILE);
         return acquireLock();
       }
     } catch (e) {
       if (e.code === 'ENOENT') return acquireLock();
+      // unreadable/corrupt lock older than stale threshold -> reclaim
+      try {
+        const st = fs.statSync(LOCK_FILE);
+        if (Date.now() - st.mtimeMs > LOCK_STALE_MS) {
+          fs.unlinkSync(LOCK_FILE);
+          return acquireLock();
+        }
+      } catch (e2) { /* ignore */ }
     }
     return false;
   }
@@ -572,7 +587,11 @@ function gitCommitAndPush(titles) {
       const msg = `Auto-publish: ${titles.join(' | ') || 'content update'}`;
       runGit(['commit', '-m', msg]); // execFileSync: no shell, so $ stays literal
     }
-    const ahead = parseInt(run('git rev-list --count origin/main..main').toString().trim(), 10) || 0;
+    // Guard for fresh clones where origin/main ref may not exist yet
+    let ahead = 0;
+    try {
+      ahead = parseInt(run('git rev-list --count origin/main..main').toString().trim(), 10) || 0;
+    } catch (e) { /* no origin/main ref yet — nothing to compare */ }
     if (ahead === 0) return 'no unpushed changes';
     run('git push origin main');
     return `pushed ${ahead} commit(s) to origin/main — Pages deploying`;
