@@ -127,6 +127,14 @@ const reviews = [
     image: "images/cart-8seat.jpg",
     link: "99-rental-review-weekly-stay-destin-9.html",
     date: "August 8, 2026"
+  },
+  {
+    id: 24,
+    title: "Rental Review: Our $99/Day Golf Cart in Miramar Beach Was the Highlight",
+    excerpt: "“We rented a 4-seat cart for the week and it made the whole trip.” A real customer’s experience with the $99/day Miramar Beach golf cart rental.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-family-miramar-beach-12.html",
+    date: "August 8, 2026"
   }];
 
 const blogPosts = [
