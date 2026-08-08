@@ -131,6 +131,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 29,
+    title: "Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect",
+    excerpt: "Planning a Miramar Beach vacation? Here’s exactly how the $99/day golf cart rental works — booking, delivery, what’s included, and what to bring.",
+    image: "images/rover-xl6-white.jpg",
+    link: "miramar-beach-golf-cart-rental-99-11.html",
+    date: "August 8, 2026"
+  },
+  {
     id: 28,
     title: "Why the $99/Day Golf Cart Rental Is the Best Deal in Destin, FL",
     excerpt: "At $99/day with free delivery on 4+ days, our brand new street-legal golf carts are the smartest way to explore Destin and Miramar Beach this summer.",
