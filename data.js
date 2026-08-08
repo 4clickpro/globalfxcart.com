@@ -1,5 +1,29 @@
 const reviews = [
   {
+    id: 18,
+    title: "Limo Renegade V3 6-Seater Golf Cart Review: 72V 4000W High-Power for $12,999",
+    excerpt: "The Limo Renegade V3 6-seater runs on a 72V system with a 4000W high-power motor and 150Ah battery, reaching up to 30 MPH. A family-fun limo-style cart at $12,999.",
+    image: "https://m.media-amazon.com/images/I/512I1xIe7+L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0HBY3HRFL?linkCode=ll2&tag=techbot00-20&linkId=limo-renegade-v3-6seater&language=en_US&ref_=as_li_ss_tl",
+    date: "August 8, 2026"
+  },
+  {
+    id: 17,
+    title: "ATS POWER 6-Seater Electric Golf Cart Review: 48V 5KW IP67 Waterproof for $11,999",
+    excerpt: "The ATS POWER 6-seater shuttle cart runs on a 48V 5KW AC motor with IP67 waterproofing, a 25 MPH top speed, 50-60km range, LED lights, disc brakes, and 5-hour quick charging. A weatherproof 6-seater at $11,999.",
+    image: "https://m.media-amazon.com/images/I/61AeXMY4FrL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/ATS-POWER-6-Seater-Electric-Waterproof/dp/B0GXKWWK1D?crid=29EMOG3NUQR0K&dib=eyJ2IjoiMSJ9.4QwN7AFDYL7iHZhhTfKtzh9U1_8Xo9NHLzzNwRaOZB5mbjqx6Y04MkZRKMUvJP6PdkZmjLvnksdF-VJ7uQbArkuvCY0oW3KHwiuwrFxkd1jELFdwePaOPZ6Hlvp7sbEGpHSapeSfkr1hs-QSeASGZFKtT2DDZGmDV2oKzKJ0pNy_7Plena6tFXKJstgdjYVtO8rtfuTNes4tsHFs5pWddQLr-leoe6wAyHXZUvOj32ogACkUGbIQQy2KWbPVWMb09vFaCQrZcxajB5jYakJZbLJbVCtw8BBBKMNSZoCO30Q.AOuRx6_4BYvlO-asPM5KbwOkuGb2BcGitIIveVQ4VSY&dib_tag=se&keywords=golf%2Bcarts&qid=1786203881&sprefix=golf%2Bcarts%2Caps%2C267&sr=8-31&th=1&linkCode=ll2&tag=techbot00-20&linkId=cb6d7eff2a28cb7e4c50a50e98dcf3e6&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 8, 2026"
+  },
+  {
+    id: 16,
+    title: "GIYI 4-Seater Electric Golf Cart Review: 5KW Motor, 20 MPH & 44-Mile Range for $8,199",
+    excerpt: "The GIYI 4-seater pairs a 5KW motor with a 60V 100Ah battery for a 44-mile range and 20 MPH top speed. MacPherson suspension, a 9-inch IPS display with reversing camera, and front & rear storage — fully assembled at $8,199.",
+    image: "https://m.media-amazon.com/images/I/81crsxmQiUL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/4-Seater-Electric-Advanced-Suspension-Recreational/dp/B0G8FNJRGG?crid=2F55WCHKD0UAJ&dib=eyJ2IjoiMSJ9.4QwN7AFDYL7iHZhhTfKtzmcILxCiVqjmeCEXZC8zgEF0L3-nPHJNUSbCkjf_aS05OoHWeF6fqYv1vGvKuPj0kh8o1-l1d-rsdbdMe61ck1RcZqinYGUUppJwNudTvljIAC3m1ddDkIqtEe_SVxsNHqd73HeSvrTSVBIA1CtvZEM46bvRzoS5A0VBDzv1-izLWSn2JAAZPcBvDcs2gJoUKcnCBeXJznRYb3HbvvSiksfrd8Cp0lS8Vj0YBpzrCtZJTX8lig4X4R46y0aoQF-w9V_Go7BrMgFc1_TE8a97iFg.HLvfoxDaBLUIUCNsRFUeVtcihFXZZXd9rnS2C3OTkwg&dib_tag=se&keywords=golf%2Bcart&qid=1786203351&sprefix=golf%2Bcart%2Caps%2C415&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=techbot00-20&linkId=bf60670401cdcc0577a7b47be05d85da&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 8, 2026"
+  },
+  {
     id: 15,
     title: "GIYI 2-Seater Electric Golf Cart Review: 5KW Motor & 44-Mile Range for $7,599",
     excerpt: "The GIYI 2-seater packs a 5KW motor, 60V 100Ah battery with 44-mile range, advanced MacPherson suspension, and a 9-inch IPS display. A premium 2-seater at $7,599.",
@@ -62,10 +86,98 @@ const reviews = [
     image: "https://golfcartshop.com/cdn/shop/files/ATS_POWER_4-Seater_Electric_Shuttle_Cart_1024x.jpg?v=1783170332",
     link: "https://www.amazon.com/ATS-POWER-4-Seater-Electric-Waterproof/dp/B0GXKK7PSY?dib=eyJ2IjoiMSJ9.KXLGWdc9NO9-sBb3O8NS_8lw2U4D69pGVpy5x0qWcAk41s42-t2euJhInM3InYZCj-oYaOiXG_LFOlETwylBOOsxFGPsu5rpvGkdaEOBxdTVc3Vot_oGd1GrjIgAkhIHcdynA4QIIAykWXo89VKwDQKMDPmyls1N-dZ_e-h1LR8yYDBW3tDXJf_nty2AIcCCkg_-_EIfDFnT4APvs5d_vEDz1awMnVjuW7Jy-0sSa4vohPVX_J1QNP33PqNRDG48y9dOnDK2LUEVux-GJXK3NENlAuINpimrxngENWnmsWc.8FsapR0XQ0rbs3d2t4Lg2JG1YIK7kjz8taPeGOzdRNU&dib_tag=se&keywords=most%2Bexpensive%2Bgolf%2Bcart&qid=1783517141&s=sporting-goods&sr=1-12&th=1&linkCode=ll2&tag=techbot00-20&linkId=d8199c61944c15160998f1278a31e1fd&language=en_US&ref_=as_li_ss_tl",
     date: "July 8, 2026"
-  }
-];
+  },
+  {
+    id: 19,
+    title: "SDLANCH 6-Seater Electric Golf Cart Review: 60V 105AH (Coming Soon)",
+    excerpt: "The SDLANCH 6-seater pairs a 60V 5KW AC motor with a 105Ah battery for up to 60KM of range, 2+2+2 seating, MacPherson suspension, and all-terrain tires. Full review coming soon.",
+    image: "https://m.media-amazon.com/images/I/51b0s3BPPSL._AC_SL1500_.jpg",
+    link: "#",
+    date: "August 8, 2026"
+  },
+  {
+    id: 20,
+    title: "GO UP 6-Passenger 4+2 Seater Golf Cart Review: 48V 150AH Lithium (Coming Soon)",
+    excerpt: "The GO UP 6-passenger 4+2 seater runs on a 48V 150AH lithium battery with one-click start, 14-inch off-road tires, and luxury ergonomic seats. Full review coming soon.",
+    image: "https://m.media-amazon.com/images/I/81w9ZvFkjnL._AC_SL1500_.jpg",
+    link: "#",
+    date: "August 8, 2026"
+  },
+  {
+    id: 22,
+    title: "Rental Review: The $99/Day Cart That Got Us to Crab Island",
+    excerpt: "Crab Island trips, sunset cruises, and zero parking fees — one customer’s week with the $99/day Destin golf cart rental.",
+    image: "images/rover-xl6-white.jpg",
+    link: "99-rental-review-crab-island-destin-6.html",
+    date: "August 8, 2026"
+  },
+  {
+    id: 21,
+    title: "Rental Review: Our $99/Day Golf Cart in Miramar Beach Was the Highlight",
+    excerpt: "“We rented a 4-seat cart for the week and it made the whole trip.” A real customer’s experience with the $99/day Miramar Beach golf cart rental.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-family-miramar-beach-3.html",
+    date: "August 8, 2026"
+  },
+
+  {
+    id: 23,
+    title: "Rental Review: A Week-Long $99/Day Golf Cart Rental in Destin, FL",
+    excerpt: "Free delivery on 4+ days, a brand new street-legal cart, and a full week of adventure — our review of the weekly Destin golf cart rental.",
+    image: "images/cart-8seat.jpg",
+    link: "99-rental-review-weekly-stay-destin-9.html",
+    date: "August 8, 2026"
+  }];
 
 const blogPosts = [
+  {
+    id: 27,
+    title: "8 Tips for First-Time Golf Cart Renters in Destin, FL",
+    excerpt: "New to golf cart rentals? Follow these 8 tips to get the most from your $99/day cart in Destin and Miramar Beach — from booking to your first cruise.",
+    image: "images/rover-xl6-white.jpg",
+    link: "destin-golf-cart-rental-tips-first-timers-8.html",
+    date: "August 8, 2026"
+  },
+  {
+    id: 26,
+    title: "Golf Cart vs. Rental Car in Destin: The Real Cost Breakdown",
+    excerpt: "Rental car, parking, gas, insurance — or one $99/day golf cart. We compare the true cost of getting around Destin, FL this summer.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-rental-vs-car-destin-cost-7.html",
+    date: "August 8, 2026"
+  },
+  {
+    id: 25,
+    title: "What to Pack for a Golf Cart Beach Day in Destin, FL",
+    excerpt: "Sunscreen, towels, a cooler, and a charger plan — our packing list for the perfect $99/day golf cart beach day in Destin and Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "what-to-pack-golf-cart-beach-day-5.html",
+    date: "August 8, 2026"
+  },
+  {
+    id: 24,
+    title: "Free Golf Cart Delivery in Destin & Miramar Beach: How It Works",
+    excerpt: "Delivery and pickup to your door — free on rentals of 4 days or more. Here’s how Destin golf cart delivery works from booking to pickup.",
+    image: "images/cart-8seat.jpg",
+    link: "free-golf-cart-delivery-destin-4.html",
+    date: "August 8, 2026"
+  },
+  {
+    id: 23,
+    title: "Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect",
+    excerpt: "Planning a Miramar Beach vacation? Here’s exactly how the $99/day golf cart rental works — booking, delivery, what’s included, and what to bring.",
+    image: "images/rover-xl6-white.jpg",
+    link: "miramar-beach-golf-cart-rental-99-2.html",
+    date: "August 8, 2026"
+  },
+  {
+    id: 22,
+    title: "Why the $99/Day Golf Cart Rental Is the Best Deal in Destin, FL",
+    excerpt: "At $99/day with free delivery on 4+ days, our brand new street-legal golf carts are the smartest way to explore Destin and Miramar Beach this summer.",
+    image: "images/cart-4seat.webp",
+    link: "99-destin-golf-cart-rental-best-deal-1.html",
+    date: "August 8, 2026"
+  },
   {
     id: 21,
     title: "The Ultimate Golf Cart Rental Guide for Destin & Miramar Beach (2026)",
