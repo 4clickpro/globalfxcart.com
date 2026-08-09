@@ -1010,6 +1010,14 @@ footer p {
   color: var(--accent);
 }
 
+.disclaimer {
+  font-size: 0.75rem;
+  opacity: 0.55;
+  max-width: 660px;
+  margin: 0.8rem auto 0;
+  line-height: 1.5;
+}
+
 /* ─── Animations ─── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(40px); }
