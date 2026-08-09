@@ -143,9 +143,25 @@ const reviews = [
     image: "images/rover-xl6-white.jpg",
     link: "99-rental-review-crab-island-destin-15.html",
     date: "August 9, 2026"
+  },
+  {
+    id: 26,
+    title: "Rental Review: A Week-Long $99/Day Golf Cart Rental in Destin, FL",
+    excerpt: "Free delivery on 4+ days, a brand new street-legal cart, and a full week of adventure — our review of the weekly Destin golf cart rental.",
+    image: "images/cart-8seat.jpg",
+    link: "99-rental-review-weekly-stay-destin-19.html",
+    date: "August 9, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 32,
+    title: "Golf Cart vs. Rental Car in Destin: The Real Cost Breakdown",
+    excerpt: "Rental car, parking, gas, insurance — or one $99/day golf cart. We compare the true cost of getting around Destin, FL this summer.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-rental-vs-car-destin-cost-18.html",
+    date: "August 9, 2026"
+  },
   {
     id: 31,
     title: "What to Pack for a Golf Cart Beach Day in Destin, FL",
