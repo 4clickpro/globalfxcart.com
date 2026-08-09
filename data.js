@@ -139,6 +139,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 31,
+    title: "What to Pack for a Golf Cart Beach Day in Destin, FL",
+    excerpt: "Sunscreen, towels, a cooler, and a charger plan — our packing list for the perfect $99/day golf cart beach day in Destin and Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "what-to-pack-golf-cart-beach-day-14.html",
+    date: "August 9, 2026"
+  },
+  {
     id: 30,
     title: "Free Golf Cart Delivery in Destin & Miramar Beach: How It Works",
     excerpt: "Delivery and pickup to your door — free on rentals of 4 days or more. Here’s how Destin golf cart delivery works from booking to pickup.",

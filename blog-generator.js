@@ -18,6 +18,7 @@ const { execSync, execFileSync } = require('child_process');
 const SITE_DIR = __dirname;
 const DATA_FILE = path.join(SITE_DIR, 'data.js');
 const BLOG_FILE = path.join(SITE_DIR, 'blog.html');
+const CLUB_FILE = path.join(SITE_DIR, 'golf-clubs.html');
 const SITEMAP_FILE = path.join(SITE_DIR, 'sitemap.xml');
 const STATE_FILE = path.join(SITE_DIR, '.blog-state.json');
 const REPORTS_DIR = path.join(SITE_DIR, 'reports');
@@ -162,9 +163,154 @@ const REVIEW_TOPICS = [
   },
 ];
 
-/* ------------------------------------------------------------------ */
-/* Helpers                                                             */
-/* ------------------------------------------------------------------ */
+const CLUB_BLOG_TOPICS = [
+  {
+    slug: 'club-best-golf-clubs-for-beginners',
+    title: 'Best Golf Clubs for Beginners in 2026: Complete Sets That Make Learning Easier',
+    excerpt: 'Complete golf club sets are the fastest way to start playing. Here are the best golf clubs for beginners in 2026 and how to choose your first set.',
+    keywords: 'best golf clubs for beginners, complete golf club sets, beginner golf clubs, golf club sets for beginners, first golf club set, golf clubs for new golfers, beginner golf equipment',
+    image: 'images/cart-4seat.webp',
+    intro: 'Buying your first set of golf clubs should be simple \u2014 and with complete golf club sets, it is. A boxed set with driver, fairway woods, hybrids, irons, wedges, putter, and a stand bag gets you on the course for far less than building a bag club by club. Here\u2019s how to pick the best golf clubs for beginners in 2026.',
+    sections: [
+      ['Start With a Complete Set', 'Complete sets bundle every club you need in one box, usually under $500. They include forgiving drivers and hybrids that make launch easier \u2014 ideal for new golfers who want to have fun from the first round.'],
+      ['Look for Forgiveness', 'Beginners need game-improvement clubs: bigger sweet spots, perimeter weighting, and higher loft. That means more consistent contact and more balls that actually fly toward the target.'],
+      ['Shaft Flex Matters', 'Most beginners do best with regular or senior flex graphite shafts \u2014 lighter and more flexible, they help generate clubhead speed without extra effort.'],
+      ['Don\u2019t Overlook the Putter and Bag', 'A good putter and a lightweight stand bag make every practice session easier. Most complete sets include both, which is another reason to start there.'],
+    ],
+    faqs: [
+      ['How much should a beginner spend on golf clubs?', 'A quality complete set runs $300\u2013$600. That covers all the clubs you need, a bag, and often headcovers \u2014 the best value in golf for a new player.'],
+      ['Are complete golf club sets any good?', 'Yes. Modern boxed sets from major brands are genuinely playable and far more forgiving than older starter sets. They are the smartest first purchase for most beginners.'],
+      ['Should I rent golf clubs instead of buying?', 'If you are just trying the sport, rental clubs at the course are fine. Once you are hooked, your own set (or a rental cart to carry it) makes every round better.'],
+    ],
+  },
+  {
+    slug: 'club-how-to-choose-golf-clubs',
+    title: 'How to Choose Golf Clubs: A Complete Buying Guide for 2026',
+    excerpt: 'Forgiveness, shafts, grips, budget \u2014 here is exactly how to choose golf clubs that match your swing and skill level in 2026.',
+    keywords: 'how to choose golf clubs, golf club buying guide, golf club fitting, choose golf clubs for my swing, golf club shaft flex, steel vs graphite shafts, golf club grips, golf club loft, forgiving golf clubs',
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'Choosing golf clubs used to mean getting fitted by a pro. Today, a few simple rules of thumb get you 90% of the way there. This golf club buying guide walks through forgiveness, shaft flex, grip size, and budget so you can buy with confidence.',
+    sections: [
+      ['Match Clubs to Your Skill Level', 'High handicappers and beginners should prioritize forgiveness; low handicaps can chase workability and feel. If in doubt, lean forgiving \u2014 it lowers scores faster.'],
+      ['Pick the Right Shaft Flex', 'Shaft flex is about swing speed: seniors and most women use senior or ladies flex, average men use regular, and fast swingers use stiff. Graphite is lighter and more comfortable; steel offers more control.'],
+      ['Get Grip Size Right', 'Grips that are too small or too big cause hooks and slices. A good rule: the grip should sit in your fingers with a little slack, not dig into your palm.'],
+      ['Set a Budget and Stick to It', 'Great sets exist at every price point. Decide what you will actually play \u2014 a $400 complete set beats a $1,500 partial bag that sits in the garage.'],
+    ],
+    faqs: [
+      ['Do I need a professional club fitting?', 'A fitting helps once your swing is consistent \u2014 usually after your first season. Beginners benefit most from the simple rules above and a good complete set.'],
+      ['What is the difference between steel and graphite shafts?', 'Graphite is lighter, absorbs vibration, and suits slower swing speeds; steel is heavier and offers more control for stronger players. Most beginners prefer graphite.'],
+      ['What loft should a beginner driver have?', 'Higher loft (10.5\u00b0\u201312\u00b0) helps beginners get the ball airborne. Lower lofts (8\u00b0\u20139\u00b0) suit faster, more consistent swings.'],
+    ],
+  },
+  {
+    slug: 'club-complete-sets-vs-building-bag',
+    title: 'Complete Golf Club Sets vs. Building a Bag: Which Is the Better Buy?',
+    excerpt: 'Complete golf club sets cost less and get you playing now; building a bag gives you premium clubs. We break down which choice fits your game and budget.',
+    keywords: 'complete golf club sets vs building bag, golf club set comparison, build your own golf bag, boxed golf set vs individual clubs, golf clubs value, buy golf clubs',
+    image: 'images/cart-8seat.jpg',
+    intro: 'Every golfer faces the same decision: buy a complete golf club set or assemble a bag club by club. There is no single right answer \u2014 it depends on your budget, your goals, and how seriously you plan to play.',
+    sections: [
+      ['Complete Sets: The Value Play', 'A boxed set typically costs $300\u2013$600 and includes everything: driver, fairway woods, hybrids, irons, wedges, putter, and a bag. For beginners and casual golfers, it is unbeatable value.'],
+      ['Building a Bag: For the Serious Golfer', 'When you know your swing, upgrading individual clubs \u2014 starting with driver and putter \u2014 lets you invest where it matters most. Expect to spend $1,000+ for a full quality set.'],
+      ['The Hybrid Middle Ground', 'Many golfers buy a complete set for the irons and wedges, then upgrade just the driver or putter. It is the best of both worlds and the most common path we see.'],
+    ],
+    faqs: [
+      ['Is a complete golf club set worth it?', 'For most beginners and weekend golfers, yes. You get a playable, balanced set for less than two premium clubs, and you can upgrade later.'],
+      ['What clubs should I upgrade first?', 'Driver and putter matter most to your score. Most players upgrade those two clubs long before replacing irons.'],
+      ['Can I mix a boxed set with premium clubs?', 'Absolutely. Mixing is smart: keep the set\u2019s irons and add a premium driver or putter when your game is ready.'],
+    ],
+  },
+  {
+    slug: 'club-golf-drivers-guide',
+    title: 'Golf Drivers Explained: Loft, Shaft Flex, and Forgiveness for Every Golfer',
+    excerpt: 'The driver is the hardest club to hit and the easiest to improve with the right choice. Here is what loft, shaft flex, and head design actually do.',
+    keywords: 'golf driver buying guide, best golf drivers, driver loft explained, driver shaft flex, forgiving drivers, golf driver head size, draw bias driver, adjustable driver',
+    image: 'images/cart-4seat.webp',
+    intro: 'Off the tee, the driver sets up every hole. Yet it is the club most amateurs struggle with \u2014 usually because the driver does not match their swing. This guide explains loft, shaft flex, and forgiveness so your next driver works with you, not against you.',
+    sections: [
+      ['Higher Loft, Higher Launch', 'Beginner and slower-swing players should look at 10.5\u00b0\u201312\u00b0 loft. More loft means less spin, more carry, and far fewer weak slices.'],
+      ['Forgiveness Comes From the Head', 'Larger heads (440\u2013460cc) with perimeter weighting keep the ball straighter on off-center hits. Draw-bias settings help players who tend to slice.'],
+      ['Match the Shaft to Your Speed', 'Swing speed determines flex: seniors and many women use senior/ladies flex, average players regular, and fast swingers stiff. The right flex adds distance and control.'],
+    ],
+    faqs: [
+      ['What driver loft should I use?', 'Most amateurs benefit from 10.5\u00b0. If you struggle to get the ball airborne, go to 12\u00b0; if you hit it high already, try 9\u00b0.'],
+      ['Do I need an adjustable driver?', 'Adjustable drivers let you change loft and lie to fix ball flight. They are worth the extra cost once you know what your miss is.'],
+      ['How much does a good driver cost?', 'Great drivers start around $300 and premium models reach $600\u2013$700. Last year\u2019s models offer nearly identical performance for less.'],
+    ],
+  },
+  {
+    slug: 'club-womens-golf-clubs-guide',
+    title: "Women's Golf Clubs: How to Choose the Right Set for Your Game",
+    excerpt: 'Women\u2019s-specific golf clubs use lighter shafts, softer flexes, and higher lofts to match most women\u2019s swing speeds. Here is how to choose the right set.',
+    keywords: "women's golf clubs, best women's golf clubs, women's golf club sets, ladies golf clubs, women's golf set for beginners, women's golf clubs lightweight, ladies complete golf set",
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'Women\u2019s golf clubs are designed around lighter shafts, softer flex, and higher loft \u2014 specs that match most women\u2019s swing speeds and help launch the ball higher and straighter. Here is how to pick the right set.',
+    sections: [
+      ['Lighter Shafts, Softer Flex', 'Ladies-flex graphite shafts are lighter and more flexible, which helps generate clubhead speed and gets the ball airborne more easily.'],
+      ['Higher Loft Is Your Friend', 'Women\u2019s sets typically include higher-lofted woods and hybrids that are genuinely easier to hit \u2014 perfect for beginners and fairway play.'],
+      ['Complete Sets Are the Smart Start', 'Most women\u2019s complete sets include a driver, fairway woods, hybrids, irons, wedges, putter, and a lightweight bag \u2014 everything you need in one box.'],
+    ],
+    faqs: [
+      ['Should women use women\u2019s-specific clubs?', 'If you are new to golf or have a slower swing speed, yes \u2014 women\u2019s clubs are built for your swing. Stronger players can also use men\u2019s or senior-flex clubs.'],
+      ['What is included in a women\u2019s complete set?', 'Typically driver, fairway woods, hybrids, irons, wedges, putter, and a stand bag \u2014 often under $400.'],
+      ['Are women\u2019s clubs the same as junior clubs?', 'No. Women\u2019s clubs are full-length with lighter, softer shafts; junior clubs are shorter and sized for young players.'],
+    ],
+  },
+  {
+    slug: 'club-how-to-choose-putter',
+    title: 'How to Choose a Putter: Styles, Weights, and Fitting Basics',
+    excerpt: 'Putting is half the game, but the putter is the most personal club in the bag. Here is how to choose a putter that fits your stroke and improves your speed control.',
+    keywords: 'how to choose a putter, best putters, putter fitting, putter styles, mallet vs blade putter, putter length, putter weight, golf putter buying guide',
+    image: 'images/cart-4seat.webp',
+    intro: 'You use the putter more than any other club, yet most golfers buy one off the rack without thinking about their stroke. This putter buying guide covers styles, length, and weight so your next putter feels like an extension of your hands.',
+    sections: [
+      ['Blade vs. Mallet', 'Blades suit players with a straight-back, straight-through stroke; mallets offer more forgiveness and alignment aids for players who arc the putter. Beginners often putt better with a mallet.'],
+      ['Length Determines Setup', 'A putter that is too long forces you into bad posture. Stand naturally and let the putter hang \u2014 the grip should sit near your wrist. Standard length is 34\u201335 inches.'],
+      ['Weight Affects Feel', 'Heavier putters promote a smooth pendulum stroke and help on fast greens; lighter putters give more feel. Test both before you buy.'],
+    ],
+    faqs: [
+      ['How do I know what putter length I need?', 'Stand in your putting posture and let the putter hang naturally. The grip should reach your wrist crease. Most golfers use 33\u201335 inches.'],
+      ['Are mallet putters easier to use?', 'For most beginners, yes \u2014 mallets are more forgiving and include alignment aids that help you aim straight.'],
+      ['How much should I spend on a putter?', 'Good putters start around $100. Mid-range models ($150\u2013$300) offer the best feel and fitting options for most players.'],
+    ],
+  },
+];
+
+const CLUB_REVIEW_TOPICS = [
+  {
+    slug: 'club-review-best-complete-golf-club-sets',
+    title: 'Review: The Best Complete Golf Club Sets for Beginners in 2026',
+    excerpt: 'We compared the most popular complete golf club sets of 2026 \u2014 forgiveness, value, and what\u2019s included. Here are the best golf club sets for beginners.',
+    keywords: 'best complete golf club sets, best golf club sets for beginners, golf club set review, beginner golf set comparison, boxed golf sets 2026',
+    image: 'images/cart-4seat.webp',
+    intro: 'Complete golf club sets are the smartest first purchase in golf. We tested and compared the leading boxed sets of 2026 on forgiveness, build quality, and value.',
+    body: 'The best complete sets bundle driver, fairway woods, hybrids, irons, wedges, putter, and a stand bag \u2014 typically under $600. Beginners should prioritize forgiveness over brand names: higher loft, lighter graphite shafts, and perimeter-weighted irons turn mishits into playable shots. Our top picks all share those traits, and every one of them will keep you happy through your first full season. If you are ready to upgrade later, you can swap the driver or putter without replacing the whole set.',
+    affiliate: 'https://www.amazon.com/s?k=complete+golf+club+sets+for+beginners&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-forgiving-golf-drivers',
+    title: 'Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)',
+    excerpt: 'We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.',
+    keywords: 'best forgiving drivers 2026, forgiving golf driver review, best golf driver for beginners, game improvement driver, golf driver comparison',
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'The driver is where amateurs lose the most strokes \u2014 and where the right club makes the biggest difference. We tested the most forgiving drivers of 2026.',
+    body: 'Forgiving drivers combine high MOI, a larger sweet spot, and higher loft to keep off-center hits straighter and longer. For amateurs, adjustability is less important than fit: choose a loft that gets the ball airborne (10.5\u00b0\u201312\u00b0) and a shaft flex matched to your swing speed. Every driver we recommend here excels at turning weak slices into playable fades \u2014 which is exactly what most weekend golfers need.',
+    affiliate: 'https://www.amazon.com/s?k=forgiving+golf+drivers+2026&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-putters-beginners',
+    title: 'Review: The Best Putters for Beginners and Mid-Handicappers in 2026',
+    excerpt: 'Alignment aids, forgiveness, and feel \u2014 we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.',
+    keywords: 'best putters 2026, best putter for beginners, mallet putter review, putter comparison, golf putter recommendations',
+    image: 'images/cart-8seat.jpg',
+    intro: 'You will use the putter more than any other club, so it deserves the most careful choice. We tested the best putters of 2026 for beginners and mid-handicappers.',
+    body: 'For most players, a mallet putter with strong alignment aids is the easiest to aim and the most forgiving on off-center hits. Match the length to your posture (typically 34\u201335 inches) and the weight to your feel \u2014 heavier promotes a smooth stroke on fast greens. The putters we recommend here all combine clear alignment lines, balanced weight, and consistent roll to help you start the ball on line and control distance.',
+    affiliate: 'https://www.amazon.com/s?k=best+putters+for+beginners&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+];
 
 function todayDate() {
   const d = new Date();
@@ -180,7 +326,7 @@ function slugify(s) {
 }
 
 function loadState() {
-  try { return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')); } catch { return { blogIdx: 0, reviewIdx: 0, postCounter: 0 }; }
+  try { return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')); } catch { return { blogIdx: 0, reviewIdx: 0, clubBlogIdx: 0, clubReviewIdx: 0, kindIdx: 0, postCounter: 0 }; }
 }
 
 // Self-healing: if the state file is lost, derive the counter from files already on disk
@@ -207,6 +353,18 @@ function nextBlogTopic(state) {
 function nextReviewTopic(state) {
   const topic = REVIEW_TOPICS[state.reviewIdx % REVIEW_TOPICS.length];
   state.reviewIdx = (state.reviewIdx + 1) % REVIEW_TOPICS.length;
+  return topic;
+}
+
+function nextClubBlogTopic(state) {
+  const topic = CLUB_BLOG_TOPICS[state.clubBlogIdx % CLUB_BLOG_TOPICS.length];
+  state.clubBlogIdx = (state.clubBlogIdx + 1) % CLUB_BLOG_TOPICS.length;
+  return topic;
+}
+
+function nextClubReviewTopic(state) {
+  const topic = CLUB_REVIEW_TOPICS[state.clubReviewIdx % CLUB_REVIEW_TOPICS.length];
+  state.clubReviewIdx = (state.clubReviewIdx + 1) % CLUB_REVIEW_TOPICS.length;
   return topic;
 }
 
@@ -277,6 +435,7 @@ function articleHtml(topic, filename) {
         <li><a href="index.html">Home</a></li>
         <li><a href="reviews.html">Reviews</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="golf-clubs.html">Golf Clubs</a></li>
         <li><a href="golf-cart-rental-guide.html">Guide</a></li>
         <li><a href="about.html">About</a></li>
         <li class="nav-call"><a href="${PHONE_TEL}">Call ${PHONE}</a></li>
@@ -383,6 +542,7 @@ function reviewHtml(topic, filename) {
         <li><a href="index.html">Home</a></li>
         <li><a href="reviews.html">Reviews</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="golf-clubs.html">Golf Clubs</a></li>
         <li><a href="golf-cart-rental-guide.html">Guide</a></li>
         <li><a href="about.html">About</a></li>
         <li class="nav-call"><a href="${PHONE_TEL}">Call ${PHONE}</a></li>
@@ -412,6 +572,231 @@ function reviewHtml(topic, filename) {
   <section class="cta-banner fade-up">
     <h2>Rent Your $99/Day Golf Cart</h2>
     <p>Golf Carts Delivered ASAP! delivered to your door in Destin &amp; Miramar Beach, FL</p>
+    <a href="${PHONE_TEL}" class="btn btn-primary">Call ${PHONE}</a>
+  </section>
+
+  <footer>
+    <p>Destin Golf Cart Rentals &amp; Sales — Destin, FL &amp; Miramar Beach, FL</p>
+    <p>Golf Carts Delivered ASAP! $99/Day &middot; Call <a href="${PHONE_TEL}">${PHONE}</a></p>
+    <p class="updated-notice">Site updated August 2026 &middot; Locally owned &amp; operated on the Emerald Coast</p>
+    <p class="affiliate-notice">We may earn commissions from affiliate links on this site.</p>
+    <p class="disclaimer"><strong>Disclaimer:</strong> Google Gemini and Google Search do not always know the difference between the word &quot;Cart&quot; and confuse it with &quot;Chart&quot;; they can also confuse &quot;FX&quot; with foreign-exchange (Forex) trading. This site is Global FX Cart &mdash; <strong>Golf Cart Sales and Rentals</strong>, with golf clubs and accessories, serving Destin &amp; Miramar Beach, FL.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+`;
+}
+
+function clubArticleHtml(topic, filename) {
+  const sections = topic.sections.map(([h, p]) => `    <h3>${h}</h3>\n    <p>${p}</p>`).join('\n\n');
+  const faqs = topic.faqs.map(([q, a]) => `      <details class="faq-item">\n        <summary>${q}</summary>\n        <p>${a}</p>\n      </details>`).join('\n');
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${topic.title}</title>
+  <meta name="description" content="${topic.excerpt}">
+  <meta name="keywords" content="${topic.keywords}">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Destin Golf Cart Rentals & Sales">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.globalfxcart.com/sitemap.xml">
+  <link rel="canonical" href="${BASE}/${filename}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Destin Golf Cart Rentals & Sales">
+  <meta property="og:title" content="${topic.title}">
+  <meta property="og:description" content="${topic.excerpt}">
+  <meta property="og:image" content="${BASE}/${topic.image}">
+  <meta property="og:url" content="${BASE}/${filename}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${topic.title}">
+  <meta name="twitter:description" content="${topic.excerpt}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "${BASE}/${filename}#article",
+    "mainEntityOfPage": "${BASE}/${filename}",
+    "headline": "${topic.title}",
+    "description": "${topic.excerpt}",
+    "keywords": "${topic.keywords}",
+    "datePublished": "${isoDate()}",
+    "dateModified": "${isoDate()}",
+    "author": {
+      "@type": "Organization",
+      "name": "Destin Golf Cart Rentals & Sales",
+      "url": "${BASE}/about.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "${BASE}/#business",
+      "name": "Destin Golf Cart Rentals & Sales",
+      "url": "${BASE}/",
+      "telephone": "+1-850-299-8575"
+    },
+    "image": "${BASE}/${topic.image}",
+    "inLanguage": "en-US",
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": "Golf Clubs & Golf Club Reviews",
+      "url": "${BASE}/golf-clubs.html"
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Destin Golf Cart Rentals</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="golf-clubs.html">Golf Clubs</a></li>
+        <li><a href="golf-cart-rental-guide.html">Guide</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-call"><a href="${PHONE_TEL}">Call ${PHONE}</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h2>${topic.title}</h2>
+    <p>${topic.excerpt}</p>
+  </section>
+
+  <section class="rental-strip">
+    <div class="rental-strip-inner">
+      <span class="rental-strip-item"><strong>Golf Clubs</strong> Guides &amp; Reviews</span>
+      <span class="rental-strip-item">Destin, FL &amp; Miramar Beach, FL</span>
+      <a href="${PHONE_TEL}" class="btn btn-primary">Call ${PHONE}</a>
+    </div>
+  </section>
+
+  <section class="content-section" style="max-width:860px">
+    <p><strong>${topic.intro}</strong></p>
+
+${sections}
+
+    <h3>Browse More Golf Club Guides</h3>
+    <p>Find the right clubs for your game in our <a href="golf-clubs.html">golf club section</a>, or check <a href="essential-golf-supplies.html">essential golf supplies</a> for everything else you need. Planning a round in Destin, FL or Miramar Beach, FL? Rent a brand new golf cart from <strong>$99/day</strong> with free delivery on 4+ days \u2014 call or text <a href="${PHONE_TEL}">${PHONE}</a>.</p>
+
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-list">
+${faqs}
+    </div>
+  </section>
+
+  <section class="cta-banner fade-up">
+    <h2>Get to the Course in Style</h2>
+    <p>Rent a brand new golf cart from $99/day \u2014 Golf Carts Delivered ASAP! in Destin &amp; Miramar Beach, FL</p>
+    <a href="${PHONE_TEL}" class="btn btn-primary">Call ${PHONE}</a>
+  </section>
+
+  <footer>
+    <p>Destin Golf Cart Rentals &amp; Sales — Destin, FL &amp; Miramar Beach, FL</p>
+    <p>Golf Carts Delivered ASAP! $99/Day &middot; Call <a href="${PHONE_TEL}">${PHONE}</a></p>
+    <p class="updated-notice">Site updated August 2026 &middot; Locally owned &amp; operated on the Emerald Coast</p>
+    <p class="affiliate-notice">We may earn commissions from affiliate links on this site.</p>
+    <p class="disclaimer"><strong>Disclaimer:</strong> Google Gemini and Google Search do not always know the difference between the word &quot;Cart&quot; and confuse it with &quot;Chart&quot;; they can also confuse &quot;FX&quot; with foreign-exchange (Forex) trading. This site is Global FX Cart &mdash; <strong>Golf Cart Sales and Rentals</strong>, with golf clubs and accessories, serving Destin &amp; Miramar Beach, FL.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+`;
+}
+
+function clubReviewHtml(topic, filename) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${topic.title}</title>
+  <meta name="description" content="${topic.excerpt}">
+  <meta name="keywords" content="${topic.keywords}">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Destin Golf Cart Rentals & Sales">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.globalfxcart.com/sitemap.xml">
+  <link rel="canonical" href="${BASE}/${filename}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Destin Golf Cart Rentals & Sales">
+  <meta property="og:title" content="${topic.title}">
+  <meta property="og:description" content="${topic.excerpt}">
+  <meta property="og:image" content="${BASE}/${topic.image}">
+  <meta property="og:url" content="${BASE}/${filename}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${topic.title}">
+  <meta name="twitter:description" content="${topic.excerpt}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "@id": "${BASE}/${filename}#review",
+    "itemReviewed": {
+      "@type": "Product",
+      "name": "${topic.title.replace(/^Review: /, '')}"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "${topic.rating}",
+      "bestRating": "5"
+    },
+    "author": { "@type": "Organization", "name": "Destin Golf Cart Rentals & Sales", "url": "${BASE}/" },
+    "datePublished": "${isoDate()}"
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Destin Golf Cart Rentals</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="golf-clubs.html">Golf Clubs</a></li>
+        <li><a href="golf-cart-rental-guide.html">Guide</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-call"><a href="${PHONE_TEL}">Call ${PHONE}</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h2>${topic.title}</h2>
+    <p>${topic.excerpt}</p>
+  </section>
+
+  <section class="rental-strip">
+    <div class="rental-strip-inner">
+      <span class="rental-strip-item"><strong>Golf Clubs</strong> Reviews</span>
+      <span class="rental-strip-item">Destin, FL &amp; Miramar Beach, FL</span>
+      <a href="${PHONE_TEL}" class="btn btn-primary">Call ${PHONE}</a>
+    </div>
+  </section>
+
+  <section class="content-section" style="max-width:860px">
+    <p><strong>${topic.intro}</strong></p>
+    <p>${topic.body}</p>
+    <p style="margin-top:1.5rem"><strong>Rated ${topic.rating}/5</strong> \u2014 browse current prices on Amazon: <a href="${topic.affiliate}" rel="nofollow sponsored">Check Price &amp; Reviews</a>. We may earn a commission from qualifying purchases at no extra cost to you.</p>
+    <p>Looking for a ride to the course? <a href="index.html">Destin Golf Cart Rentals &amp; Sales</a> rents Golf Carts Delivered ASAP! from $99/day with free delivery on 4+ days. Call <a href="${PHONE_TEL}">${PHONE}</a>.</p>
+  </section>
+
+  <section class="cta-banner fade-up">
+    <h2>Get to the Course in Style</h2>
+    <p>Rent a brand new golf cart from $99/day \u2014 Golf Carts Delivered ASAP! in Destin &amp; Miramar Beach, FL</p>
     <a href="${PHONE_TEL}" class="btn btn-primary">Call ${PHONE}</a>
   </section>
 
@@ -463,8 +848,11 @@ function validateMarkers() {
   const data = fs.readFileSync(DATA_FILE, 'utf8');
   if (!data.includes('const blogPosts = [')) throw new Error('blogPosts marker missing in data.js');
   if (!data.includes('const reviews = [')) throw new Error('reviews marker missing in data.js');
+  if (!data.includes('const clubPosts = [')) throw new Error('clubPosts marker missing in data.js');
   const blog = fs.readFileSync(BLOG_FILE, 'utf8');
   if (!blog.includes('"itemListElement": [')) throw new Error('itemListElement marker missing in blog.html');
+  const clubs = fs.readFileSync(CLUB_FILE, 'utf8');
+  if (!clubs.includes('"itemListElement": [')) throw new Error('itemListElement marker missing in golf-clubs.html');
   const sitemap = fs.readFileSync(SITEMAP_FILE, 'utf8');
   if (!sitemap.includes('</urlset>')) throw new Error('</urlset> missing in sitemap.xml');
 }
@@ -494,6 +882,20 @@ function addToBlogItemList(title, filename) {
   fs.writeFileSync(BLOG_FILE, html);
 }
 
+function addToClubItemList(title, filename) {
+  let html = fs.readFileSync(CLUB_FILE, 'utf8');
+  const marker = '"itemListElement": [';
+  const idx = html.indexOf(marker);
+  if (idx === -1) throw new Error('Cannot find itemListElement in golf-clubs.html');
+  const blockEnd = html.indexOf(']', idx);
+  const itemListBlock = html.slice(idx, blockEnd + 1).replace(/("position": )(\d+)/g, (m, p, n) => p + (parseInt(n, 10) + 1));
+  html = html.slice(0, idx) + itemListBlock + html.slice(blockEnd + 1);
+  const insertAt = idx + marker.length;
+  const item = `\n      { "@type": "ListItem", "position": 1, "name": "${title}", "url": "${BASE}/${filename}" },`;
+  html = html.slice(0, insertAt) + item + html.slice(insertAt);
+  fs.writeFileSync(CLUB_FILE, html);
+}
+
 function addToSitemap(filename) {
   let xml = fs.readFileSync(SITEMAP_FILE, 'utf8');
   const entry = `  <url>\n    <loc>${BASE}/${filename}</loc>\n    <lastmod>${isoDate()}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>\n`;
@@ -506,17 +908,19 @@ function addToSitemap(filename) {
 function writeReport(entry, filename, kind) {
   if (!fs.existsSync(REPORTS_DIR)) fs.mkdirSync(REPORTS_DIR, { recursive: true });
   const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+  const addedTo = kind === 'blog' ? 'blogPosts' : kind === 'review' ? 'reviews' : 'clubPosts';
+  const list = kind === 'club-blog' || kind === 'club-review' ? 'golf-clubs.html ItemList' : kind === 'blog' ? 'blog.html ItemList' : 'reviews array';
   const report = `# Blog Automation Report — ${stamp}
 
 - **Published at:** ${new Date().toString()}
 - **Type:** ${kind}
 - **Title:** ${entry.title}
 - **Page:** ${BASE}/${filename}
-- **Added to:** data.js (${kind === 'blog' ? 'blogPosts' : 'reviews'}), blog.html ItemList, sitemap.xml
+- **Added to:** data.js (${addedTo}), ${list}, sitemap.xml
 - **Excerpt:** ${entry.excerpt}
 
 ---
-*Generated by blog-generator.js — $99 Beach Golf Cart Rental series.*
+*Generated by blog-generator.js — golf cart rental & golf club content series.*
 `;
   fs.writeFileSync(path.join(REPORTS_DIR, `report-${stamp}.md`), report);
   return report;
@@ -626,18 +1030,49 @@ function nextDueSlot(now) {
   return tomorrow.getTime();
 }
 
-// Publish one article (blog or review per the 2:1 rotation). Returns a short summary.
+// 4-kind rotation: cart blog, cart review, club blog, club review.
+// Club content gets a dedicated section (golf-clubs.html) and links back
+// to the golf cart sales & rental site with keywords.
+const KIND_CYCLE = ['cartBlog', 'cartReview', 'clubBlog', 'clubReview'];
+
+// Publish one article per the rotation. Returns a short summary.
 function publishOne(state) {
-  const isBlog = (state.blogIdx + state.reviewIdx) % 3 !== 2; // 2 of 3 posts are blog posts, 1 is a review
-  const topic = isBlog ? nextBlogTopic(state) : nextReviewTopic(state);
-  const kind = isBlog ? 'blog' : 'review';
-  const target = isBlog ? 'blogPosts' : 'reviews';
+  if (state.kindIdx === undefined) state.kindIdx = 0;
+  const kind = KIND_CYCLE[state.kindIdx % KIND_CYCLE.length];
+  state.kindIdx = (state.kindIdx + 1) % KIND_CYCLE.length;
+
+  let topic, kindLabel, target, isClub;
+  if (kind === 'cartBlog') {
+    topic = nextBlogTopic(state);
+    kindLabel = 'blog';
+    target = 'blogPosts';
+    isClub = false;
+  } else if (kind === 'cartReview') {
+    topic = nextReviewTopic(state);
+    kindLabel = 'review';
+    target = 'reviews';
+    isClub = false;
+  } else if (kind === 'clubBlog') {
+    topic = nextClubBlogTopic(state);
+    kindLabel = 'club-blog';
+    target = 'clubPosts';
+    isClub = true;
+  } else {
+    topic = nextClubReviewTopic(state);
+    kindLabel = 'club-review';
+    target = 'clubPosts';
+    isClub = true;
+  }
 
   // Monotonic counter guarantees unique filenames even after topic rotation repeats
   state.postCounter += 1;
   const uniqueFilename = `${topic.slug}-${state.postCounter}.html`;
 
-  const html = isBlog ? articleHtml(topic, uniqueFilename) : reviewHtml(topic, uniqueFilename);
+  let html;
+  if (kind === 'cartBlog') html = articleHtml(topic, uniqueFilename);
+  else if (kind === 'cartReview') html = reviewHtml(topic, uniqueFilename);
+  else if (kind === 'clubBlog') html = clubArticleHtml(topic, uniqueFilename);
+  else html = clubReviewHtml(topic, uniqueFilename);
   fs.writeFileSync(path.join(SITE_DIR, uniqueFilename), html);
 
   const entry = {
@@ -651,16 +1086,18 @@ function publishOne(state) {
 
   validateMarkers(); // fail fast before any writes if a marker is missing
 
-  // Blog posts go at the top of the list; rental-experience reviews are appended
-  // at the END of the reviews array so Amazon affiliate reviews keep the
-  // homepage featured slots (reviews.slice(0,3)).
-  insertIntoDataJs(entry, target, isBlog);
-  if (isBlog) addToBlogItemList(topic.title, uniqueFilename);
+  // Cart blog posts go at the top of blogPosts; rental-experience reviews are
+  // appended at the END of the reviews array so Amazon affiliate reviews keep
+  // the homepage featured slots (reviews.slice(0,3)). Club content (both blog
+  // and review) goes at the top of clubPosts in the golf-clubs.html section.
+  insertIntoDataJs(entry, target, !(kind === 'cartReview'));
+  if (kind === 'cartBlog') addToBlogItemList(topic.title, uniqueFilename);
+  if (isClub) addToClubItemList(topic.title, uniqueFilename);
   addToSitemap(uniqueFilename);
   saveState(state);
 
-  writeReport(entry, uniqueFilename, kind);
-  return `Created ${uniqueFilename} (${kind}): ${topic.title}`;
+  writeReport(entry, uniqueFilename, kindLabel);
+  return `Created ${uniqueFilename} (${kindLabel}): ${topic.title}`;
 }
 
 function main() {
