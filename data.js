@@ -326,6 +326,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 4,
+    title: "How to Choose Golf Clubs: A Complete Buying Guide for 2026",
+    excerpt: "Forgiveness, shafts, grips, budget — here is exactly how to choose golf clubs that match your swing and skill level in 2026.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-how-to-choose-golf-clubs-20.html",
+    date: "August 9, 2026"
+  },
+  {
     id: 3,
     title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
     excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
