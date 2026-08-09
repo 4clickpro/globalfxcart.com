@@ -139,6 +139,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 30,
+    title: "Free Golf Cart Delivery in Destin & Miramar Beach: How It Works",
+    excerpt: "Delivery and pickup to your door — free on rentals of 4 days or more. Here’s how Destin golf cart delivery works from booking to pickup.",
+    image: "images/cart-8seat.jpg",
+    link: "free-golf-cart-delivery-destin-13.html",
+    date: "August 9, 2026"
+  },
+  {
     id: 29,
     title: "Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect",
     excerpt: "Planning a Miramar Beach vacation? Here’s exactly how the $99/day golf cart rental works — booking, delivery, what’s included, and what to bring.",
