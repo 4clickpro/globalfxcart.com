@@ -357,12 +357,14 @@ function nextReviewTopic(state) {
 }
 
 function nextClubBlogTopic(state) {
+  if (state.clubBlogIdx === undefined) state.clubBlogIdx = 0;
   const topic = CLUB_BLOG_TOPICS[state.clubBlogIdx % CLUB_BLOG_TOPICS.length];
   state.clubBlogIdx = (state.clubBlogIdx + 1) % CLUB_BLOG_TOPICS.length;
   return topic;
 }
 
 function nextClubReviewTopic(state) {
+  if (state.clubReviewIdx === undefined) state.clubReviewIdx = 0;
   const topic = CLUB_REVIEW_TOPICS[state.clubReviewIdx % CLUB_REVIEW_TOPICS.length];
   state.clubReviewIdx = (state.clubReviewIdx + 1) % CLUB_REVIEW_TOPICS.length;
   return topic;

@@ -1,7 +1,9 @@
 {
   "blogIdx": 4,
-  "reviewIdx": 1,
-  "postCounter": 14,
+  "reviewIdx": 2,
+  "postCounter": 17,
   "nextDue": 1786298400000,
-  "kindIdx": 1
+  "kindIdx": 0,
+  "clubBlogIdx": 1,
+  "clubReviewIdx": 1
 }

@@ -135,6 +135,14 @@ const reviews = [
     image: "images/cart-4seat.webp",
     link: "99-rental-review-family-miramar-beach-12.html",
     date: "August 8, 2026"
+  },
+  {
+    id: 25,
+    title: "Rental Review: The $99/Day Cart That Got Us to Crab Island",
+    excerpt: "Crab Island trips, sunset cruises, and zero parking fees — one customer’s week with the $99/day Destin golf cart rental.",
+    image: "images/rover-xl6-white.jpg",
+    link: "99-rental-review-crab-island-destin-15.html",
+    date: "August 9, 2026"
   }];
 
 const blogPosts = [
@@ -301,6 +309,22 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 3,
+    title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
+    excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-complete-golf-club-sets-17.html",
+    date: "August 9, 2026"
+  },
+  {
+    id: 2,
+    title: "Best Golf Clubs for Beginners in 2026: Complete Sets That Make Learning Easier",
+    excerpt: "Complete golf club sets are the fastest way to start playing. Here are the best golf clubs for beginners in 2026 and how to choose your first set.",
+    image: "images/cart-4seat.webp",
+    link: "club-best-golf-clubs-for-beginners-16.html",
+    date: "August 9, 2026"
+  },
   {
     id: 1,
     title: "Essential Golf Supplies Every Golfer Needs",
