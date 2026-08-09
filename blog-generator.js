@@ -881,6 +881,12 @@ function addToBlogItemList(title, filename) {
   const insertAt = idx + marker.length;
   const item = `\n      { "@type": "ListItem", "position": 1, "name": "${title}", "url": "${BASE}/${filename}" },`;
   html = html.slice(0, insertAt) + item + html.slice(insertAt);
+  // Normalize a trailing comma before the closing bracket (safe even if the
+  // original list was hand-written without one on its last item).
+  const endIdx = html.indexOf(']', idx);
+  const seg = html.slice(idx, endIdx + 1);
+  const cleaned = seg.replace(/,\s*\n\s*\]/, '\n    ]');
+  html = html.slice(0, idx) + cleaned + html.slice(endIdx + 1);
   fs.writeFileSync(BLOG_FILE, html);
 }
 
@@ -895,6 +901,13 @@ function addToClubItemList(title, filename) {
   const insertAt = idx + marker.length;
   const item = `\n      { "@type": "ListItem", "position": 1, "name": "${title}", "url": "${BASE}/${filename}" },`;
   html = html.slice(0, insertAt) + item + html.slice(insertAt);
+  // The ItemList may have started empty, so the last entry can end with a
+  // trailing comma that makes the JSON-LD invalid. Normalize: strip any
+  // comma directly before the ItemList closing bracket.
+  const endIdx = html.indexOf(']', idx);
+  const seg = html.slice(idx, endIdx + 1);
+  const cleaned = seg.replace(/,\s*\n\s*\]/, '\n    ]');
+  html = html.slice(0, idx) + cleaned + html.slice(endIdx + 1);
   fs.writeFileSync(CLUB_FILE, html);
 }
 
