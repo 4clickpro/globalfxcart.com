@@ -291,3 +291,14 @@ const blogPosts = [
     date: "June 15, 2026"
   }
 ];
+
+const clubPosts = [
+  {
+    id: 1,
+    title: "Essential Golf Supplies Every Golfer Needs",
+    excerpt: "From premium golf balls to the perfect stand bag, here's what to pack for your next round.",
+    image: "images/cart-4seat.webp",
+    link: "essential-golf-supplies.html",
+    date: "June 15, 2026"
+  }
+];

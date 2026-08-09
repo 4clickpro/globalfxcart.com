@@ -37,6 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
     blogGrid.innerHTML = blogPosts.map(createPostCard).join('');
   }
 
+  const clubGrid = document.getElementById('club-grid');
+  if (clubGrid) {
+    clubGrid.innerHTML = clubPosts.map(createPostCard).join('');
+  }
+
   // Scroll animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
