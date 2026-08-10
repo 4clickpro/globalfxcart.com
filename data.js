@@ -155,6 +155,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 33,
+    title: "8 Tips for First-Time Golf Cart Renters in Destin, FL",
+    excerpt: "New to golf cart rentals? Follow these 8 tips to get the most from your $99/day cart in Destin and Miramar Beach — from booking to your first cruise.",
+    image: "images/rover-xl6-white.jpg",
+    link: "destin-golf-cart-rental-tips-first-timers-22.html",
+    date: "August 10, 2026"
+  },
+  {
     id: 32,
     title: "Golf Cart vs. Rental Car in Destin: The Real Cost Breakdown",
     excerpt: "Rental car, parking, gas, insurance — or one $99/day golf cart. We compare the true cost of getting around Destin, FL this summer.",
