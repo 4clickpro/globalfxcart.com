@@ -131,6 +131,57 @@ const BLOG_TOPICS = [
       ['What if I need help on the road?', 'Call us at ' + PHONE + ' \u2014 we\u2019re local and happy to help with any question during your rental.'],
     ],
   },
+  {
+    slug: 'golf-cart-rental-weekly-destin',
+    title: 'Weekly Golf Cart Rentals in Destin, FL: Rates, Delivery & How to Book',
+    excerpt: 'Book a weekly golf cart rental in Destin, FL and save with free delivery on 4+ days. Here\u2019s how weekly rates work, what\u2019s included, and how to lock in your cart.',
+    image: 'images/cart-8seat.jpg',
+    intro: 'Most Destin vacationers stay a week or longer \u2014 and a weekly golf cart rental is the smartest way to get around. Free delivery on 4+ day bookings, a brand new street-legal cart, and one simple rate. Here\u2019s how it works.',
+    sections: [
+      ['Why Weekly Beats Daily', 'Weekly rentals include free delivery and pickup on bookings of 4 days or more \u2014 the single biggest saving. You also skip daily rate math: one price covers the whole stay.'],
+      ['What You Get', 'A brand new 4-seat, 6-seat Land Rover style, or 8-seat cart, fully charged and street legal, delivered to your condo or vacation rental anywhere in Destin or Miramar Beach.'],
+      ['Book Your Week Early', 'Peak-season weeks sell out fast \u2014 especially Saturday-to-Saturday stays. Call or text ' + PHONE + ' as soon as your dates are set.'],
+    ],
+    faqs: [
+      ['Is delivery really free on weekly rentals?', 'Yes \u2014 delivery and pickup are free on all rentals of 4 days or more, including weekly bookings, anywhere in Destin, FL and Miramar Beach, FL.'],
+      ['Can I rent a golf cart for a full week in Destin?', 'Absolutely. Most visitors rent for a week or longer. Weekly rates include free delivery and save versus paying daily \u2014 call ' + PHONE + ' for exact pricing.'],
+      ['What if I need the cart for longer than a week?', 'We offer long-term leasing for snowbirds and seasonal visitors. Ask about monthly rates when you call.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-rental-30a',
+    title: 'Golf Cart Rentals on 30A: Seaside, Rosemary Beach & Beyond',
+    excerpt: 'Thinking about 30A? Here\u2019s how golf cart rentals work from Destin to Rosemary Beach \u2014 delivery, street-legal rules, and the best stops along Scenic Highway 30A.',
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'Scenic Highway 30A is one of the most golf-cart-friendly stretches in Florida \u2014 Seaside, WaterColor, Rosemary Beach, and Alys Beach are built for slow cruising. Here\u2019s how to rent a cart for your 30A trip.',
+    sections: [
+      ['Where We Deliver on 30A', 'We deliver throughout Destin and Miramar Beach, and can arrange drop-offs for 30A communities like Sandestin, Seascape, and surrounding areas \u2014 call to confirm your exact address.'],
+      ['Street-Legal on 30A', 'All of our carts are street-legal LSVs with headlights, seat belts, and turn signals, permitted on roads posted at 35 mph or less \u2014 which covers most of the 30A corridor.'],
+      ['Best Stops by Cart', 'Seaside\u2019s town center, the Gulf Place amphitheater, Grayton Beach, and the bike paths between Alys and Rosemary are all easy in a cart. Park free and stroll.'],
+    ],
+    faqs: [
+      ['Do you deliver golf carts to 30A?', 'We deliver throughout Destin and Miramar Beach, FL and can arrange 30A-area drop-offs \u2014 call ' + PHONE + ' to confirm your vacation rental address and delivery options.'],
+      ['Are golf carts street legal on 30A?', 'Yes \u2014 street-legal LSVs with headlights, seat belts, and turn signals are permitted on roads posted at 35 mph or less, which covers most of the 30A corridor.'],
+      ['How much does a 30A golf cart rental cost?', 'Rentals start at $99/day for a brand new 4-seat cart, with free delivery on 4+ day bookings. 6-seat Land Rover style carts are $149/day and 8-seat carts are $199/day.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-rental-6-passenger-destin',
+    title: '6-Passenger Golf Cart Rentals in Destin: Room for the Whole Crew',
+    excerpt: 'Need room for the family or a group? Our brand new 6-seat Land Rover style golf cart rentals in Destin, FL seat six with Bluetooth audio and premium seats \u2014 from $149/day.',
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'Traveling with kids, grandparents, or friends? A 6-passenger golf cart keeps everyone together \u2014 no caravan of cars, no fighting for parking spots. Here\u2019s why our 6-seat Land Rover style cart is the crew favorite.',
+    sections: [
+      ['Six Seats, One Adventure', 'Our white 6-seater Land Rover style cart seats the whole group with room to spare \u2014 and Bluetooth audio so everyone can pick the soundtrack.'],
+      ['Street Legal and Delivered', 'Brand new, fully street legal, and delivered to your condo or vacation rental free on 4+ day bookings anywhere in Destin or Miramar Beach.'],
+      ['Perfect for Groups and Celebrations', 'Family dinners at Destin Harbor, group trips to Crab Island, sunset cruises \u2014 six seats means nobody gets left behind.'],
+    ],
+    faqs: [
+      ['How much is a 6-passenger golf cart rental in Destin?', 'Our brand new 6-seat Land Rover style carts are $149/day, with free delivery on rentals of 4 days or more.'],
+      ['Does the 6-seater have Bluetooth?', 'Yes \u2014 the 6-seat Land Rover style cart includes Bluetooth audio and premium seats.'],
+      ['How many people fit in the 6-seater?', 'It seats six passengers comfortably, making it ideal for families, friend groups, and celebrations.'],
+    ],
+  },
 ];
 
 const REVIEW_TOPICS = [
@@ -159,6 +210,24 @@ const REVIEW_TOPICS = [
     image: 'images/cart-8seat.jpg',
     intro: 'Longer stay, better value. A weekly rental test-drive of the Destin golf cart experience.',
     body: 'For a 7-night stay, the weekly rate with free delivery was a no-brainer. The cart came charged and ready, the orientation took five minutes, and we were cruising the Emerald Coast by lunch. Seats were comfortable, storage was plenty, and the street-legal setup meant we could go anywhere. Best value of the whole trip.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-sandestin-baytowne',
+    title: 'Rental Review: Sandestin & Baytowne Wharf by Golf Cart',
+    excerpt: 'A weekend at Sandestin, dinner at Baytowne Wharf, and zero parking headaches \u2014 one review of the $99/day golf cart rental in Miramar Beach.',
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'Sandestin and Baytowne Wharf are made for golf carts. Here\u2019s how one weekend went with a $99/day rental delivered to our Miramar Beach vacation rental.',
+    body: 'The cart was delivered to our rental right on time, free on our 4+ day booking. We cruised to Baytowne Wharf for dinner, hit the beach access points all day, and never once hunted for parking. The kids called it the best part of the trip \u2014 and the adults agreed. Pickup at the end took two minutes. Five stars.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-grand-boulevard',
+    title: 'Rental Review: Grand Boulevard Dinner Runs on a $99/Day Cart',
+    excerpt: 'Parking at Grand Boulevard is a breeze when you arrive by golf cart \u2014 one customer\u2019s review of dinner runs and shopping trips in Miramar Beach.',
+    image: 'images/cart-4seat.webp',
+    intro: 'Grand Boulevard is the hub of Miramar Beach \u2014 and golf cart parking is right at the door. Here\u2019s how one week of dinner runs went.',
+    body: 'We rented the 4-seater for a week and used it constantly \u2014 Grand Boulevard dinner runs, grocery quick trips, beach days. The cart parking at Grand Boulevard is close and easy, and we saved a fortune versus rental car parking. The cart was spotless and fully charged on delivery. Highly recommend to anyone staying in Miramar Beach.',
     rating: 5,
   },
 ];
@@ -274,6 +343,60 @@ const CLUB_BLOG_TOPICS = [
       ['How much should I spend on a putter?', 'Good putters start around $100. Mid-range models ($150\u2013$300) offer the best feel and fitting options for most players.'],
     ],
   },
+  {
+    slug: 'club-best-complete-sets-under-500',
+    title: 'Best Complete Golf Club Sets Under $500 in 2026 (Tested & Ranked)',
+    excerpt: 'Great golf clubs don\u2019t have to cost a fortune. We tested the best complete golf club sets under $500 for 2026 \u2014 forgiveness, value, and what\u2019s included.',
+    keywords: 'best golf club sets under 500, complete golf sets under $500, affordable golf club sets, best budget golf clubs, golf club sets under 500 dollars, value golf club sets 2026',
+    image: 'images/cart-4seat.webp',
+    intro: 'A full set of quality golf clubs for under $500? Yes \u2014 complete sets from major brands bundle a driver, fairway woods, hybrids, irons, wedges, putter, and a stand bag for less than many single drivers. Here are the best complete golf club sets under $500 for 2026.',
+    sections: [
+      ['What to Look For Under $500', 'Prioritize forgiveness: perimeter-weighted irons, higher-lofted hybrids, and graphite shafts. Skip flashy brands and look for complete sets with a real putter and a quality bag.'],
+      ['The Sweet Spot: $300\u2013$450', 'The best value lives here. Sets in this range include modern forgiving drivers, 2\u20133 hybrids instead of hard-to-hit long irons, and genuinely playable putters.'],
+      ['What These Sets Skip', 'Expect a pitching wedge and sometimes a sand wedge, but rarely a lob wedge. Budget $50\u2013$80 to add one later if you want it.'],
+    ],
+    faqs: [
+      ['Can you get a good golf club set for under $500?', 'Yes \u2014 complete sets from $300\u2013$500 are genuinely playable and the best value in golf. They include every club you need and a bag.'],
+      ['What is the best complete golf set under $500?', 'The best under-$500 sets combine forgiving drivers, multiple hybrids, game-improvement irons, and a solid putter \u2014 compare our top picks above.'],
+      ['Are cheap complete golf sets worth it?', 'A well-reviewed complete set under $500 beats piecing together a bag from random clubs. Upgrade individual clubs later as your game grows.'],
+    ],
+  },
+  {
+    slug: 'club-callaway-strata-vs-wilson-profile-sgi',
+    title: 'Callaway Strata vs Wilson Profile SGI: Which Beginner Set Wins?',
+    excerpt: 'The two most popular beginner golf club sets of 2026, head to head. We compare the Callaway Strata and Wilson Profile SGI on forgiveness, value, and what\u2019s in the bag.',
+    keywords: 'Callaway Strata vs Wilson Profile SGI, best beginner golf set comparison, Callaway Strata review, Wilson Profile SGI review, beginner golf club sets compared',
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'If you\u2019re shopping for a beginner golf club set, you\u2019ve seen two names everywhere: the Callaway Strata and the Wilson Profile SGI. Both are excellent \u2014 here\u2019s how they compare and which one to buy.',
+    sections: [
+      ['Callaway Strata: The All-Rounder', 'The Strata is the best-selling beginner set for good reason \u2014 forgiving irons, a well-balanced hybrid selection, and a putter that actually works. Expect a driver, 3-wood, 4 & 5 hybrids, 6\u2013PW irons, and a stand bag.'],
+      ['Wilson Profile SGI: Maximum Forgiveness', 'The Profile SGI is built around forgiveness: higher lofts, lighter graphite shafts, and a deep cavity design that helps launch the ball. A great pick for absolute beginners and slower swing speeds.'],
+      ['The Verdict', 'Both are excellent \u2014 the Strata edges it on build quality and resale, while the Profile SGI is slightly friendlier for total beginners on a tighter budget. You can\u2019t go wrong with either.'],
+    ],
+    faqs: [
+      ['Is the Callaway Strata good for beginners?', 'Yes \u2014 the Callaway Strata is the best-selling beginner set on the market, with forgiving hybrids and irons that make learning easier.'],
+      ['Is the Wilson Profile SGI a good beginner set?', 'Yes \u2014 the Profile SGI prioritizes forgiveness with higher lofts and lighter shafts, ideal for new golfers and slower swing speeds.'],
+      ['Which is better: Strata or Profile SGI?', 'The Callaway Strata is the better all-rounder with stronger build quality; the Wilson Profile SGI is the more forgiving value pick. Both are excellent beginner sets.'],
+    ],
+  },
+  {
+    slug: 'club-cavity-back-vs-blade-irons',
+    title: 'Cavity Back vs Blade Irons: Which Is Right for Your Game?',
+    excerpt: 'Cavity back irons offer forgiveness; blades offer feel. Here\u2019s how to choose between the two styles in 2026 \u2014 and why most golfers should pick cavity back.',
+    keywords: 'cavity back vs blade irons, blade irons vs cavity back, game improvement irons, best irons for high handicappers, iron design explained, forged blades vs cavity back',
+    image: 'images/cart-8seat.jpg',
+    intro: 'The oldest argument in golf: blades or cavity backs? The short answer for most players is cavity back \u2014 but here\u2019s the full breakdown so you can decide with confidence.',
+    sections: [
+      ['Cavity Back: Built for Forgiveness', 'Cavity back irons redistribute weight to the perimeter, creating a larger sweet spot and more consistent contact on mishits. Higher launch and more help for 90% of golfers.'],
+      ['Blades: Feel for the Elite', 'Blades offer the purest feel and workability, but demand a consistent strike. They punish mishits \u2014 which is why even many tour players use player\u2019s cavity irons.'],
+      ['The Practical Choice', 'Unless you\u2019re a low single-digit handicapper, choose cavity back or game-improvement irons. They lower scores faster and make golf more fun.'],
+    ],
+    faqs: [
+      ['Should a beginner buy blades or cavity backs?', 'Cavity backs, without question. They\u2019re more forgiving, launch higher, and are far more enjoyable for new golfers.'],
+      ['Do any pros use blade irons?', 'Yes \u2014 but many tour players actually use player\u2019s cavity or muscle-cavity irons. Pure blades are a minority choice even at the elite level.'],
+      ['Are cavity back irons easier to hit?', 'Yes \u2014 the perimeter weighting creates a larger sweet spot, so off-center hits lose less distance and stay straighter.'],
+    ],
+  },
 ];
 
 const CLUB_REVIEW_TOPICS = [
@@ -308,6 +431,17 @@ const CLUB_REVIEW_TOPICS = [
     intro: 'You will use the putter more than any other club, so it deserves the most careful choice. We tested the best putters of 2026 for beginners and mid-handicappers.',
     body: 'For most players, a mallet putter with strong alignment aids is the easiest to aim and the most forgiving on off-center hits. Match the length to your posture (typically 34\u201335 inches) and the weight to your feel \u2014 heavier promotes a smooth stroke on fast greens. The putters we recommend here all combine clear alignment lines, balanced weight, and consistent roll to help you start the ball on line and control distance.',
     affiliate: 'https://www.amazon.com/s?k=best+putters+for+beginners&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-sets-under-500',
+    title: 'Review: The 5 Best Complete Golf Club Sets Under $500 in 2026',
+    excerpt: 'We tested the best complete golf club sets under $500 for 2026 \u2014 forgiveness, value, and what\u2019s included. Here are the sets that beat their price tag.',
+    keywords: 'best complete golf sets under 500, best budget golf club sets 2026, golf club set review under 500, affordable complete sets, value golf sets reviewed',
+    image: 'images/cart-4seat.webp',
+    intro: 'You don\u2019t need to spend a fortune to start playing great golf. We tested the best complete golf club sets under $500 to find the ones that truly deliver.',
+    body: 'The best complete sets under $500 share the same DNA: forgiving drivers with 10.5\u00b0+ loft, two or three hybrids, perimeter-weighted game-improvement irons, and a putter you can actually make putts with. Brand names matter less than the set makeup \u2014 a $400 set with the right clubs beats a $500 set missing a sand wedge. Every set we recommend includes a stand bag, and all of them are playable straight out of the box for a full season or more.',
+    affiliate: 'https://www.amazon.com/s?k=best+complete+golf+club+sets+under+500&tag=techbot00-20&linkCode=ll2',
     rating: 4.5,
   },
 ];
