@@ -342,6 +342,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 6,
+    title: "Complete Golf Club Sets vs. Building a Bag: Which Is the Better Buy?",
+    excerpt: "Complete golf club sets cost less and get you playing now; building a bag gives you premium clubs. We break down which choice fits your game and budget.",
+    image: "images/cart-8seat.jpg",
+    link: "club-complete-sets-vs-building-bag-24.html",
+    date: "August 10, 2026"
+  },
+  {
     id: 5,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
