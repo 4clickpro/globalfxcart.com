@@ -326,6 +326,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 5,
+    title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
+    excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-review-best-forgiving-golf-drivers-21.html",
+    date: "August 9, 2026"
+  },
+  {
     id: 4,
     title: "How to Choose Golf Clubs: A Complete Buying Guide for 2026",
     excerpt: "Forgiveness, shafts, grips, budget — here is exactly how to choose golf clubs that match your swing and skill level in 2026.",
