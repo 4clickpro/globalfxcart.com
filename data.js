@@ -342,6 +342,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 7,
+    title: "PGM 27-Piece Men's Complete Golf Set: R&A & USGA Certified",
+    excerpt: "A full 27-piece complete set with adjustable driver, fairway woods, hybrids, irons, P/S wedges, putter, headcovers, and a stand bag — R&A & USGA certified for tournament play.",
+    image: "https://m.media-amazon.com/images/I/81MOsHeojPL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/PGM-Complete-Handed-Certified-Headcovers/dp/B0G2PLVT2Z?crid=320C2UQ2I3L1F&dib=eyJ2IjoiMSJ9.RGcFiUF1XCh0kYikkDxTzjQCYsRwxkOgPiRW3El2Ldx4dyXgSpz8p41MWtjCmf2VvWYOrl-QhvGE6PZo1-G5VwFY1-wiBo5HwVY1SuT-R3fJ5BJNgCuJbpA6fDDYDUVeydCBmAuIL3UvMZLHWvS6Pl0xeBX69UO4vGPOCkZLcyRt3bLlqybV3OFCK0Af9i1do-_0JS9fvh9T7n5OaQBDw2WJn3tJqcstpdKqFbQWOus.bSEOZUdDlpZSu1Wvq803uXdhfg54U8TgcjkXoKB5FZ4&dib_tag=se&keywords=golf%2Bclubs&qid=1786404625&sprefix=golf%2B%2Caps%2C938&sr=8-5-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=techbot00-20&linkId=69b5fce54919e97a22bb8f55d0a71987&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 10, 2026"
+  },
+  {
     id: 6,
     title: "Complete Golf Club Sets vs. Building a Bag: Which Is the Better Buy?",
     excerpt: "Complete golf club sets cost less and get you playing now; building a bag gives you premium clubs. We break down which choice fits your game and budget.",
