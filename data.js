@@ -342,6 +342,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 8,
+    title: "Srixon ZXi 5 Iron Set: 4-PW, Steel Shafts, Stiff Flex (Right Hand)",
+    excerpt: "The Srixon ZXi 5 iron set (4-PW) blends forged feel with game-improvement forgiveness — steel shafts, stiff flex, and right-handed. A serious iron upgrade for mid-handicappers.",
+    image: "https://m.media-amazon.com/images/I/71Z5mx3UbcL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Srixon-Iron-Steel-Stiff-Right/dp/B0DT3L6L71?crid=320C2UQ2I3L1F&dib=eyJ2IjoiMSJ9.WE7CtqlO5cvPhxU24T42RZr9HtlXaybCpgcLzVK5s12bz8lMiQ15NwYJ9R_eX6rv2Cq3wmwaSXTvsxqunTSyut3S4kXxoqBVDYNsMdLeci8RgLzSBk51JmkbUpAPQMWxRPmJZ-P5DYeQgWtREZFdNUEbq_qVChoE1YcI-hdcpBK29gkn7GrNx6fjx6WJ_N1N5xJvpy82jmhk1WKvAZmprFDsC-oj-QJVo_9RFwJokUc.IE-qWIg1VOavzvHy-SNdVzL-F3c6aSZGTtrZ8R6Atkk&dib_tag=se&keywords=golf%2Bclubs&qid=1786404927&sprefix=golf%2B%2Caps%2C938&sr=8-9-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=techbot00-20&linkId=d97fea6420da064c2d0c0f97b8669554&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 10, 2026"
+  },
+  {
     id: 7,
     title: "PGM 27-Piece Men's Complete Golf Set: R&A & USGA Certified",
     excerpt: "A full 27-piece complete set with adjustable driver, fairway woods, hybrids, irons, P/S wedges, putter, headcovers, and a stand bag — R&A & USGA certified for tournament play.",
