@@ -342,6 +342,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 9,
+    title: "PXG 0311P GEN7 Iron Set: 5-PW, Steel Shafts, Stiff Flex (Right Hand)",
+    excerpt: "PXG's GEN7 0311P irons (5-PW, 6 clubs) blend a forged feel with serious forgiveness — steel shafts, stiff flex, and right-handed. A premium iron upgrade for better players.",
+    image: "https://m.media-amazon.com/images/I/71SizOwusIL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/PXG-GEN7-0311P-Chrome-Iron/dp/B0D9R9MXJZ?crid=320C2UQ2I3L1F&dib=eyJ2IjoiMSJ9.WE7CtqlO5cvPhxU24T42RZr9HtlXaybCpgcLzVK5s12bz8lMiQ15NwYJ9R_eX6rv2Cq3wmwaSXTvsxqunTSyut3S4kXxoqBVDYNsMdLeci8RgLzSBk51JmkbUpAPQMWxRPmJZ-P5DYeQgWtREZFdNUEbq_qVChoE1YcI-hdcpBK29gkn7GrNx6fjx6WJ_N1N5xJvpy82jmhk1WKvAZmprFDsC-oj-QJVo_9RFwJokUc.IE-qWIg1VOavzvHy-SNdVzL-F3c6aSZGTtrZ8R6Atkk&dib_tag=se&keywords=golf+clubs&qid=1786404927&sprefix=golf+%2Caps%2C938&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=techbot00-20&linkId=b4779d38c3682b67f99fa743cba27c68&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 10, 2026"
+  },
+  {
     id: 8,
     title: "Srixon ZXi 5 Iron Set: 4-PW, Steel Shafts, Stiff Flex (Right Hand)",
     excerpt: "The Srixon ZXi 5 iron set (4-PW) blends forged feel with game-improvement forgiveness — steel shafts, stiff flex, and right-handed. A serious iron upgrade for mid-handicappers.",
