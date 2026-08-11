@@ -342,6 +342,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 10,
+    title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
+    excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
+    image: "images/cart-8seat.jpg",
+    link: "club-review-best-putters-beginners-25.html",
+    date: "August 11, 2026"
+  },
+  {
     id: 9,
     title: "PXG 0311P GEN7 Iron Set: 5-PW, Steel Shafts, Stiff Flex (Right Hand)",
     excerpt: "PXG's GEN7 0311P irons (5-PW, 6 clubs) blend a forged feel with serious forgiveness — steel shafts, stiff flex, and right-handed. A premium iron upgrade for better players.",
