@@ -29,6 +29,9 @@ const PHONE = '(850) 299-8575';
 const PHONE_TEL = 'tel:8502998575';
 const BASE = 'https://www.globalfxcart.com';
 
+// Primary money keywords — included on every generated rental/review page
+const RENTAL_KEYWORDS = 'gas golf cart rental Miramar Beach FL, Miramar beach golf cart rentals 8 passenger, 8 seater golf cart rental Miramar Beach FL, best golf cart rental Miramar Beach, electric golf cart rental Miramar Beach FL, beachfront golf cart rentals, cheapest golf cart rental Miramar Beach, cheapest golf cart rental Miramar Beach near me, cheapest golf cart rental Miramar Beach cheap, Miramar Beach golf cart rentals, Miramar Beach golf cart rentals prices, Destin golf cart rentals';
+
 /* ------------------------------------------------------------------ */
 /* Content bank — rotate through these so every post is unique         */
 /* ------------------------------------------------------------------ */
@@ -514,6 +517,7 @@ function articleHtml(topic, filename) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${topic.title}</title>
   <meta name="description" content="${topic.excerpt}">
+  <meta name="keywords" content="${topic.keywords || RENTAL_KEYWORDS}">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Destin Golf Cart Rentals & Sales">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.globalfxcart.com/sitemap.xml">
@@ -536,6 +540,7 @@ function articleHtml(topic, filename) {
     "mainEntityOfPage": "${BASE}/${filename}",
     "headline": "${topic.title}",
     "description": "${topic.excerpt}",
+    "keywords": "${topic.keywords || RENTAL_KEYWORDS}",
     "datePublished": "${isoDate()}",
     "dateModified": "${isoDate()}",
     "author": {
@@ -635,6 +640,7 @@ function reviewHtml(topic, filename) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${topic.title}</title>
   <meta name="description" content="${topic.excerpt}">
+  <meta name="keywords" content="${topic.keywords || RENTAL_KEYWORDS}">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Destin Golf Cart Rentals & Sales">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.globalfxcart.com/sitemap.xml">
