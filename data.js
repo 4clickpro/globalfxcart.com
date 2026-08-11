@@ -104,6 +104,14 @@ const reviews = [
     date: "August 8, 2026"
   },
   {
+    id: 28,
+    title: "GO UP 2-Seat Sightseeing Golf Cart Review: 48V 105AH Lithium & Touchscreen for $7,700",
+    excerpt: "The GO UP 2-seat sightseeing cart pairs a 48V 105Ah lithium battery with a 4KW motor, a 10.1-inch touchscreen, 6.5-inch speakers, and MacPherson suspension. A quiet leisure shuttle for resorts and scenic areas.",
+    image: "https://m.media-amazon.com/images/I/91DD+TEHLhL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/GO-UP-Sightseeing-Leisure-Vehicle/dp/B0GL1J5CDH?crid=1LOHMC503FZ45&dib=eyJ2IjoiMSJ9.II6wUWVTjsp2Rl7n-deK0GcILxCiVqjmeCEXZC8zgEH0TkB65hL183wgqdLRRDXYrREvDwO5lLlookPhUFsWTUhQcU7QxWwMo_8qsgkOzEV8IMK-fBzxYkU4KSxxRXJEf0hqSDtybHPbadLLCJQOutu6lSMWNeRnCptoqypX82dygn7et7DwRy4mxqb495TdeqtK3GZjPxO7G8UVXuckfF4nTMI2qx_fZ9rEV8V3OCo-wfpre3K5td7svPuK-CT5BjQcpUo36OsCz8tXeCKWD9oLIVM57yX456IMWFU4U5E.jpg6Zc-DSX0tcSKkcX69vGp1lArP914vnt_LjdFQ_Bg&dib_tag=se&keywords=golf+cart&qid=1786462538&sprefix=golf+%2Caps%2C492&sr=8-32&linkCode=ll2&tag=techbot00-20&linkId=538b9ad112c52760bf399c76c6915495&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 11, 2026"
+  },
+  {
     id: 22,
     title: "Rental Review: The $99/Day Cart That Got Us to Crab Island",
     excerpt: "Crab Island trips, sunset cruises, and zero parking fees — one customer’s week with the $99/day Destin golf cart rental.",
