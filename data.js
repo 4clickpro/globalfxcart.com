@@ -20,7 +20,7 @@ const reviews = [
     title: "GIYI 4-Seater Electric Golf Cart Review: 5KW Motor, 20 MPH & 44-Mile Range for $8,199",
     excerpt: "The GIYI 4-seater pairs a 5KW motor with a 60V 100Ah battery for a 44-mile range and 20 MPH top speed. MacPherson suspension, a 9-inch IPS display with reversing camera, and front & rear storage — fully assembled at $8,199.",
     image: "https://m.media-amazon.com/images/I/81crsxmQiUL._AC_SL1500_.jpg",
-    link: "https://www.amazon.com/4-Seater-Electric-Advanced-Suspension-Recreational/dp/B0G8FNJRGG?crid=2F55WCHKD0UAJ&dib=eyJ2IjoiMSJ9.4QwN7AFDYL7iHZhhTfKtzmcILxCiVqjmeCEXZC8zgEF0L3-nPHJNUSbCkjf_aS05OoHWeF6fqYv1vGvKuPj0kh8o1-l1d-rsdbdMe61ck1RcZqinYGUUppJwNudTvljIAC3m1ddDkIqtEe_SVxsNHqd73HeSvrTSVBIA1CtvZEM46bvRzoS5A0VBDzv1-izLWSn2JAAZPcBvDcs2gJoUKcnCBeXJznRYb3HbvvSiksfrd8Cp0lS8Vj0YBpzrCtZJTX8lig4X4R46y0aoQF-w9V_Go7BrMgFc1_TE8a97iFg.HLvfoxDaBLUIUCNsRFUeVtcihFXZZXd9rnS2C3OTkwg&dib_tag=se&keywords=golf%2Bcart&qid=1786203351&sprefix=golf%2Bcart%2Caps%2C415&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=techbot00-20&linkId=bf60670401cdcc0577a7b47be05d85da&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    link: "https://www.amazon.com/4-Seater-Electric-Advanced-Suspension-Recreational/dp/B0H8WW5Y9T?crid=1LOHMC503FZ45&dib=eyJ2IjoiMSJ9.II6wUWVTjsp2Rl7n-deK0GcILxCiVqjmeCEXZC8zgEH0TkB65hL183wgqdLRRDXYrREvDwO5lLlookPhUFsWTUhQcU7QxWwMo_8qsgkOzEV8IMK-fBzxYkU4KSxxRXJEf0hqSDtybHPbadLLCJQOutu6lSMWNeRnCptoqypX82dygn7et7DwRy4mxqb495TdeqtK3GZjPxO7G8UVXuckfF4nTMI2qx_fZ9rEV8V3OCo-wfpre3K5td7svPuK-CT5BjQcpUo36OsCz8tXeCKWD9oLIVM57yX456IMWFU4U5E.jpg6Zc-DSX0tcSKkcX69vGp1lArP914vnt_LjdFQ_Bg&dib_tag=se&keywords=golf%2Bcart&qid=1786462538&sprefix=golf%2B%2Caps%2C492&sr=8-11&th=1&linkCode=ll2&tag=techbot00-20&linkId=a5aa50cb780ba1699aff511bfc21c40e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
     date: "August 8, 2026"
   },
   {
@@ -89,11 +89,11 @@ const reviews = [
   },
   {
     id: 19,
-    title: "SDLANCH 6-Seater Electric Golf Cart Review: 60V 105AH (Coming Soon)",
-    excerpt: "The SDLANCH 6-seater pairs a 60V 5KW AC motor with a 105Ah battery for up to 60KM of range, 2+2+2 seating, MacPherson suspension, and all-terrain tires. Full review coming soon.",
+    title: "SDLANCH 6-Seater Electric Golf Cart Review: 60V 5KW AC Motor, 25 MPH & 37-Mile Range",
+    excerpt: "The SDLANCH 6-seater pairs a 60V 5KW AC motor with a 105Ah battery for up to 37 miles of range, 2+2+2 seating, MacPherson suspension, and 23-inch all-terrain tires. A rugged family and resort shuttle.",
     image: "https://m.media-amazon.com/images/I/51b0s3BPPSL._AC_SL1500_.jpg",
-    link: "#",
-    date: "August 8, 2026"
+    link: "https://www.amazon.com/SDLANCH-Suspension-Recreational-Stock%EF%BC%8CSelf-Pickup-Goods%EF%BC%8C65/dp/B0H6LYGMZH?crid=1LOHMC503FZ45&dib=eyJ2IjoiMSJ9.II6wUWVTjsp2Rl7n-deK0GcILxCiVqjmeCEXZC8zgEH0TkB65hL183wgqdLRRDXYrREvDwO5lLlookPhUFsWTUhQcU7QxWwMo_8qsgkOzEV8IMK-fBzxYkU4KSxxRXJEf0hqSDtybHPbadLLCJQOutu6lSMWNeRnCptoqypX82dygn7et7DwRy4mxqb495TdeqtK3GZjPxO7G8UVXuckfF4nTMI2qx_fZ9rEV8V3OCo-wfpre3K5td7svPuK-CT5BjQcpUo36OsCz8tXeCKWD9oLIVM57yX456IMWFU4U5E.jpg6Zc-DSX0tcSKkcX69vGp1lArP914vnt_LjdFQ_Bg&dib_tag=se&keywords=golf+cart&qid=1786462538&sprefix=golf+%2Caps%2C492&sr=8-9&linkCode=ll2&tag=techbot00-20&linkId=f74606da63caf42c95284fedd92e8924&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 11, 2026"
   },
   {
     id: 20,
