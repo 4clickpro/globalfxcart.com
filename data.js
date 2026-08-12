@@ -1,5 +1,13 @@
 const reviews = [
   {
+    id: 33,
+    title: "PGM NSR V 18-Piece Men's Complete Golf Club Set Review: Adjustable Loft Titanium Driver",
+    excerpt: "An 18-piece complete set with an adjustable-loft (8.5°-12°) DAT55 titanium driver, #3/#5 fairway woods, #4 hybrid, 5-PW irons, sand wedge, CNC-milled putter, 5 headcovers, and a stand bag — with 0.86 COR for extra distance.",
+    image: "https://m.media-amazon.com/images/I/81cIff-wv4L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0F5MTZTF9?pd_rd_i=B0F5MTZTF9&pd_rd_w=2sd0i&content-id=amzn1.sym.17345c9b-ef8c-4a79-bcd9-8894b1e1e0ea&pf_rd_p=17345c9b-ef8c-4a79-bcd9-8894b1e1e0ea&pf_rd_r=3PB63CCF751JBRNYF296&pd_rd_wg=Zaojx&pd_rd_r=9b49d3bd-35b5-423b-8c71-7a57aa1e332d&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1&linkCode=ll2&tag=techbot00-20&linkId=bcd9060b728fe2f5ca66f6f7cf32f199&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 12, 2026"
+  },
+  {
     id: 32,
     title: "PGM 19-Piece Men's Complete Golf Club Set Review: 460cc Titanium Driver & CNC Milled Putter",
     excerpt: "A 19-piece complete set with a 460cc ultra-thin-face titanium driver, #3/#5 fairway woods, #4 hybrid, 5-PW forged irons, 52° & 56° wedges, CNC-milled putter, and a stand bag — with graphite shafts throughout.",
