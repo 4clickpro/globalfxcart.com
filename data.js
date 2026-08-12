@@ -1,5 +1,29 @@
 const reviews = [
   {
+    id: 32,
+    title: "PGM 19-Piece Men's Complete Golf Club Set Review: 460cc Titanium Driver & CNC Milled Putter",
+    excerpt: "A 19-piece complete set with a 460cc ultra-thin-face titanium driver, #3/#5 fairway woods, #4 hybrid, 5-PW forged irons, 52° & 56° wedges, CNC-milled putter, and a stand bag — with graphite shafts throughout.",
+    image: "https://m.media-amazon.com/images/I/814Iy6-amZL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0GYDCWGMM?pd_rd_i=B0GYDCWGMM&pd_rd_w=krzWb&content-id=amzn1.sym.4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_p=4a7f44df-467c-45a1-af5f-91661a6df2f9&pf_rd_r=4PZNP4Y9APJD77NZAA4J&pd_rd_wg=ZPSzs&pd_rd_r=498df580-3f59-470b-8618-508b490f7c23&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&th=1&linkCode=ll2&tag=techbot00-20&linkId=cb69b897ef0085931883c5f117af4715&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 12, 2026"
+  },
+  {
+    id: 31,
+    title: "PGM 27-Piece Men's Complete Golf Set Review: R&A & USGA Certified",
+    excerpt: "A full 27-piece complete set with adjustable 8.5°-12.5° titanium driver, fairway woods, hybrids, irons, P/S wedges, putter, headcovers, and a stand bag — R&A & USGA certified for tournament play.",
+    image: "https://m.media-amazon.com/images/I/81MOsHeojPL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0G2PLVT2Z?pd_rd_i=B0G2PLVT2Z&pd_rd_w=xv0xH&content-id=amzn1.sym.17345c9b-ef8c-4a79-bcd9-8894b1e1e0ea&pf_rd_p=17345c9b-ef8c-4a79-bcd9-8894b1e1e0ea&pf_rd_r=0TAWVBJM47HJ6EKP9X9V&pd_rd_wg=0nO2q&pd_rd_r=8090d2d8-ecf5-43f4-a48f-877b604ed08c&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1&linkCode=ll2&tag=techbot00-20&linkId=b100bc48aebaa3f2680ec3f3b0d85054&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 12, 2026"
+  },
+  {
+    id: 30,
+    title: "Callaway Golf 2026 XR 13-Piece Complete Golf Set Review: Driver, Woods, Hybrids, Irons & Odyssey DFX Putter",
+    excerpt: "The Callaway 2026 XR 13-piece set bundles 12 clubs and a stand bag — a 460cc titanium driver, 3-wood, 4 & 5 hybrids, 6-9 irons, PW/AW/SW wedges, and an Odyssey DFX putter, built +1 inch over standard length. A complete bag from tee to green for beginners and mid-handicappers.",
+    image: "https://m.media-amazon.com/images/I/71JjiZgzaoL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/CG-PK-XR-Complete-Set/dp/B0FH5VVFVK?crid=2BNQKJ3M9I8GS&dib=eyJ2IjoiMSJ9.RGcFiUF1XCh0kYikkDxTzp8tCbhpgCcrBQuH54tY7csWR_LOHswj-BbmaDZGeDRP1D_2mW4aU-pjn36aDz63twBXb7pWF0EjazZXR1gKQwTpNLpfa6uocCS1DwM1JAD3htCjh8QwFMug-82nIuwmJylaodL-_gPriBdK1o1UByBRUWB4GbashQF87cVD3kcgviS0b6rsoVQFZRF0XmwiduwQ01kLugIsCK1bC1ICF0g.DfPYPs4ibJ4pjrbQaP9kNEm6yTHlWDRuokIgblW3u2g&dib_tag=se&keywords=golf%2Bclubs&qid=1786548666&sprefix=golf%2Bc%2Caps%2C216&sr=8-4&th=1&linkCode=ll2&tag=techbot00-20&linkId=c460614078ce23fbea8f67d83bf9156f&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl",
+    date: "August 12, 2026"
+  },
+  {
     id: 18,
     title: "Limo Renegade V3 6-Seater Golf Cart Review: 72V 4000W High-Power for $12,999",
     excerpt: "The Limo Renegade V3 6-seater runs on a 72V system with a 4000W high-power motor and 150Ah battery, reaching up to 30 MPH. A family-fun limo-style cart at $12,999.",
