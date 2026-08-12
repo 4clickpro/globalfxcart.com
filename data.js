@@ -167,6 +167,14 @@ const reviews = [
     image: "images/cart-4seat.webp",
     link: "99-rental-review-family-miramar-beach-23.html",
     date: "August 10, 2026"
+  },
+  {
+    id: 29,
+    title: "Rental Review: The $99/Day Cart That Got Us to Crab Island",
+    excerpt: "Crab Island trips, sunset cruises, and zero parking fees — one customer’s week with the $99/day Destin golf cart rental.",
+    image: "images/rover-xl6-white.jpg",
+    link: "99-rental-review-crab-island-destin-27.html",
+    date: "August 12, 2026"
   }];
 
 const blogPosts = [
