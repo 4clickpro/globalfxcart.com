@@ -366,6 +366,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 11,
+    title: "Golf Drivers Explained: Loft, Shaft Flex, and Forgiveness for Every Golfer",
+    excerpt: "The driver is the hardest club to hit and the easiest to improve with the right choice. Here is what loft, shaft flex, and head design actually do.",
+    image: "images/cart-4seat.webp",
+    link: "club-golf-drivers-guide-28.html",
+    date: "August 12, 2026"
+  },
+  {
     id: 10,
     title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
     excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
