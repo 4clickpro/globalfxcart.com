@@ -215,9 +215,25 @@ const reviews = [
     image: "images/cart-8seat.jpg",
     link: "99-rental-review-weekly-stay-destin-31.html",
     date: "August 13, 2026"
+  },
+  {
+    id: 35,
+    title: "Rental Review: Sandestin & Baytowne Wharf by Golf Cart",
+    excerpt: "A weekend at Sandestin, dinner at Baytowne Wharf, and zero parking headaches — one review of the $99/day golf cart rental in Miramar Beach.",
+    image: "images/rover-xl6-white.jpg",
+    link: "99-rental-review-sandestin-baytowne-35.html",
+    date: "August 14, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 36,
+    title: "Weekly Golf Cart Rentals in Destin, FL: Rates, Delivery & How to Book",
+    excerpt: "Book a weekly golf cart rental in Destin, FL and save with free delivery on 4+ days. Here’s how weekly rates work, what’s included, and how to lock in your cart.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-rental-weekly-destin-34.html",
+    date: "August 14, 2026"
+  },
   {
     id: 35,
     title: "Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect",
@@ -413,6 +429,14 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 16,
+    title: "How to Choose a Putter: Styles, Weights, and Fitting Basics",
+    excerpt: "Putting is half the game, but the putter is the most personal club in the bag. Here is how to choose a putter that fits your stroke and improves your speed control.",
+    image: "images/cart-4seat.webp",
+    link: "club-how-to-choose-putter-36.html",
+    date: "August 14, 2026"
+  },
   {
     id: 14,
     title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",

@@ -30,7 +30,7 @@ const PHONE_TEL = 'tel:8502998575';
 const BASE = 'https://www.globalfxcart.com';
 
 // Primary money keywords — included on every generated rental/review page
-const RENTAL_KEYWORDS = 'gas golf cart rental Miramar Beach FL, Miramar beach golf cart rentals 8 passenger, 8 seater golf cart rental Miramar Beach FL, best golf cart rental Miramar Beach, electric golf cart rental Miramar Beach FL, beachfront golf cart rentals, cheapest golf cart rental Miramar Beach, cheapest golf cart rental Miramar Beach near me, cheapest golf cart rental Miramar Beach cheap, Miramar Beach golf cart rentals, Miramar Beach golf cart rentals prices, Destin golf cart rentals';
+const RENTAL_KEYWORDS = 'golf cart rental Destin FL, Destin golf cart rentals, golf cart rental Destin Florida, rent a golf cart Destin, cheap golf cart rental Destin, $99 golf cart rental Destin, best golf cart rental Destin, cheapest golf cart rental Destin, Destin beach golf cart rental, golf cart rental Miramar Beach FL, Miramar Beach golf cart rentals, Miramar Beach golf cart rentals prices, golf cart rental Miramar Beach, best golf cart rental Miramar Beach, cheapest golf cart rental Miramar Beach, 4 seater golf cart rental Destin, 6 seater golf cart rental Destin, 8 seater golf cart rental Destin, 6 passenger golf cart rental Destin, 8 passenger golf cart rental Destin, street legal golf cart rental Destin, LSV rental Destin, low speed vehicle rental Destin, electric golf cart rental Destin FL, gas golf cart rental Miramar Beach FL, weekly golf cart rental Destin, monthly golf cart rental Destin, long term golf cart rental Destin, golf cart rental with delivery Destin, golf cart delivery Destin FL, beachfront golf cart rentals, golf cart rental near me, beach golf cart rental near me, golf cart rental 30A, 30A golf cart rentals, golf cart rental Santa Rosa Beach, Santa Rosa Beach golf cart rental, golf cart rental Sandestin, Sandestin golf cart rental, Rosemary Beach golf cart rental, Seagrove Beach golf cart rental, Grayton Beach golf cart rental, WaterColor golf cart rental, Seaside FL golf cart rental, Blue Mountain Beach golf cart rental, Alys Beach golf cart rental, golf cart rental Okaloosa Island, Fort Walton Beach golf cart rental, Emerald Coast golf cart rental, Walton County golf cart rental, golf cart rental prices Destin';
 
 /* ------------------------------------------------------------------ */
 /* Content bank — rotate through these so every post is unique         */
@@ -39,6 +39,7 @@ const RENTAL_KEYWORDS = 'gas golf cart rental Miramar Beach FL, Miramar beach go
 const BLOG_TOPICS = [
   {
     slug: '99-destin-golf-cart-rental-best-deal',
+    keywords: 'Destin golf cart rental, golf cart rental Destin FL, cheap golf cart rental Destin, $99 golf cart rental Destin, best golf cart rental Destin, Destin beach golf cart rental',
     title: 'Why the $99/Day Golf Cart Rental Is the Best Deal in Destin, FL',
     excerpt: 'At $99/day with free delivery on 4+ days, our brand new street-legal golf carts are the smartest way to explore Destin and Miramar Beach this summer.',
     image: 'images/cart-4seat.webp',
@@ -55,6 +56,7 @@ const BLOG_TOPICS = [
   },
   {
     slug: 'miramar-beach-golf-cart-rental-99',
+    keywords: 'Miramar Beach golf cart rental, golf cart rental Miramar Beach FL, Miramar Beach golf cart rentals, $99 golf cart rental Miramar Beach, Miramar Beach golf cart rentals prices',
     title: 'Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect',
     excerpt: 'Planning a Miramar Beach vacation? Here\u2019s exactly how the $99/day golf cart rental works \u2014 booking, delivery, what\u2019s included, and what to bring.',
     image: 'images/rover-xl6-white.jpg',
@@ -71,6 +73,7 @@ const BLOG_TOPICS = [
   },
   {
     slug: 'free-golf-cart-delivery-destin',
+    keywords: 'golf cart delivery Destin, free golf cart delivery Destin, golf cart rental with delivery, golf cart delivery Miramar Beach, Destin golf cart delivery',
     title: 'Free Golf Cart Delivery in Destin & Miramar Beach: How It Works',
     excerpt: 'Delivery and pickup to your door \u2014 free on rentals of 4 days or more. Here\u2019s how Destin golf cart delivery works from booking to pickup.',
     image: 'images/cart-8seat.jpg',
@@ -87,6 +90,7 @@ const BLOG_TOPICS = [
   },
   {
     slug: 'what-to-pack-golf-cart-beach-day',
+    keywords: 'golf cart beach day Destin, what to pack for beach Destin, golf cart beach packing list, Destin beach day golf cart, Miramar Beach beach day',
     title: 'What to Pack for a Golf Cart Beach Day in Destin, FL',
     excerpt: 'Sunscreen, towels, a cooler, and a charger plan \u2014 our packing list for the perfect $99/day golf cart beach day in Destin and Miramar Beach.',
     image: 'images/cart-4seat.webp',
@@ -103,6 +107,7 @@ const BLOG_TOPICS = [
   },
   {
     slug: 'golf-cart-rental-vs-car-destin-cost',
+    keywords: 'golf cart vs rental car Destin, golf cart vs car Destin, is a golf cart cheaper than a car, Destin parking fees, golf cart rental cost comparison',
     title: 'Golf Cart vs. Rental Car in Destin: The Real Cost Breakdown',
     excerpt: 'Rental car, parking, gas, insurance \u2014 or one $99/day golf cart. We compare the true cost of getting around Destin, FL this summer.',
     image: 'images/cart-8seat.jpg',
@@ -119,6 +124,7 @@ const BLOG_TOPICS = [
   },
   {
     slug: 'destin-golf-cart-rental-tips-first-timers',
+    keywords: 'first time golf cart rental Destin, golf cart rental tips, Destin golf cart rental guide, how to rent a golf cart Destin, golf cart rental rules',
     title: '8 Tips for First-Time Golf Cart Renters in Destin, FL',
     excerpt: 'New to golf cart rentals? Follow these 8 tips to get the most from your $99/day cart in Destin and Miramar Beach \u2014 from booking to your first cruise.',
     image: 'images/rover-xl6-white.jpg',
@@ -136,6 +142,7 @@ const BLOG_TOPICS = [
   },
   {
     slug: 'golf-cart-rental-weekly-destin',
+    keywords: 'weekly golf cart rental Destin, golf cart rental for a week Destin, 7 day golf cart rental Destin, weekly golf cart rental Miramar Beach, long term golf cart rental Destin',
     title: 'Weekly Golf Cart Rentals in Destin, FL: Rates, Delivery & How to Book',
     excerpt: 'Book a weekly golf cart rental in Destin, FL and save with free delivery on 4+ days. Here\u2019s how weekly rates work, what\u2019s included, and how to lock in your cart.',
     image: 'images/cart-8seat.jpg',
@@ -153,6 +160,7 @@ const BLOG_TOPICS = [
   },
   {
     slug: 'golf-cart-rental-30a',
+    keywords: 'golf cart rental 30A, 30A golf cart rentals, golf cart rental Santa Rosa Beach, Rosemary Beach golf cart rental, Seaside FL golf cart rental, WaterColor golf cart rental',
     title: 'Golf Cart Rentals on 30A: Seaside, Rosemary Beach & Beyond',
     excerpt: 'Thinking about 30A? Here\u2019s how golf cart rentals work from Destin to Rosemary Beach \u2014 delivery, street-legal rules, and the best stops along Scenic Highway 30A.',
     image: 'images/rover-xl6-white.jpg',
@@ -170,6 +178,7 @@ const BLOG_TOPICS = [
   },
   {
     slug: 'golf-cart-rental-6-passenger-destin',
+    keywords: '6 passenger golf cart rental Destin, 6 seater golf cart rental Destin, 6 seater golf cart rental Miramar Beach, golf cart rental for 6 people, 6 seat golf cart rental',
     title: '6-Passenger Golf Cart Rentals in Destin: Room for the Whole Crew',
     excerpt: 'Need room for the family or a group? Our brand new 6-seat Land Rover style golf cart rentals in Destin, FL seat six with Bluetooth audio and premium seats \u2014 from $149/day.',
     image: 'images/rover-xl6-white.jpg',
@@ -185,11 +194,63 @@ const BLOG_TOPICS = [
       ['How many people fit in the 6-seater?', 'It seats six passengers comfortably, making it ideal for families, friend groups, and celebrations.'],
     ],
   },
+  {
+    slug: 'golf-cart-rental-beach-access-destin',
+    title: 'Best Beach Access Points for Golf Carts in Destin & Miramar Beach',
+    excerpt: 'A golf cart makes every beach day easier. Here are the best beach access points, parking tips, and routes for golf carts in Destin and Miramar Beach.',
+    image: 'images/cart-4seat.webp',
+    keywords: 'Destin beach access, Miramar Beach beach access, golf cart beach access Destin, golf cart to the beach, beach parking Destin golf cart, beach access points Destin',
+    intro: 'The hardest part of a Destin beach day is usually parking. With a $99/day golf cart, you can skip the lot and roll right up to the nearest access point. Here are the best beach access points for golf carts in Destin and Miramar Beach.',
+    sections: [
+      ['Henderson Beach State Park', 'Henderson Beach is one of the most popular stretches in Destin, and golf cart parking near the access points beats hunting for a car spot. Arrive early in peak season.'],
+      ['Crystal Beach and Scenic Gulf Drive', 'Along Scenic Gulf Drive you will find public access points every few blocks. A cart fits into the smaller pull-off spots, so you can hop between accesses until you find your favorite sand.'],
+      ['Miramar Beach Walkovers', 'Miramar Beach has walkover access points all along the coast, from the east end to the quieter west end. Park the cart close, grab your chairs, and go.'],
+    ],
+    faqs: [
+      ['Can I park a golf cart at the beach?', 'Golf carts fit many beach access pull-offs and designated spots that cars cannot use, which makes beach days far easier. Follow posted signs and keep the road clear.'],
+      ['Which beach is best for a golf cart day?', 'Henderson Beach, Crystal Beach, and the Miramar Beach walkovers are all easy by cart. We will point you to the closest access when you call ' + PHONE + '.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-rental-large-groups-destin',
+    title: 'Golf Cart Rentals for Large Groups and Family Reunions in Destin',
+    excerpt: 'Planning a family reunion or group trip to Destin? Here is how 6 and 8-seat golf cart rentals keep big groups together, from beach days to dinner runs.',
+    image: 'images/cart-8seat.jpg',
+    keywords: 'golf cart rental for large groups, family reunion golf cart Destin, 8 seater golf cart rental Destin, group golf cart rental Destin, golf cart rental for 8',
+    intro: 'Big groups are the best groups, but they are also the hardest to move around. A 6 or 8-seat golf cart keeps everyone together on a Destin or Miramar Beach vacation.',
+    sections: [
+      ['Pick the Right Size', 'A 6-seat Land Rover style cart fits most families, and our 8-seat cart handles the biggest groups. Rent a couple of carts side by side for reunions and weddings.'],
+      ['One Group, One Plan', 'No caravan of cars and no splitting up to find parking. Everyone rides together to the beach, the Harbor Boardwalk, and dinner.'],
+      ['Delivery for Big Groups', 'We deliver to condos and vacation rentals across Destin and Miramar Beach, free on rentals of 4 days or more, so your whole crew is ready to roll.'],
+    ],
+    faqs: [
+      ['How many people can ride together?', 'Our 6-seat cart holds six, and the 8-seat cart holds eight. For larger groups we can arrange multiple carts delivered to the same address.'],
+      ['Do you rent for weddings or reunions?', 'Yes. Call ' + PHONE + ' and we will help you size the right carts for your group and dates.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-rental-long-term-destin',
+    title: 'Long-Term and Monthly Golf Cart Rentals in Destin, FL',
+    excerpt: 'Staying a month or the whole season? Long-term golf cart rentals in Destin and Miramar Beach come with free delivery and simple monthly rates.',
+    image: 'images/rover-xl6-white.jpg',
+    keywords: 'monthly golf cart rental Destin, long term golf cart rental Destin, seasonal golf cart rental Destin, snowbird golf cart rental Destin, golf cart leasing Destin FL',
+    intro: 'If you are on the Emerald Coast for a month or more, a long-term golf cart rental is the simplest way to get around. Here is how monthly rentals work in Destin and Miramar Beach.',
+    sections: [
+      ['Snowbirds and Seasonal Stays', 'If you winter on the Emerald Coast, a long-term cart beats buying one. You get a brand new street-legal cart without maintenance, registration, or storage headaches.'],
+      ['Simple Monthly Rates', 'Monthly rentals bundle delivery, a charged and cleaned cart, and pickup at the end of your stay. Call for current long-term pricing on 4, 6, and 8-seat carts.'],
+      ['Why Rent Instead of Buy', 'Buying means insurance, batteries, and upkeep. Renting keeps it simple, and you can swap sizes between seasons.'],
+    ],
+    faqs: [
+      ['Do you offer monthly golf cart rentals?', 'Yes, we offer long-term and monthly rentals for snowbirds and seasonal visitors. Call ' + PHONE + ' for rates and availability.'],
+      ['Is delivery included on long-term rentals?', 'Delivery and pickup are included on long-term bookings. We will confirm your address and schedule when you reserve.'],
+    ],
+  },
 ];
 
 const REVIEW_TOPICS = [
   {
     slug: '99-rental-review-family-miramar-beach',
+    keywords: 'Miramar Beach golf cart rental review, $99 golf cart rental review, family golf cart rental Miramar Beach, 4 seater golf cart rental review, Miramar Beach vacation golf cart',
     title: 'Rental Review: Our $99/Day Golf Cart in Miramar Beach Was the Highlight',
     excerpt: '\u201cWe rented a 4-seat cart for the week and it made the whole trip.\u201d A real customer\u2019s experience with the $99/day Miramar Beach golf cart rental.',
     image: 'images/cart-4seat.webp',
@@ -199,6 +260,7 @@ const REVIEW_TOPICS = [
   },
   {
     slug: '99-rental-review-crab-island-destin',
+    keywords: 'Crab Island golf cart, golf cart to Crab Island, Destin golf cart rental review, Crab Island Destin, golf cart rental Destin Harbor',
     title: 'Rental Review: The $99/Day Cart That Got Us to Crab Island',
     excerpt: 'Crab Island trips, sunset cruises, and zero parking fees \u2014 one customer\u2019s week with the $99/day Destin golf cart rental.',
     image: 'images/rover-xl6-white.jpg',
@@ -208,6 +270,7 @@ const REVIEW_TOPICS = [
   },
   {
     slug: '99-rental-review-weekly-stay-destin',
+    keywords: 'weekly golf cart rental review, week long golf cart rental Destin, Destin golf cart rental review, free delivery golf cart rental',
     title: 'Rental Review: A Week-Long $99/Day Golf Cart Rental in Destin, FL',
     excerpt: 'Free delivery on 4+ days, a brand new street-legal cart, and a full week of adventure \u2014 our review of the weekly Destin golf cart rental.',
     image: 'images/cart-8seat.jpg',
@@ -217,6 +280,7 @@ const REVIEW_TOPICS = [
   },
   {
     slug: '99-rental-review-sandestin-baytowne',
+    keywords: 'Sandestin golf cart rental, Baytowne Wharf golf cart, golf cart rental Sandestin FL, Sandestin golf cart, Miramar Beach golf cart review',
     title: 'Rental Review: Sandestin & Baytowne Wharf by Golf Cart',
     excerpt: 'A weekend at Sandestin, dinner at Baytowne Wharf, and zero parking headaches \u2014 one review of the $99/day golf cart rental in Miramar Beach.',
     image: 'images/rover-xl6-white.jpg',
@@ -226,11 +290,62 @@ const REVIEW_TOPICS = [
   },
   {
     slug: '99-rental-review-grand-boulevard',
+    keywords: 'Grand Boulevard golf cart, Grand Boulevard Miramar Beach, golf cart parking Grand Boulevard, Miramar Beach golf cart rental review, Grand Boulevard Sandestin',
     title: 'Rental Review: Grand Boulevard Dinner Runs on a $99/Day Cart',
     excerpt: 'Parking at Grand Boulevard is a breeze when you arrive by golf cart \u2014 one customer\u2019s review of dinner runs and shopping trips in Miramar Beach.',
     image: 'images/cart-4seat.webp',
     intro: 'Grand Boulevard is the hub of Miramar Beach \u2014 and golf cart parking is right at the door. Here\u2019s how one week of dinner runs went.',
     body: 'We rented the 4-seater for a week and used it constantly \u2014 Grand Boulevard dinner runs, grocery quick trips, beach days. The cart parking at Grand Boulevard is close and easy, and we saved a fortune versus rental car parking. The cart was spotless and fully charged on delivery. Highly recommend to anyone staying in Miramar Beach.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-henderson-beach',
+    title: 'Rental Review: Henderson Beach and Crystal Beach Days on a $99/Day Cart',
+    excerpt: 'Beach days without the parking lot stress. A review of the $99/day golf cart rental for Henderson Beach and Crystal Beach in Destin, FL.',
+    image: 'images/cart-4seat.webp',
+    keywords: 'Henderson Beach golf cart, Henderson Beach State Park, Crystal Beach golf cart, Destin beach access golf cart, golf cart to the beach Destin',
+    intro: 'We wanted a beach week without circling for parking, and the $99/day cart delivered. Here is how our Henderson Beach and Crystal Beach days went.',
+    body: 'The cart was delivered to our condo, free on our 4+ day booking, and fully charged. Each morning we loaded chairs and a cooler and cruised straight to the beach access points. We hit Henderson Beach, Crystal Beach, and a few Miramar Beach walkovers without ever paying for parking. Pickup at the end took two minutes. Best money we spent all trip.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-30a-santa-rosa',
+    title: 'Rental Review: 30A and Santa Rosa Beach by $99/Day Golf Cart',
+    excerpt: 'Seaside, WaterColor, and Santa Rosa Beach are built for slow cruising. A review of the $99/day golf cart rental for a 30A beach trip.',
+    image: 'images/rover-xl6-white.jpg',
+    keywords: '30A golf cart rental, Santa Rosa Beach golf cart rental, golf cart rental 30A, Scenic Highway 30A golf cart, golf cart rental Santa Rosa Beach FL',
+    intro: 'We split our week between Miramar Beach and the 30A beach towns, and the cart made the whole stretch easy. Here is how it went.',
+    body: 'The street-legal cart handled the slower 30A roads perfectly, and we parked free while strolling Seaside and Grayton Beach. Delivery to our Miramar Beach rental was on time and free on our 4+ day booking. The staff explained the roads to stick to and even suggested a few stops. A relaxed, stress-free way to do 30A.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-8-seat-family',
+    title: 'Rental Review: The 8-Seat Cart for a Big Family Beach Week',
+    excerpt: 'Eight seats, one cart, zero parking fights. A review of the 8-seat golf cart rental for a large family vacation in Destin, FL.',
+    image: 'images/cart-8seat.jpg',
+    keywords: '8 seater golf cart rental, 8 passenger golf cart rental Destin, 8 seater golf cart rental Destin, large family golf cart rental, 8 seat golf cart rental Miramar Beach',
+    intro: 'With three generations on the trip, we needed one vehicle that fit everyone. The 8-seat cart was the answer.',
+    body: 'The 8-seater was delivered to our rental, free on our 4+ day booking, with a quick orientation. All eight of us rode together to the beach, to dinner on the Harbor, and to sunset spots. The full audio system kept the kids happy, and pickup at the end was effortless. For a big family, this is the move.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-sunset-destin-harbor',
+    title: 'Rental Review: Sunset Cruises and Dinner Runs on the Destin Harbor',
+    excerpt: 'Harbor Boardwalk dinners and sunset cruises are minutes away by golf cart. A review of the $99/day rental for Destin Harbor nights.',
+    image: 'images/rover-xl6-white.jpg',
+    keywords: 'Destin Harbor golf cart, sunset cruise Destin, Destin Harbor Boardwalk golf cart, dinner Destin Harbor golf cart, golf cart sunset Destin',
+    intro: 'Evenings on the Destin Harbor are the best part of a beach trip, and the cart made them effortless. Here is how our week went.',
+    body: 'Each night we cruised to the Harbor Boardwalk, parked steps from the restaurants, and watched the boats come in. No ride shares, no parking garage, no waiting. The cart was clean, charged, and delivered free on our 4+ day rental. We will rent again next year.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-silver-sands-outlets',
+    title: 'Rental Review: Shopping Runs to Silver Sands on a $99/Day Cart',
+    excerpt: 'Silver Sands Premium Outlets is right off Emerald Coast Parkway. A review of using the $99/day golf cart for shopping runs in Miramar Beach.',
+    image: 'images/cart-4seat.webp',
+    keywords: 'Silver Sands Premium Outlets, golf cart Silver Sands, shopping Miramar Beach golf cart, golf cart to outlets Destin, Miramar Beach shopping',
+    intro: 'We came for the beach but ended up doing plenty of shopping too. The cart made every Silver Sands run quick and easy.',
+    body: 'The outlets are a short, easy ride from our Miramar Beach rental, and cart parking is simple. We loaded bags into the storage area and never worried about a full lot. Delivery was free on our 4+ day booking, the cart was spotless, and pickup was two minutes. A great add-on to a beach week.',
     rating: 5,
   },
 ];
@@ -481,30 +596,47 @@ function saveState(state) {
   fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
 }
 
+// A slug has already been published if a generated page for it exists.
+function slugAlreadyUsed(slug) {
+  try {
+    return fs.readdirSync(SITE_DIR).some((f) => f.startsWith(slug + '-') && f.endsWith('.html'));
+  } catch {
+    return false;
+  }
+}
+
+// Pick the next topic in rotation, skipping slugs that already have a page so
+// we never publish near-duplicate posts. If every topic is used, fall back to
+// the next-in-rotation topic so the cron keeps publishing.
+function nextUnusedTopic(state, bank, idxKey) {
+  if (state[idxKey] === undefined) state[idxKey] = 0;
+  const start = state[idxKey] % bank.length;
+  for (let i = 0; i < bank.length; i++) {
+    const topic = bank[(start + i) % bank.length];
+    if (!slugAlreadyUsed(topic.slug)) {
+      state[idxKey] = (start + i + 1) % bank.length;
+      return topic;
+    }
+  }
+  const fallback = bank[start % bank.length];
+  state[idxKey] = (start + 1) % bank.length;
+  return fallback;
+}
+
 function nextBlogTopic(state) {
-  const topic = BLOG_TOPICS[state.blogIdx % BLOG_TOPICS.length];
-  state.blogIdx = (state.blogIdx + 1) % BLOG_TOPICS.length;
-  return topic;
+  return nextUnusedTopic(state, BLOG_TOPICS, 'blogIdx');
 }
 
 function nextReviewTopic(state) {
-  const topic = REVIEW_TOPICS[state.reviewIdx % REVIEW_TOPICS.length];
-  state.reviewIdx = (state.reviewIdx + 1) % REVIEW_TOPICS.length;
-  return topic;
+  return nextUnusedTopic(state, REVIEW_TOPICS, 'reviewIdx');
 }
 
 function nextClubBlogTopic(state) {
-  if (state.clubBlogIdx === undefined) state.clubBlogIdx = 0;
-  const topic = CLUB_BLOG_TOPICS[state.clubBlogIdx % CLUB_BLOG_TOPICS.length];
-  state.clubBlogIdx = (state.clubBlogIdx + 1) % CLUB_BLOG_TOPICS.length;
-  return topic;
+  return nextUnusedTopic(state, CLUB_BLOG_TOPICS, 'clubBlogIdx');
 }
 
 function nextClubReviewTopic(state) {
-  if (state.clubReviewIdx === undefined) state.clubReviewIdx = 0;
-  const topic = CLUB_REVIEW_TOPICS[state.clubReviewIdx % CLUB_REVIEW_TOPICS.length];
-  state.clubReviewIdx = (state.clubReviewIdx + 1) % CLUB_REVIEW_TOPICS.length;
-  return topic;
+  return nextUnusedTopic(state, CLUB_REVIEW_TOPICS, 'clubReviewIdx');
 }
 
 function articleHtml(topic, filename) {
