@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     recentPosts.innerHTML = blogPosts.slice(0, 3).map(createPostCard).join('');
   }
 
+  const homeClubGrid = document.getElementById('home-club-grid');
+  if (homeClubGrid) {
+    homeClubGrid.innerHTML = clubPosts.slice(0, 3).map(createPostCard).join('');
+  }
+
   const reviewsGrid = document.getElementById('reviews-grid');
   if (reviewsGrid) {
     reviewsGrid.innerHTML = reviews.map(createPostCard).join('');

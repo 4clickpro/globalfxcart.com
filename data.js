@@ -470,6 +470,14 @@ const clubPosts = [
     date: "August 10, 2026"
   },
   {
+    id: 15,
+    title: "TaylorMade Qi Max Irons Review: Graphite Regular Left-Hand 5-PW+AW Set",
+    excerpt: "The TaylorMade Qi Max irons deliver premium performance with graphite regular shafts in a left-hand 5-PW+AW set. Top-tier feel and forgiveness at $1,199.99.",
+    image: "https://golfusa.com/wp-content/uploads/2026/01/Qi-Max-Iron.jpg",
+    link: "https://www.amazon.com/dp/B0G2TCMHH3?pd_rd_i=B0G2TCMHH3&pd_rd_w=cnneO&content-id=amzn1.sym.4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_p=4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_r=1CM33SQD9GSAEA3B2EFB&pd_rd_wg=rqEDA&pd_rd_r=64fcb83f-cdac-4c4b-a2b9-b34c06615515&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=techbot00-20&linkId=6f2e125ab096970d2b66a89a592ee4c6&language=en_US&ref_=as_li_ss_tl",
+    date: "July 8, 2026"
+  },
+  {
     id: 7,
     title: "PGM 27-Piece Men's Complete Golf Set: R&A & USGA Certified",
     excerpt: "A full 27-piece complete set with adjustable driver, fairway woods, hybrids, irons, P/S wedges, putter, headcovers, and a stand bag — R&A & USGA certified for tournament play.",
