@@ -207,6 +207,14 @@ const reviews = [
     image: "images/rover-xl6-white.jpg",
     link: "99-rental-review-crab-island-destin-27.html",
     date: "August 12, 2026"
+  },
+  {
+    id: 34,
+    title: "Rental Review: A Week-Long $99/Day Golf Cart Rental in Destin, FL",
+    excerpt: "Free delivery on 4+ days, a brand new street-legal cart, and a full week of adventure — our review of the weekly Destin golf cart rental.",
+    image: "images/cart-8seat.jpg",
+    link: "99-rental-review-weekly-stay-destin-31.html",
+    date: "August 13, 2026"
   }];
 
 const blogPosts = [
@@ -405,6 +413,22 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 14,
+    title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
+    excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-complete-golf-club-sets-33.html",
+    date: "August 13, 2026"
+  },
+  {
+    id: 13,
+    title: "Women's Golf Clubs: How to Choose the Right Set for Your Game",
+    excerpt: "Women’s-specific golf clubs use lighter shafts, softer flexes, and higher lofts to match most women’s swing speeds. Here is how to choose the right set.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-womens-golf-clubs-guide-32.html",
+    date: "August 13, 2026"
+  },
   {
     id: 12,
     title: "Review: The 5 Best Complete Golf Club Sets Under $500 in 2026",
