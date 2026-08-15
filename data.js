@@ -227,6 +227,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 37,
+    title: "Golf Cart Rentals on 30A: Seaside, Rosemary Beach & Beyond",
+    excerpt: "Thinking about 30A? Here’s how golf cart rentals work from Destin to Rosemary Beach — delivery, street-legal rules, and the best stops along Scenic Highway 30A.",
+    image: "images/rover-xl6-white.jpg",
+    link: "golf-cart-rental-30a-38.html",
+    date: "August 15, 2026"
+  },
+  {
     id: 36,
     title: "Weekly Golf Cart Rentals in Destin, FL: Rates, Delivery & How to Book",
     excerpt: "Book a weekly golf cart rental in Destin, FL and save with free delivery on 4+ days. Here’s how weekly rates work, what’s included, and how to lock in your cart.",
