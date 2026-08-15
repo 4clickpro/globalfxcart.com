@@ -430,6 +430,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 17,
+    title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
+    excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-review-best-forgiving-golf-drivers-37.html",
+    date: "August 15, 2026"
+  },
+  {
     id: 16,
     title: "How to Choose a Putter: Styles, Weights, and Fitting Basics",
     excerpt: "Putting is half the game, but the putter is the most personal club in the bag. Here is how to choose a putter that fits your stroke and improves your speed control.",
