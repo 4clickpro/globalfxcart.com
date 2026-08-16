@@ -446,6 +446,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 19,
+    title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
+    excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
+    image: "images/cart-8seat.jpg",
+    link: "club-review-best-putters-beginners-41.html",
+    date: "August 16, 2026"
+  },
+  {
     id: 18,
     title: "Best Complete Golf Club Sets Under $500 in 2026 (Tested & Ranked)",
     excerpt: "Great golf clubs don’t have to cost a fortune. We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included.",
