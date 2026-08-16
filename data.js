@@ -129,10 +129,10 @@ const reviews = [
   },
   {
     id: 20,
-    title: "GO UP 6-Passenger 4+2 Seater Golf Cart Review: 48V 150AH Lithium (Coming Soon)",
-    excerpt: "The GO UP 6-passenger 4+2 seater runs on a 48V 150AH lithium battery with one-click start, 14-inch off-road tires, and luxury ergonomic seats. Full review coming soon.",
+    title: "GO UP 6-Passenger 4+2 Seater Golf Cart Review: 48V 150AH Lithium",
+    excerpt: "The GO UP 6-passenger 4+2 seater runs on a 48V 150AH lithium battery with one-click start, 14-inch off-road tires, and luxury ergonomic seats. Here's our full review.",
     image: "https://m.media-amazon.com/images/I/81w9ZvFkjnL._AC_SL1500_.jpg",
-    link: "#",
+    link: "https://www.amazon.com/dp/B0H38WL4QP?linkCode=ll2&tag=techbot00-20&linkId=goup-6passenger-4plus2&language=en_US&ref_=as_li_ss_tl",
     date: "August 8, 2026"
   },
   {

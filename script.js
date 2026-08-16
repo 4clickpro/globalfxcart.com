@@ -59,12 +59,34 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
   // Navbar scroll effect
-  const nav = document.querySelector('nav');
-  if (nav) {
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 50);
+  const navEls = document.querySelectorAll('nav');
+  const onScroll = () => {
+    navEls.forEach(n => n.classList.toggle('scrolled', window.scrollY > 50));
+  };
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+
+  // Mobile menu toggle (injected via JS so every page stays in sync)
+  navEls.forEach(nav => {
+    const ul = nav.querySelector('ul');
+    if (!ul) return;
+    const toggle = document.createElement('button');
+    toggle.className = 'nav-toggle';
+    toggle.setAttribute('aria-label', 'Toggle navigation menu');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.innerHTML = '<span></span><span></span><span></span>';
+    nav.insertBefore(toggle, ul);
+
+    const close = () => {
+      nav.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', String(open));
     });
-  }
+    ul.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
+  });
 
   // Sticky mobile call bar — call or text to book from any page
   if (!document.querySelector('.sticky-call-bar')) {
@@ -74,18 +96,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(bar);
   }
 
-  // Rental video play button
-  const video = document.getElementById('rentalVideo');
-  const playBtn = document.getElementById('videoPlayBtn');
-  if (video && playBtn) {
-    playBtn.addEventListener('click', () => {
-      video.play();
-    });
-    video.addEventListener('play', () => {
-      playBtn.classList.add('hidden');
-    });
-    video.addEventListener('pause', () => {
-      if (video.ended) playBtn.classList.remove('hidden');
-    });
-  }
+  // Video play buttons (any .video-wrap)
+  document.querySelectorAll('.video-wrap').forEach(wrap => {
+    const video = wrap.querySelector('video');
+    const playBtn = wrap.querySelector('.video-play');
+    if (video && playBtn) {
+      playBtn.addEventListener('click', () => video.play());
+      video.addEventListener('play', () => playBtn.classList.add('hidden'));
+      video.addEventListener('pause', () => {
+        if (video.ended) playBtn.classList.remove('hidden');
+      });
+    }
+  });
 });
