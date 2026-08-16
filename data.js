@@ -446,6 +446,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 18,
+    title: "Best Complete Golf Club Sets Under $500 in 2026 (Tested & Ranked)",
+    excerpt: "Great golf clubs don’t have to cost a fortune. We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included.",
+    image: "images/cart-4seat.webp",
+    link: "club-best-complete-sets-under-500-40.html",
+    date: "August 16, 2026"
+  },
+  {
     id: 17,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
