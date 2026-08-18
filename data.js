@@ -231,6 +231,14 @@ const reviews = [
     image: "images/cart-4seat.webp",
     link: "99-rental-review-grand-boulevard-39.html",
     date: "August 15, 2026"
+  },
+  {
+    id: 37,
+    title: "Rental Review: Henderson Beach and Crystal Beach Days on a $99/Day Cart",
+    excerpt: "Beach days without the parking lot stress. A review of the $99/day golf cart rental for Henderson Beach and Crystal Beach in Destin, FL.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-henderson-beach-43.html",
+    date: "August 17, 2026"
   }];
 
 const blogPosts = [
@@ -453,6 +461,22 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 21,
+    title: "Review: The 5 Best Complete Golf Club Sets Under $500 in 2026",
+    excerpt: "We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included. Here are the sets that beat their price tag.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-sets-under-500-45.html",
+    date: "August 17, 2026"
+  },
+  {
+    id: 20,
+    title: "Callaway Strata vs Wilson Profile SGI: Which Beginner Set Wins?",
+    excerpt: "The two most popular beginner golf club sets of 2026, head to head. We compare the Callaway Strata and Wilson Profile SGI on forgiveness, value, and what’s in the bag.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-callaway-strata-vs-wilson-profile-sgi-44.html",
+    date: "August 17, 2026"
+  },
   {
     id: 19,
     title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
