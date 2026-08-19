@@ -478,6 +478,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 23,
+    title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
+    excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-complete-golf-club-sets-49.html",
+    date: "August 19, 2026"
+  },
+  {
     id: 22,
     title: "Cavity Back vs Blade Irons: Which Is Right for Your Game?",
     excerpt: "Cavity back irons offer forgiveness; blades offer feel. Here’s how to choose between the two styles in 2026 — and why most golfers should pick cavity back.",
