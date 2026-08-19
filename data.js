@@ -478,6 +478,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 22,
+    title: "Cavity Back vs Blade Irons: Which Is Right for Your Game?",
+    excerpt: "Cavity back irons offer forgiveness; blades offer feel. Here’s how to choose between the two styles in 2026 — and why most golfers should pick cavity back.",
+    image: "images/cart-8seat.jpg",
+    link: "club-cavity-back-vs-blade-irons-48.html",
+    date: "August 18, 2026"
+  },
+  {
     id: 21,
     title: "Review: The 5 Best Complete Golf Club Sets Under $500 in 2026",
     excerpt: "We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included. Here are the sets that beat their price tag.",
