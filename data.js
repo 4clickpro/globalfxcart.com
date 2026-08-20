@@ -247,9 +247,25 @@ const reviews = [
     image: "images/rover-xl6-white.jpg",
     link: "99-rental-review-30a-santa-rosa-47.html",
     date: "August 18, 2026"
+  },
+  {
+    id: 39,
+    title: "Rental Review: The 8-Seat Cart for a Big Family Beach Week",
+    excerpt: "Eight seats, one cart, zero parking fights. A review of the 8-seat golf cart rental for a large family vacation in Destin, FL.",
+    image: "images/cart-8seat.jpg",
+    link: "99-rental-review-8-seat-family-51.html",
+    date: "August 19, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 40,
+    title: "Golf Cart Rentals for Large Groups and Family Reunions in Destin",
+    excerpt: "Planning a family reunion or group trip to Destin? Here is how 6 and 8-seat golf cart rentals keep big groups together, from beach days to dinner runs.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-rental-large-groups-destin-50.html",
+    date: "August 19, 2026"
+  },
   {
     id: 39,
     title: "Best Beach Access Points for Golf Carts in Destin & Miramar Beach",
