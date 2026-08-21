@@ -255,6 +255,14 @@ const reviews = [
     image: "images/cart-8seat.jpg",
     link: "99-rental-review-8-seat-family-51.html",
     date: "August 19, 2026"
+  },
+  {
+    id: 40,
+    title: "Rental Review: Sunset Cruises and Dinner Runs on the Destin Harbor",
+    excerpt: "Harbor Boardwalk dinners and sunset cruises are minutes away by golf cart. A review of the $99/day rental for Destin Harbor nights.",
+    image: "images/rover-xl6-white.jpg",
+    link: "99-rental-review-sunset-destin-harbor-55.html",
+    date: "August 21, 2026"
   }];
 
 const blogPosts = [
