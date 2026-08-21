@@ -259,6 +259,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 41,
+    title: "Long-Term and Monthly Golf Cart Rentals in Destin, FL",
+    excerpt: "Staying a month or the whole season? Long-term golf cart rentals in Destin and Miramar Beach come with free delivery and simple monthly rates.",
+    image: "images/rover-xl6-white.jpg",
+    link: "golf-cart-rental-long-term-destin-54.html",
+    date: "August 20, 2026"
+  },
+  {
     id: 40,
     title: "Golf Cart Rentals for Large Groups and Family Reunions in Destin",
     excerpt: "Planning a family reunion or group trip to Destin? Here is how 6 and 8-seat golf cart rentals keep big groups together, from beach days to dinner runs.",
