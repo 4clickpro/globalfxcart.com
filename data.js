@@ -263,6 +263,14 @@ const reviews = [
     image: "images/rover-xl6-white.jpg",
     link: "99-rental-review-sunset-destin-harbor-55.html",
     date: "August 21, 2026"
+  },
+  {
+    id: 41,
+    title: "Rental Review: Shopping Runs to Silver Sands on a $99/Day Cart",
+    excerpt: "Silver Sands Premium Outlets is right off Emerald Coast Parkway. A review of using the $99/day golf cart for shopping runs in Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-silver-sands-outlets-59.html",
+    date: "August 22, 2026"
   }];
 
 const blogPosts = [
