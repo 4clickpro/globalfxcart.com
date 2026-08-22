@@ -510,6 +510,22 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 27,
+    title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
+    excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
+    image: "images/cart-8seat.jpg",
+    link: "club-review-best-putters-beginners-57.html",
+    date: "August 21, 2026"
+  },
+  {
+    id: 26,
+    title: "How to Choose Golf Clubs: A Complete Buying Guide for 2026",
+    excerpt: "Forgiveness, shafts, grips, budget — here is exactly how to choose golf clubs that match your swing and skill level in 2026.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-how-to-choose-golf-clubs-56.html",
+    date: "August 21, 2026"
+  },
+  {
     id: 25,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
