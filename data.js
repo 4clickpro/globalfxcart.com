@@ -526,6 +526,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 29,
+    title: "Review: The 5 Best Complete Golf Club Sets Under $500 in 2026",
+    excerpt: "We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included. Here are the sets that beat their price tag.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-sets-under-500-61.html",
+    date: "August 23, 2026"
+  },
+  {
     id: 28,
     title: "Complete Golf Club Sets vs. Building a Bag: Which Is the Better Buy?",
     excerpt: "Complete golf club sets cost less and get you playing now; building a bag gives you premium clubs. We break down which choice fits your game and budget.",
