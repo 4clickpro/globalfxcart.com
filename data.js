@@ -526,6 +526,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 28,
+    title: "Complete Golf Club Sets vs. Building a Bag: Which Is the Better Buy?",
+    excerpt: "Complete golf club sets cost less and get you playing now; building a bag gives you premium clubs. We break down which choice fits your game and budget.",
+    image: "images/cart-8seat.jpg",
+    link: "club-complete-sets-vs-building-bag-60.html",
+    date: "August 22, 2026"
+  },
+  {
     id: 27,
     title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
     excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
