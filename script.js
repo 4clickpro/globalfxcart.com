@@ -47,6 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
     clubGrid.innerHTML = clubPosts.map(createPostCard).join('');
   }
 
+  // Amazon affiliate cart inventory → homepage "EZ-GO & More" section
+  // Carts = Amazon-linked review entries, excluding golf club set reviews
+  const amazonCartGrid = document.getElementById('amazon-cart-grid');
+  if (amazonCartGrid) {
+    const cartInventory = reviews.filter(r =>
+      r.link.startsWith('https://www.amazon.com') && !/Piece|Club Set|Golf Set/i.test(r.title)
+    );
+    amazonCartGrid.innerHTML = cartInventory.map(createPostCard).join('');
+  }
+
   // Scroll animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
