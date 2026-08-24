@@ -57,6 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
     amazonCartGrid.innerHTML = cartInventory.map(createPostCard).join('');
   }
 
+  // Amazon affiliate golf club inventory → homepage "Golf Club Inventory" section
+  const amazonClubGrid = document.getElementById('amazon-club-grid');
+  if (amazonClubGrid) {
+    const clubInventory = reviews.filter(r =>
+      r.link.startsWith('https://www.amazon.com') && /Piece|Club Set|Golf Set/i.test(r.title)
+    );
+    amazonClubGrid.innerHTML = clubInventory.map(createPostCard).join('');
+  }
+
   // Scroll animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
