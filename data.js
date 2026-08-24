@@ -542,6 +542,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 30,
+    title: "Golf Drivers Explained: Loft, Shaft Flex, and Forgiveness for Every Golfer",
+    excerpt: "The driver is the hardest club to hit and the easiest to improve with the right choice. Here is what loft, shaft flex, and head design actually do.",
+    image: "images/cart-4seat.webp",
+    link: "club-golf-drivers-guide-64.html",
+    date: "August 24, 2026"
+  },
+  {
     id: 29,
     title: "Review: The 5 Best Complete Golf Club Sets Under $500 in 2026",
     excerpt: "We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included. Here are the sets that beat their price tag.",
