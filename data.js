@@ -542,6 +542,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 31,
+    title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
+    excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-complete-golf-club-sets-65.html",
+    date: "August 24, 2026"
+  },
+  {
     id: 30,
     title: "Golf Drivers Explained: Loft, Shaft Flex, and Forgiveness for Every Golfer",
     excerpt: "The driver is the hardest club to hit and the easiest to improve with the right choice. Here is what loft, shaft flex, and head design actually do.",
