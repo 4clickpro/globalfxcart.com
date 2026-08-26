@@ -558,6 +558,22 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 33,
+    title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
+    excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-review-best-forgiving-golf-drivers-69.html",
+    date: "August 25, 2026"
+  },
+  {
+    id: 32,
+    title: "Women's Golf Clubs: How to Choose the Right Set for Your Game",
+    excerpt: "Women’s-specific golf clubs use lighter shafts, softer flexes, and higher lofts to match most women’s swing speeds. Here is how to choose the right set.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-womens-golf-clubs-guide-68.html",
+    date: "August 25, 2026"
+  },
+  {
     id: 31,
     title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
     excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
