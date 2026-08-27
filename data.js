@@ -287,9 +287,25 @@ const reviews = [
     image: "images/rover-xl6-white.jpg",
     link: "99-rental-review-crab-island-destin-67.html",
     date: "August 25, 2026"
+  },
+  {
+    id: 44,
+    title: "Rental Review: A Week-Long $99/Day Golf Cart Rental in Destin, FL",
+    excerpt: "Free delivery on 4+ days, a brand new street-legal cart, and a full week of adventure — our review of the weekly Destin golf cart rental.",
+    image: "images/cart-8seat.jpg",
+    link: "99-rental-review-weekly-stay-destin-71.html",
+    date: "August 27, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 45,
+    title: "What to Pack for a Golf Cart Beach Day in Destin, FL",
+    excerpt: "Sunscreen, towels, a cooler, and a charger plan — our packing list for the perfect $99/day golf cart beach day in Destin and Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "what-to-pack-golf-cart-beach-day-70.html",
+    date: "August 27, 2026"
+  },
   {
     id: 44,
     title: "Free Golf Cart Delivery in Destin & Miramar Beach: How It Works",
@@ -557,6 +573,14 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 34,
+    title: "How to Choose a Putter: Styles, Weights, and Fitting Basics",
+    excerpt: "Putting is half the game, but the putter is the most personal club in the bag. Here is how to choose a putter that fits your stroke and improves your speed control.",
+    image: "images/cart-4seat.webp",
+    link: "club-how-to-choose-putter-72.html",
+    date: "August 27, 2026"
+  },
   {
     id: 33,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
