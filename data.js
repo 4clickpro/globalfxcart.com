@@ -574,6 +574,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 35,
+    title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
+    excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
+    image: "images/cart-8seat.jpg",
+    link: "club-review-best-putters-beginners-73.html",
+    date: "August 27, 2026"
+  },
+  {
     id: 34,
     title: "How to Choose a Putter: Styles, Weights, and Fitting Basics",
     excerpt: "Putting is half the game, but the putter is the most personal club in the bag. Here is how to choose a putter that fits your stroke and improves your speed control.",
