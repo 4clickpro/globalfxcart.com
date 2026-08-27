@@ -295,9 +295,25 @@ const reviews = [
     image: "images/cart-8seat.jpg",
     link: "99-rental-review-weekly-stay-destin-71.html",
     date: "August 27, 2026"
+  },
+  {
+    id: 45,
+    title: "Rental Review: Sandestin & Baytowne Wharf by Golf Cart",
+    excerpt: "A weekend at Sandestin, dinner at Baytowne Wharf, and zero parking headaches — one review of the $99/day golf cart rental in Miramar Beach.",
+    image: "images/rover-xl6-white.jpg",
+    link: "99-rental-review-sandestin-baytowne-75.html",
+    date: "August 27, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 46,
+    title: "Golf Cart vs. Rental Car in Destin: The Real Cost Breakdown",
+    excerpt: "Rental car, parking, gas, insurance — or one $99/day golf cart. We compare the true cost of getting around Destin, FL this summer.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-rental-vs-car-destin-cost-74.html",
+    date: "August 27, 2026"
+  },
   {
     id: 45,
     title: "What to Pack for a Golf Cart Beach Day in Destin, FL",
