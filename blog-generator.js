@@ -944,6 +944,7 @@ ${faqs}
 }
 
 function reviewHtml(topic, filename) {
+  const faqSchema = faqSchemaHtml(topic.faqs, BASE + '/' + filename);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1183,6 +1184,7 @@ ${faqs}
 }
 
 function clubReviewHtml(topic, filename) {
+  const faqSchema = faqSchemaHtml(topic.faqs, BASE + '/' + filename);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
