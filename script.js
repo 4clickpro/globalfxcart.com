@@ -3,7 +3,7 @@ function createPostCard(post) {
     <article class="card">
       <a href="${post.link}" ${post.link === '#' ? 'onclick="return false"' : ''}>
         <div class="card-image">
-          <img src="${post.image}" alt="${post.title}" loading="lazy" onerror="this.onerror=null;this.src='images/rover-xl6-white.jpg';this.alt='Golf cart'">
+          <img src="${post.image}" alt="${post.title}" loading="lazy" onerror="this.onerror=null;this.src='images/cart-6seat-side.jpg';this.alt='Golf cart'">
         </div>
         <div class="card-body">
           <span class="card-date">${post.date}</span>

@@ -147,7 +147,7 @@ const reviews = [
     id: 22,
     title: "Rental Review: The $99/Day Cart That Got Us to Crab Island",
     excerpt: "Crab Island trips, sunset cruises, and zero parking fees — one customer’s week with the $99/day Destin golf cart rental.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-front.jpg",
     link: "99-rental-review-crab-island-destin-6.html",
     date: "August 8, 2026"
   },
@@ -180,7 +180,7 @@ const reviews = [
     id: 25,
     title: "Rental Review: The $99/Day Cart That Got Us to Crab Island",
     excerpt: "Crab Island trips, sunset cruises, and zero parking fees — one customer’s week with the $99/day Destin golf cart rental.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-side.jpg",
     link: "99-rental-review-crab-island-destin-15.html",
     date: "August 9, 2026"
   },
@@ -204,7 +204,7 @@ const reviews = [
     id: 29,
     title: "Rental Review: The $99/Day Cart That Got Us to Crab Island",
     excerpt: "Crab Island trips, sunset cruises, and zero parking fees — one customer’s week with the $99/day Destin golf cart rental.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-rear.jpg",
     link: "99-rental-review-crab-island-destin-27.html",
     date: "August 12, 2026"
   },
@@ -220,7 +220,7 @@ const reviews = [
     id: 35,
     title: "Rental Review: Sandestin & Baytowne Wharf by Golf Cart",
     excerpt: "A weekend at Sandestin, dinner at Baytowne Wharf, and zero parking headaches — one review of the $99/day golf cart rental in Miramar Beach.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-front.jpg",
     link: "99-rental-review-sandestin-baytowne-35.html",
     date: "August 14, 2026"
   },
@@ -244,7 +244,7 @@ const reviews = [
     id: 38,
     title: "Rental Review: 30A and Santa Rosa Beach by $99/Day Golf Cart",
     excerpt: "Seaside, WaterColor, and Santa Rosa Beach are built for slow cruising. A review of the $99/day golf cart rental for a 30A beach trip.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-side.jpg",
     link: "99-rental-review-30a-santa-rosa-47.html",
     date: "August 29, 2026"
   },
@@ -270,7 +270,7 @@ const blogPosts = [
     id: 43,
     title: "Street-Legal Golf Carts in Florida: LSV Rules Explained (2026)",
     excerpt: "What makes a golf cart street legal in Florida? LSV requirements, where you can drive in Destin and Miramar Beach, insurance rules, and licensing.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-rear.jpg",
     link: "street-legal-golf-cart-florida-rules-54.html",
     date: "August 29, 2026"
   },
@@ -310,7 +310,7 @@ const blogPosts = [
     id: 38,
     title: "6-Passenger Golf Cart Rentals in Destin: Room for the Whole Crew",
     excerpt: "Need room for the family or a group? Our brand new 6-seat Land Rover style golf cart rentals in Destin, FL seat six with Bluetooth audio and premium seats — from $149/day.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-front.jpg",
     link: "golf-cart-rental-6-passenger-destin-42.html",
     date: "August 29, 2026"
   },
@@ -318,7 +318,7 @@ const blogPosts = [
     id: 37,
     title: "Golf Cart Rentals on 30A: Seaside, Rosemary Beach & Beyond",
     excerpt: "Thinking about 30A? Here’s how golf cart rentals work from Destin to Rosemary Beach — delivery, street-legal rules, and the best stops along Scenic Highway 30A.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-side.jpg",
     link: "golf-cart-rental-30a-38.html",
     date: "August 15, 2026"
   },
@@ -334,7 +334,7 @@ const blogPosts = [
     id: 35,
     title: "Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect",
     excerpt: "Planning a Miramar Beach vacation? Here’s exactly how the $99/day golf cart rental works — booking, delivery, what’s included, and what to bring.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-rear.jpg",
     link: "miramar-beach-golf-cart-rental-99-30.html",
     date: "August 12, 2026"
   },
@@ -350,7 +350,7 @@ const blogPosts = [
     id: 33,
     title: "8 Tips for First-Time Golf Cart Renters in Destin, FL",
     excerpt: "New to golf cart rentals? Follow these 8 tips to get the most from your $99/day cart in Destin and Miramar Beach — from booking to your first cruise.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-front.jpg",
     link: "destin-golf-cart-rental-tips-first-timers-22.html",
     date: "August 10, 2026"
   },
@@ -382,7 +382,7 @@ const blogPosts = [
     id: 29,
     title: "Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect",
     excerpt: "Planning a Miramar Beach vacation? Here’s exactly how the $99/day golf cart rental works — booking, delivery, what’s included, and what to bring.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-side.jpg",
     link: "miramar-beach-golf-cart-rental-99-11.html",
     date: "August 8, 2026"
   },
@@ -398,7 +398,7 @@ const blogPosts = [
     id: 27,
     title: "8 Tips for First-Time Golf Cart Renters in Destin, FL",
     excerpt: "New to golf cart rentals? Follow these 8 tips to get the most from your $99/day cart in Destin and Miramar Beach — from booking to your first cruise.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-rear.jpg",
     link: "destin-golf-cart-rental-tips-first-timers-8.html",
     date: "August 8, 2026"
   },
@@ -430,7 +430,7 @@ const blogPosts = [
     id: 23,
     title: "Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect",
     excerpt: "Planning a Miramar Beach vacation? Here’s exactly how the $99/day golf cart rental works — booking, delivery, what’s included, and what to bring.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-front.jpg",
     link: "miramar-beach-golf-cart-rental-99-2.html",
     date: "August 8, 2026"
   },
@@ -446,7 +446,7 @@ const blogPosts = [
     id: 21,
     title: "The Ultimate Golf Cart Rental Guide for Destin & Miramar Beach (2026)",
     excerpt: "Everything you need to know about renting a golf cart in Destin, FL & Miramar Beach, FL: pricing, street-legal rules, delivery, and pro tips.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-side.jpg",
     link: "golf-cart-rental-guide.html",
     date: "July 20, 2026"
   },
@@ -462,7 +462,7 @@ const blogPosts = [
     id: 17,
     title: "Do You Need a License to Drive a Golf Cart in Destin & Miramar Beach?",
     excerpt: "Street-legal golf carts are a great way to get around Destin, FL. Here's what you need to know about driver requirements and road rules.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-rear.jpg",
     link: "golf-cart-license-destin.html",
     date: "July 12, 2026"
   },
@@ -470,7 +470,7 @@ const blogPosts = [
     id: 18,
     title: "Best Golf Cart Routes on the Emerald Coast: Destin to Miramar Beach",
     excerpt: "Discover the best scenic routes, beach access points, and must-visit stops when exploring Destin and Miramar Beach by golf cart.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-front.jpg",
     link: "best-golf-cart-routes-emerald-coast.html",
     date: "July 8, 2026"
   },
@@ -537,7 +537,7 @@ const clubPosts = [
     id: 27,
     title: "Review: The Best Golf Hybrids for High Handicappers in 2026",
     excerpt: "Hybrids replace the clubs amateurs fear most. We tested the most forgiving hybrids of 2026 for high handicappers — easy launch, slice control, real distance.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-side.jpg",
     link: "club-review-best-hybrids-high-handicappers-59.html",
     date: "August 29, 2026"
   },
@@ -545,7 +545,7 @@ const clubPosts = [
     id: 26,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-rear.jpg",
     link: "club-review-best-forgiving-golf-drivers-58.html",
     date: "August 29, 2026"
   },
@@ -553,7 +553,7 @@ const clubPosts = [
     id: 25,
     title: "How to Choose Golf Clubs: A Complete Buying Guide for 2026",
     excerpt: "Forgiveness, shafts, grips, budget — here is exactly how to choose golf clubs that match your swing and skill level in 2026.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-front.jpg",
     link: "club-how-to-choose-golf-clubs-57.html",
     date: "August 29, 2026"
   },
@@ -593,7 +593,7 @@ const clubPosts = [
     id: 20,
     title: "Callaway Strata vs Wilson Profile SGI: Which Beginner Set Wins?",
     excerpt: "The two most popular beginner golf club sets of 2026, head to head. We compare the Callaway Strata and Wilson Profile SGI on forgiveness, value, and what’s in the bag.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-side.jpg",
     link: "club-callaway-strata-vs-wilson-profile-sgi-44.html",
     date: "August 29, 2026"
   },
@@ -617,7 +617,7 @@ const clubPosts = [
     id: 17,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-rear.jpg",
     link: "club-review-best-forgiving-golf-drivers-37.html",
     date: "August 15, 2026"
   },
@@ -641,7 +641,7 @@ const clubPosts = [
     id: 13,
     title: "Women's Golf Clubs: How to Choose the Right Set for Your Game",
     excerpt: "Women’s-specific golf clubs use lighter shafts, softer flexes, and higher lofts to match most women’s swing speeds. Here is how to choose the right set.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-front.jpg",
     link: "club-womens-golf-clubs-guide-32.html",
     date: "August 13, 2026"
   },
@@ -713,7 +713,7 @@ const clubPosts = [
     id: 5,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-side.jpg",
     link: "club-review-best-forgiving-golf-drivers-21.html",
     date: "August 9, 2026"
   },
@@ -721,7 +721,7 @@ const clubPosts = [
     id: 4,
     title: "How to Choose Golf Clubs: A Complete Buying Guide for 2026",
     excerpt: "Forgiveness, shafts, grips, budget — here is exactly how to choose golf clubs that match your swing and skill level in 2026.",
-    image: "images/rover-xl6-white.jpg",
+    image: "images/cart-6seat-rear.jpg",
     link: "club-how-to-choose-golf-clubs-20.html",
     date: "August 9, 2026"
   },
