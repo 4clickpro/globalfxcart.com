@@ -1,0 +1,10 @@
+import re, glob, os
+os.chdir('/tmp/gfc-work')
+s = open('sitemap.xml').read()
+listed = set(re.findall(r'<loc>https://www\.globalfxcart\.com/([^<]+)</loc>', s))
+actual = set(os.path.basename(f) for f in glob.glob('*.html'))
+missing = sorted(actual - listed)
+junk = sorted(l for l in listed if l not in actual)
+print('pages on disk not in sitemap:', len(missing))
+print('in sitemap but no file:', junk)
+print('missing sample:', missing[:12])
