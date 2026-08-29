@@ -303,6 +303,14 @@ const reviews = [
     image: "images/rover-xl6-white.jpg",
     link: "99-rental-review-sandestin-baytowne-75.html",
     date: "August 27, 2026"
+  },
+  {
+    id: 46,
+    title: "Rental Review: Grand Boulevard Dinner Runs on a $99/Day Cart",
+    excerpt: "Parking at Grand Boulevard is a breeze when you arrive by golf cart — one customer’s review of dinner runs and shopping trips in Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-grand-boulevard-79.html",
+    date: "August 29, 2026"
   }];
 
 const blogPosts = [
