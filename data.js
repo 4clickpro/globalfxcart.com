@@ -526,6 +526,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 28,
+    title: "Complete Golf Club Sets vs. Building a Bag: Which Is the Better Buy?",
+    excerpt: "Complete golf club sets cost less and get you playing now; building a bag gives you premium clubs. We break down which choice fits your game and budget.",
+    image: "images/cart-8seat.jpg",
+    link: "club-complete-sets-vs-building-bag-60.html",
+    date: "August 29, 2026"
+  },
+  {
     id: 27,
     title: "Review: The Best Golf Hybrids for High Handicappers in 2026",
     excerpt: "Hybrids replace the clubs amateurs fear most. We tested the most forgiving hybrids of 2026 for high handicappers — easy launch, slice control, real distance.",
