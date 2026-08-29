@@ -307,6 +307,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 47,
+    title: "8 Tips for First-Time Golf Cart Renters in Destin, FL",
+    excerpt: "New to golf cart rentals? Follow these 8 tips to get the most from your $99/day cart in Destin and Miramar Beach — from booking to your first cruise.",
+    image: "images/rover-xl6-white.jpg",
+    link: "destin-golf-cart-rental-tips-first-timers-78.html",
+    date: "August 28, 2026"
+  },
+  {
     id: 46,
     title: "Golf Cart vs. Rental Car in Destin: The Real Cost Breakdown",
     excerpt: "Rental car, parking, gas, insurance — or one $99/day golf cart. We compare the true cost of getting around Destin, FL this summer.",
@@ -589,6 +597,22 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 37,
+    title: "Review: The 5 Best Complete Golf Club Sets Under $500 in 2026",
+    excerpt: "We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included. Here are the sets that beat their price tag.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-sets-under-500-77.html",
+    date: "August 28, 2026"
+  },
+  {
+    id: 36,
+    title: "Best Complete Golf Club Sets Under $500 in 2026 (Tested & Ranked)",
+    excerpt: "Great golf clubs don’t have to cost a fortune. We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included.",
+    image: "images/cart-4seat.webp",
+    link: "club-best-complete-sets-under-500-76.html",
+    date: "August 28, 2026"
+  },
   {
     id: 35,
     title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
