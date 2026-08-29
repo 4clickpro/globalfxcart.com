@@ -259,6 +259,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 44,
+    title: "Buy a Golf Cart in Destin and Get It Delivered: How It Works",
+    excerpt: "From deposit to delivery day, how buying a golf cart remotely works, snowbird storage plans, and what is included with every delivered cart.",
+    image: "images/cart-4seat.webp",
+    link: "golf-cart-delivery-destin-buy-online-55.html",
+    date: "August 29, 2026"
+  },
+  {
     id: 43,
     title: "Street-Legal Golf Carts in Florida: LSV Rules Explained (2026)",
     excerpt: "What makes a golf cart street legal in Florida? LSV requirements, where you can drive in Destin and Miramar Beach, insurance rules, and licensing.",
