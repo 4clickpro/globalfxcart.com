@@ -709,7 +709,7 @@ function articleHtml(topic, filename) {
     }
   }
   </script>
-  \${faqSchema}
+  ${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -824,7 +824,7 @@ function reviewHtml(topic, filename) {
     "datePublished": "${isoDate()}"
   }
   </script>
-  \${faqSchema}
+  ${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -948,7 +948,7 @@ function clubArticleHtml(topic, filename) {
     }
   }
   </script>
-  \${faqSchema}
+  ${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -1063,7 +1063,7 @@ function clubReviewHtml(topic, filename) {
     "datePublished": "${isoDate()}"
   }
   </script>
-  \${faqSchema}
+  ${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
