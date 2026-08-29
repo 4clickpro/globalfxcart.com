@@ -259,6 +259,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 41,
+    title: "Golf Carts for Sale in Destin FL: Street-Legal Carts You Can Buy Today",
+    excerpt: "Looking for golf carts for sale in Destin, FL? Brand new street-legal 4, 6, and 8-seat carts available now, with delivery across Destin and Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "golf-carts-for-sale-destin-52.html",
+    date: "August 29, 2026"
+  },
+  {
     id: 40,
     title: "Golf Cart Rentals for Large Groups and Family Reunions in Destin",
     excerpt: "Planning a family reunion or group trip to Destin? Here is how 6 and 8-seat golf cart rentals keep big groups together, from beach days to dinner runs.",

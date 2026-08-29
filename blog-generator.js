@@ -48,6 +48,84 @@ const RENTAL_KEYWORDS = 'golf cart rental Destin FL, Destin golf cart rentals, g
 /* Content bank — rotate through these so every post is unique         */
 /* ------------------------------------------------------------------ */
 
+
+// Golf Cart FOR SALE content bank (priority: sell carts)
+const CART_SALES_TOPICS = [
+  {
+    slug: 'golf-carts-for-sale-destin',
+    keywords: 'golf carts for sale Destin FL, golf carts for sale Destin, buy golf cart Destin, new golf carts for sale Destin Florida, street legal golf carts for sale',
+    title: 'Golf Carts for Sale in Destin FL: Street-Legal Carts You Can Buy Today',
+    excerpt: 'Looking for golf carts for sale in Destin, FL? Brand new street-legal 4, 6, and 8-seat carts available now, with delivery across Destin and Miramar Beach.',
+    image: 'images/cart-4seat.webp',
+    intro: 'Renting is great for a week, but if you live on the Emerald Coast or you are a snowbird, owning makes more sense. Here is what is for sale right now at Destin Golf Cart Rentals and Sales, what it costs, and how fast we can deliver.',
+    sections: [
+      ['What Is In Stock', 'Brand new street-legal golf carts in 4-seat, 6-seat Land Rover style, and 8-seat configurations. Every cart ships with headlights, seat belts, turn signals, and full street-legal certification for Walton and Okaloosa County roads.'],
+      ['New vs Used: What to Buy', 'New carts carry full warranty and the latest lithium battery systems, charging costs pennies and range covers a full week of Emerald Coast cruising. Clean used carts cost 30-40 percent less and are inspected battery-to-brakes before we list them.'],
+      ['Delivery to Your Door', 'We deliver purchased carts anywhere in Destin or Miramar Beach, free within 15 miles. Snowbirds: buy in fall, we store and maintain it, and it is waiting charged when you return.'],
+      ['Rent-First, Buy-Later', 'Rent the exact model you are considering for a day at 99 dollars. Love it? We credit your rental fee toward the purchase. Zero-risk test drive.'],
+    ],
+    faqs: [
+      ['How much do golf carts cost in Destin, FL?', 'New street-legal 4-seat carts typically run 8,000 to 12,000 dollars depending on battery and options; 6-8 seat luxury models run higher. Used carts start around 5,000. Call (850) 299-8575 for today inventory and pricing.'],
+      ['Are the carts for sale street legal in Florida?', 'Yes. Every cart we sell is fully street legal with lights, seat belts, and turn signals, ready for roads with 35 mph limits or lower per Florida LSV law.'],
+      ['Do you deliver purchased golf carts?', 'Yes. Free delivery within 15 miles of Destin, covering all of Destin and Miramar Beach. Farther delivery available, call for a quote.'],
+    ],
+  },
+  {
+    slug: 'new-vs-used-golf-cart-buying-guide',
+    keywords: 'new vs used golf cart, buy used golf cart Destin, golf cart buying guide Florida, golf cart prices Destin FL, lithium vs lead acid golf cart',
+    title: 'New vs Used Golf Carts: A Destin Buyer Guide (2026 Prices)',
+    excerpt: 'Should you buy new or used? Real 2026 price ranges, battery comparison (lithium vs lead-acid), inspection checklist, and the hidden costs nobody mentions.',
+    image: 'images/cart-8seat.jpg',
+    intro: 'The golf cart market in Florida is wild, prices swing thousands between sellers for similar carts. Here is how to buy smart in Destin and Miramar Beach, whether new or used.',
+    sections: [
+      ['2026 Price Reality Check', 'New 4-seat electric: 8k to 12k. New 6-seat lifted: 12k to 16k. Used 2-4 year old carts: 5k to 8k. Anything newer than 5 years with lithium batteries holds value shockingly well in coastal markets.'],
+      ['Lithium vs Lead-Acid', 'Lithium costs more upfront but lasts 3x longer, charges in 2 hours, and loses no range on hills. Lead-acid needs water refills and dies in 3-5 years. On the coast, lithium wins, humidity murders lead-acid.'],
+      ['Used Cart Inspection Checklist', 'Battery date codes (anything 4+ years old is a replacement bill), tire wear, brake function, frame rust (coastal killer), and a test drive at full speed. If a seller will not let you test drive, walk away.'],
+      ['Hidden Costs of Ownership', 'Insurance (100 to 300 per year in FL), registration as LSV, charger (often not included used), and storage. Budget 500 per year beyond the sticker.'],
+    ],
+    faqs: [
+      ['What is the average cost of a golf cart in Florida in 2026?', 'New street-legal electric carts average 9,000 to 12,000 dollars; used carts in good condition run 5,000 to 8,000. Lithium battery models command a premium but cost less over 5 years.'],
+      ['Is buying a used golf cart worth it?', 'Yes if the batteries are under 3 years old and the frame is rust-free, you save 30-40 percent. Our inspected used carts include a battery health report.'],
+    ],
+  },
+  {
+    slug: 'street-legal-golf-cart-florida-rules',
+    keywords: 'street legal golf cart Florida, LSV rules Florida, golf cart street legal requirements, low speed vehicle Florida law, drive golf cart on road Destin',
+    title: 'Street-Legal Golf Carts in Florida: LSV Rules Explained (2026)',
+    excerpt: 'What makes a golf cart street legal in Florida? LSV requirements, where you can drive in Destin and Miramar Beach, insurance rules, and licensing.',
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'Florida golf cart law trips up more buyers than anything else. Here is the plain-English version of what is street legal, where you can drive it, and what you need, accurate as of 2026.',
+    sections: [
+      ['Golf Cart vs LSV: The Legal Difference', 'A plain golf cart is only legal on golf courses and designated 30 mph-or-less roads. A Low Speed Vehicle (LSV), what we sell, is federally certified: windshield, VIN, lights, seat belts, mirrors, and 21-25 mph top speed. LSVs drive on any road posted 35 mph or less.'],
+      ['Where You Can Drive in Destin and Miramar Beach', 'Scenic Gulf Drive, most residential streets, and designated crossings are all LSV-legal. US-98 itself is off-limits. Beach driving is prohibited in Okaloosa and Walton County.'],
+      ['License, Registration and Insurance', 'You need a valid driver license to operate an LSV. Registration with the state and insurance are required for LSVs (not plain carts). We handle paperwork guidance at purchase.'],
+      ['Why Buying Certified Matters', 'Selling a non-certified cart with a street legal kit installed is common on Facebook Marketplace, but it is still not an LSV without the federal certification. We only sell properly certified carts.'],
+    ],
+    faqs: [
+      ['Can I drive a golf cart on the road in Destin, Florida?', 'Yes, if it is a certified LSV and the road is posted 35 mph or lower, that covers most of Destin and Miramar Beach streets including Scenic Gulf Drive.'],
+      ['Do golf carts need insurance in Florida?', 'LSVs do, a standard auto policy add-on runs 100 to 300 per year. Plain golf carts on designated roads do not require it but we recommend it.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-delivery-destin-buy-online',
+    keywords: 'golf cart delivery Destin, buy golf cart online Florida, golf cart shipped to condo, golf cart dealer delivery Miramar Beach, snowbird golf cart',
+    title: 'Buy a Golf Cart in Destin and Get It Delivered: How It Works',
+    excerpt: 'From deposit to delivery day, how buying a golf cart remotely works, snowbird storage plans, and what is included with every delivered cart.',
+    image: 'images/cart-4seat.webp',
+    intro: 'You do not need to visit a dealership lot. Most of our sales happen over the phone. Here is the full process from first call to keys in hand, including our snowbird storage program.',
+    sections: [
+      ['The 3-Step Remote Purchase', '1) Call (850) 299-8575, we confirm inventory, specs, and pricing. 2) Small deposit locks your cart. 3) Delivery day: we arrive with the cart charged, walk you through operation, and hand over title paperwork.'],
+      ['Snowbird Storage and Maintenance', 'Leaving for the summer? Store with us: covered storage, monthly battery maintenance charging, and a charged, inspected cart on your return. 75 per month, delivery both ways included.'],
+      ['What Is Included', 'Every purchased cart includes charger, full walkthrough, title and registration guidance, and our local support line, you call the same number for rentals or ownership questions.'],
+      ['Trade-Ins Accepted', 'Have an old cart? We trade, even non-running units. Credit applied against your purchase.'],
+    ],
+    faqs: [
+      ['Can I buy a golf cart without visiting the dealership?', 'Yes, the entire purchase can be done by phone with delivery to your address in Destin or Miramar Beach. Titles are processed and delivered with the cart.'],
+      ['Do you offer storage for golf carts?', 'Yes, 75 per month covered storage with battery maintenance, designed for snowbirds. Includes delivery and pickup both ways.'],
+    ],
+  },
+];
+
 const BLOG_TOPICS = [
   {
     slug: '99-destin-golf-cart-rental-best-deal',
@@ -1367,11 +1445,22 @@ const KIND_CYCLE = ['cartBlog', 'cartReview', 'clubBlog', 'clubReview'];
 // Publish one article per the rotation. Returns a short summary.
 function publishOne(state) {
   if (state.kindIdx === undefined) state.kindIdx = 0;
-  const kind = KIND_CYCLE[state.kindIdx % KIND_CYCLE.length];
-  state.kindIdx = (state.kindIdx + 1) % KIND_CYCLE.length;
+  let kind;
+  if (state.priorityKinds && state.priorityKinds.length) {
+    kind = state.priorityKinds.shift();
+    state.kindIdx = (KIND_CYCLE.indexOf(kind) + 1) % KIND_CYCLE.length;
+  } else {
+    kind = KIND_CYCLE[state.kindIdx % KIND_CYCLE.length];
+    state.kindIdx = (state.kindIdx + 1) % KIND_CYCLE.length;
+  }
 
   let topic, kindLabel, target, isClub;
-  if (kind === 'cartBlog') {
+  if (kind === 'cartSales') {
+    topic = nextUnusedTopic(state, CART_SALES_TOPICS, 'salesIdx');
+    kindLabel = 'cart-sales';
+    target = 'blogPosts';
+    isClub = false;
+  } else if (kind === 'cartBlog') {
     topic = nextBlogTopic(state);
     kindLabel = 'blog';
     target = 'blogPosts';
@@ -1398,7 +1487,7 @@ function publishOne(state) {
   const uniqueFilename = `${topic.slug}-${state.postCounter}.html`;
 
   let html;
-  if (kind === 'cartBlog') html = articleHtml(topic, uniqueFilename);
+  if (kind === 'cartBlog' || kind === 'cartSales') html = articleHtml(topic, uniqueFilename);
   else if (kind === 'cartReview') html = reviewHtml(topic, uniqueFilename);
   else if (kind === 'clubBlog') html = clubArticleHtml(topic, uniqueFilename);
   else html = clubReviewHtml(topic, uniqueFilename);
