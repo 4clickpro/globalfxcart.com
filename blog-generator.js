@@ -702,7 +702,7 @@ function articleHtml(topic, filename) {
   <header>
     <nav>
       <div class="logo">
-        <h1>Destin Golf Cart Rentals</h1>
+        <h1>globalfxcart.com — Destin Golf Cart Rentals</h1>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -810,7 +810,7 @@ function reviewHtml(topic, filename) {
   <header>
     <nav>
       <div class="logo">
-        <h1>Destin Golf Cart Rentals</h1>
+        <h1>globalfxcart.com — Destin Golf Cart Rentals</h1>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -926,7 +926,7 @@ function clubArticleHtml(topic, filename) {
   <header>
     <nav>
       <div class="logo">
-        <h1>Destin Golf Cart Rentals</h1>
+        <h1>globalfxcart.com — Destin Golf Cart Rentals</h1>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -1034,7 +1034,7 @@ function clubReviewHtml(topic, filename) {
   <header>
     <nav>
       <div class="logo">
-        <h1>Destin Golf Cart Rentals</h1>
+        <h1>globalfxcart.com — Destin Golf Cart Rentals</h1>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
