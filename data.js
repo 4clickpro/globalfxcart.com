@@ -259,6 +259,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 42,
+    title: "New vs Used Golf Carts: A Destin Buyer Guide (2026 Prices)",
+    excerpt: "Should you buy new or used? Real 2026 price ranges, battery comparison (lithium vs lead-acid), inspection checklist, and the hidden costs nobody mentions.",
+    image: "images/cart-8seat.jpg",
+    link: "new-vs-used-golf-cart-buying-guide-53.html",
+    date: "August 29, 2026"
+  },
+  {
     id: 41,
     title: "Golf Carts for Sale in Destin FL: Street-Legal Carts You Can Buy Today",
     excerpt: "Looking for golf carts for sale in Destin, FL? Brand new street-legal 4, 6, and 8-seat carts available now, with delivery across Destin and Miramar Beach.",
