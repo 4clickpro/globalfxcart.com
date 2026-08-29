@@ -25,6 +25,18 @@ const REPORTS_DIR = path.join(SITE_DIR, 'reports');
 const LOCK_FILE = path.join(SITE_DIR, '.generator.lock');
 const LOCK_STALE_MS = 10 * 60 * 1000; // a lock older than 10 min is considered stale
 
+// FAQPage JSON-LD helper (SEO rich results)
+function faqSchemaHtml(faqs, pageUrl) {
+  if (!faqs || !faqs.length) return '';
+  const entity = faqs.map(([q, a]) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": { "@type": "Answer", "text": a }
+  }));
+  const schema = { "@context": "https://schema.org", "@type": "FAQPage", "url": pageUrl, "mainEntity": entity };
+  return '  <script type="application/ld+json">\n  ' + JSON.stringify(schema) + '\n  </script>\n';
+}
+
 const PHONE = '(850) 299-8575';
 const PHONE_TEL = 'tel:8502998575';
 const BASE = 'https://www.globalfxcart.com';
@@ -641,6 +653,7 @@ function nextClubReviewTopic(state) {
 
 function articleHtml(topic, filename) {
   const sections = topic.sections.map(([h, p]) => `    <h3>${h}</h3>\n    <p>${p}</p>`).join('\n\n');
+  const faqSchema = faqSchemaHtml(topic.faqs, BASE + '/' + filename);
   const faqs = topic.faqs.map(([q, a]) => `      <details class="faq-item">\n        <summary>${q}</summary>\n        <p>${a}</p>\n      </details>`).join('\n');
   return `<!DOCTYPE html>
 <html lang="en">
@@ -696,6 +709,7 @@ function articleHtml(topic, filename) {
     }
   }
   </script>
+  \${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -759,6 +773,12 @@ ${faqs}
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <!-- Sticky mobile call bar (24/7 booking) -->
+  <div class="sticky-call-bar">
+    <a href="tel:8502998575" class="call-now">📞 Call to Book — 24/7</a>
+    <a href="sms:8502998575" class="text-now">💬 Text</a>
+  </div>
+
 </body>
 </html>
 `;
@@ -804,6 +824,7 @@ function reviewHtml(topic, filename) {
     "datePublished": "${isoDate()}"
   }
   </script>
+  \${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -859,6 +880,12 @@ function reviewHtml(topic, filename) {
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <!-- Sticky mobile call bar (24/7 booking) -->
+  <div class="sticky-call-bar">
+    <a href="tel:8502998575" class="call-now">📞 Call to Book — 24/7</a>
+    <a href="sms:8502998575" class="text-now">💬 Text</a>
+  </div>
+
 </body>
 </html>
 `;
@@ -866,6 +893,7 @@ function reviewHtml(topic, filename) {
 
 function clubArticleHtml(topic, filename) {
   const sections = topic.sections.map(([h, p]) => `    <h3>${h}</h3>\n    <p>${p}</p>`).join('\n\n');
+  const faqSchema = faqSchemaHtml(topic.faqs, BASE + '/' + filename);
   const faqs = topic.faqs.map(([q, a]) => `      <details class="faq-item">\n        <summary>${q}</summary>\n        <p>${a}</p>\n      </details>`).join('\n');
   return `<!DOCTYPE html>
 <html lang="en">
@@ -920,6 +948,7 @@ function clubArticleHtml(topic, filename) {
     }
   }
   </script>
+  \${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -983,6 +1012,12 @@ ${faqs}
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <!-- Sticky mobile call bar (24/7 booking) -->
+  <div class="sticky-call-bar">
+    <a href="tel:8502998575" class="call-now">📞 Call to Book — 24/7</a>
+    <a href="sms:8502998575" class="text-now">💬 Text</a>
+  </div>
+
 </body>
 </html>
 `;
@@ -1028,6 +1063,7 @@ function clubReviewHtml(topic, filename) {
     "datePublished": "${isoDate()}"
   }
   </script>
+  \${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -1084,6 +1120,12 @@ function clubReviewHtml(topic, filename) {
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <!-- Sticky mobile call bar (24/7 booking) -->
+  <div class="sticky-call-bar">
+    <a href="tel:8502998575" class="call-now">📞 Call to Book — 24/7</a>
+    <a href="sms:8502998575" class="text-now">💬 Text</a>
+  </div>
+
 </body>
 </html>
 `;

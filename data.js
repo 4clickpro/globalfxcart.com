@@ -239,9 +239,41 @@ const reviews = [
     image: "images/cart-4seat.webp",
     link: "99-rental-review-henderson-beach-43.html",
     date: "August 29, 2026"
+  },
+  {
+    id: 38,
+    title: "Rental Review: 30A and Santa Rosa Beach by $99/Day Golf Cart",
+    excerpt: "Seaside, WaterColor, and Santa Rosa Beach are built for slow cruising. A review of the $99/day golf cart rental for a 30A beach trip.",
+    image: "images/rover-xl6-white.jpg",
+    link: "99-rental-review-30a-santa-rosa-47.html",
+    date: "August 29, 2026"
+  },
+  {
+    id: 39,
+    title: "Rental Review: The 8-Seat Cart for a Big Family Beach Week",
+    excerpt: "Eight seats, one cart, zero parking fights. A review of the 8-seat golf cart rental for a large family vacation in Destin, FL.",
+    image: "images/cart-8seat.jpg",
+    link: "99-rental-review-8-seat-family-51.html",
+    date: "August 29, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 40,
+    title: "Golf Cart Rentals for Large Groups and Family Reunions in Destin",
+    excerpt: "Planning a family reunion or group trip to Destin? Here is how 6 and 8-seat golf cart rentals keep big groups together, from beach days to dinner runs.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-rental-large-groups-destin-50.html",
+    date: "August 29, 2026"
+  },
+  {
+    id: 39,
+    title: "Best Beach Access Points for Golf Carts in Destin & Miramar Beach",
+    excerpt: "A golf cart makes every beach day easier. Here are the best beach access points, parking tips, and routes for golf carts in Destin and Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "golf-cart-rental-beach-access-destin-46.html",
+    date: "August 29, 2026"
+  },
   {
     id: 38,
     title: "6-Passenger Golf Cart Rentals in Destin: Room for the Whole Crew",
@@ -461,6 +493,22 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 23,
+    title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
+    excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-complete-golf-club-sets-49.html",
+    date: "August 29, 2026"
+  },
+  {
+    id: 22,
+    title: "Cavity Back vs Blade Irons: Which Is Right for Your Game?",
+    excerpt: "Cavity back irons offer forgiveness; blades offer feel. Here’s how to choose between the two styles in 2026 — and why most golfers should pick cavity back.",
+    image: "images/cart-8seat.jpg",
+    link: "club-cavity-back-vs-blade-irons-48.html",
+    date: "August 29, 2026"
+  },
   {
     id: 21,
     title: "Review: The 5 Best Complete Golf Club Sets Under $500 in 2026",
