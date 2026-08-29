@@ -1,13 +1,12 @@
 {
   "blogIdx": 11,
   "reviewIdx": 8,
-  "postCounter": 53,
+  "postCounter": 54,
   "nextDue": 1787979600000,
   "kindIdx": 0,
   "clubBlogIdx": 0,
   "clubReviewIdx": 1,
   "priorityKinds": [
-    "cartSales",
     "cartSales",
     "clubBlog",
     "clubBlog",
@@ -18,5 +17,5 @@
     "clubReview",
     "clubReview"
   ],
-  "salesIdx": 2
+  "salesIdx": 3
 }

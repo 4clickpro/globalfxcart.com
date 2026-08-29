@@ -259,6 +259,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 43,
+    title: "Street-Legal Golf Carts in Florida: LSV Rules Explained (2026)",
+    excerpt: "What makes a golf cart street legal in Florida? LSV requirements, where you can drive in Destin and Miramar Beach, insurance rules, and licensing.",
+    image: "images/rover-xl6-white.jpg",
+    link: "street-legal-golf-cart-florida-rules-54.html",
+    date: "August 29, 2026"
+  },
+  {
     id: 42,
     title: "New vs Used Golf Carts: A Destin Buyer Guide (2026 Prices)",
     excerpt: "Should you buy new or used? Real 2026 price ranges, battery comparison (lithium vs lead-acid), inspection checklist, and the hidden costs nobody mentions.",
