@@ -526,6 +526,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 27,
+    title: "Review: The Best Golf Hybrids for High Handicappers in 2026",
+    excerpt: "Hybrids replace the clubs amateurs fear most. We tested the most forgiving hybrids of 2026 for high handicappers — easy launch, slice control, real distance.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-review-best-hybrids-high-handicappers-59.html",
+    date: "August 29, 2026"
+  },
+  {
     id: 26,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
