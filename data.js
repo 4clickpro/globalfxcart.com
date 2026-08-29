@@ -231,9 +231,25 @@ const reviews = [
     image: "images/cart-4seat.webp",
     link: "99-rental-review-grand-boulevard-39.html",
     date: "August 15, 2026"
+  },
+  {
+    id: 37,
+    title: "Rental Review: Henderson Beach and Crystal Beach Days on a $99/Day Cart",
+    excerpt: "Beach days without the parking lot stress. A review of the $99/day golf cart rental for Henderson Beach and Crystal Beach in Destin, FL.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-henderson-beach-43.html",
+    date: "August 29, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 38,
+    title: "6-Passenger Golf Cart Rentals in Destin: Room for the Whole Crew",
+    excerpt: "Need room for the family or a group? Our brand new 6-seat Land Rover style golf cart rentals in Destin, FL seat six with Bluetooth audio and premium seats — from $149/day.",
+    image: "images/rover-xl6-white.jpg",
+    link: "golf-cart-rental-6-passenger-destin-42.html",
+    date: "August 29, 2026"
+  },
   {
     id: 37,
     title: "Golf Cart Rentals on 30A: Seaside, Rosemary Beach & Beyond",
@@ -445,6 +461,38 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 21,
+    title: "Review: The 5 Best Complete Golf Club Sets Under $500 in 2026",
+    excerpt: "We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included. Here are the sets that beat their price tag.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-sets-under-500-45.html",
+    date: "August 29, 2026"
+  },
+  {
+    id: 20,
+    title: "Callaway Strata vs Wilson Profile SGI: Which Beginner Set Wins?",
+    excerpt: "The two most popular beginner golf club sets of 2026, head to head. We compare the Callaway Strata and Wilson Profile SGI on forgiveness, value, and what’s in the bag.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-callaway-strata-vs-wilson-profile-sgi-44.html",
+    date: "August 29, 2026"
+  },
+  {
+    id: 19,
+    title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
+    excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
+    image: "images/cart-8seat.jpg",
+    link: "club-review-best-putters-beginners-41.html",
+    date: "August 29, 2026"
+  },
+  {
+    id: 18,
+    title: "Best Complete Golf Club Sets Under $500 in 2026 (Tested & Ranked)",
+    excerpt: "Great golf clubs don’t have to cost a fortune. We tested the best complete golf club sets under $500 for 2026 — forgiveness, value, and what’s included.",
+    image: "images/cart-4seat.webp",
+    link: "club-best-complete-sets-under-500-40.html",
+    date: "August 29, 2026"
+  },
   {
     id: 17,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
