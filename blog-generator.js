@@ -800,6 +800,63 @@ const CLUB_BLOG_TOPICS = [
       ['Can I leave golf clubs in a golf cart overnight?', 'Better not \u2014 overnight heat, dew, and humidity degrade grips and can loosen epoxy over time. Bring the bag indoors, even for a week-long vacation.'],
     ],
   },
+  {
+    slug: 'club-flying-with-golf-clubs-30a-destin',
+    title: 'Flying to Destin or 30A with Golf Clubs: Airline Fees, Travel Bags, and When to Rent Instead',
+    excerpt: 'Airline golf bag fees, hard vs soft travel cases, and the honest math on renting clubs for your Destin, Miramar Beach, or 30A golf vacation.',
+    keywords: 'flying with golf clubs, airline golf bag fees, golf travel bag tips, Destin golf vacation, rent golf clubs Destin FL, golf clubs on a plane, 30A golf trip, VPS airport golf clubs',
+    image: 'images/cart-4seat.webp',
+    intro: 'Every Destin, Miramar Beach, and 30A golf vacation starts with the same decision: pay the airline golf bag fees and haul your own set, or rent clubs when you land. Here is the honest math, the gear that keeps your clubs safe, and how the smartest visitors travel light.',
+    sections: [
+      ['What Airlines Charge for Golf Bags', 'Most U.S. airlines count a golf travel bag as one standard checked item when it stays under 50 pounds \u2014 typically $35\u2013$45 each way. Budget carriers vary, and oversize handling can add more, so check your carrier\u2019s policy before you book, not at the counter.'],
+      ['Hard Case vs. Soft Travel Bag', 'Hard-shell cases survive the roughest ramp handling and swallow a full set; padded soft bags with a stiff arm cost less and are fine for a trip or two a year. Either way, wrap club heads in towels and zip nothing loose.'],
+      ['When Renting Clubs Wins', 'One or two rounds? A weeklong rental set in the Destin area often costs about the same as one round-trip checked bag fee \u2014 with zero airport hassle. Rent the clubs, fly with just clothes, and spend the savings on the fun stuff.'],
+      ['Getting Around Once You Land', 'Sandestin, Regatta Bay, and the 30A courses are all short hops from Miramar Beach. A $99/day street-legal rental cart from globalfxcart.com with free delivery on 4+ days covers the course, the beach, and dinner \u2014 call or text (850) 299-8575, 24/7.'],
+    ],
+    faqs: [
+      ['Do airlines charge extra for golf clubs?', 'Most treat one golf bag as a standard checked bag up to 50 pounds; budget airlines vary. Compare the round-trip fee against local rental rates before hauling clubs through VPS.'],
+      ['Can I rent golf clubs in Destin FL?', 'Yes \u2014 courses and shops around Destin, Sandestin, and 30A rent full sets by the day or week. For short trips it usually beats paying airline bag fees both directions.'],
+      ['Is it worth flying with your own golf clubs?', 'If you play several rounds and love your set, yes. For one round on a Destin vacation, rentals usually win on cost, convenience, and baggage-claim peace of mind.'],
+    ],
+  },
+  {
+    slug: 'club-sandestin-golf-vacation-checklist',
+    title: 'Sandestin Golf Vacation Checklist: What to Book, Pack, and Rent Before You Arrive',
+    excerpt: 'Tee times, rental carts, and gear \u2014 the checklist we give every visitor planning golf at Sandestin, Miramar Beach, and the 30A corridor.',
+    keywords: 'Sandestin golf vacation, golf trip checklist Destin, Sandestin golf courses, golf trip packing list, rent golf cart Sandestin, Destin golf trip planning, 30A golf vacation, Miramar Beach golf',
+    image: 'images/cart-8seat.jpg',
+    intro: 'A Sandestin golf trip is easy to overthink and simple to execute. Book the three things that sell out first \u2014 tee times, ride carts, and wheels for the week \u2014 then pack light and let the Emerald Coast do the rest. This is the exact checklist we hand visiting groups.',
+    sections: [
+      ['Book Tee Times Weeks Out', 'Sandestin\u2019s resort courses and the popular public tracks around Destin fill fast from March through August. Reserve morning rounds early; late-afternoon slots are easier to land and cooler in a Florida summer.'],
+      ['Pack the Bag, Rent the Rest', 'Bring your own clubs if you love them \u2014 otherwise rent a set locally and skip the airline fee. Same logic on the ground: a street-legal $99/day rental cart with free delivery on 4+ days covers beach runs, Baytowne Wharf dinners, and the drive to the first tee.'],
+      ['Dress for Emerald Coast Weather', 'Breathable polos, a second glove for sweat, and a light rain layer \u2014 afternoon storms roll through June through September. Sunscreen rides in the cart bag, not back at the condo.'],
+      ['Lock In the Cart for the Whole Week', 'Golf carts run $99/day street legal with free delivery on rentals of 4 or more days across Destin and Miramar Beach. Call or text (850) 299-8575, 24/7, and the cart is at your rental before check-in.'],
+    ],
+    faqs: [
+      ['When should I book a Sandestin golf vacation?', 'For spring and summer trips, reserve tee times and lodging 4\u20136 weeks ahead, and book your golf cart as soon as your dates are set \u2014 peak weeks sell out first.'],
+      ['Do I need a car in Sandestin if I rent a golf cart?', 'In Sandestin, Miramar Beach, and along 30A, a street-legal cart covers most trips \u2014 beach, dining, and golf. Many visitors park the rental car for the week and use the cart instead.'],
+      ['How much does a golf cart cost for a Sandestin golf trip?', 'Street-legal carts are $99/day at globalfxcart.com with free delivery on rentals of 4+ days in Destin and Miramar Beach \u2014 booked 24/7 at (850) 299-8575.'],
+    ],
+  },
+  {
+    slug: 'club-junior-golf-clubs-destin-family',
+    title: 'Junior Golf Clubs: The Right Set for Kids on a Destin Family Vacation',
+    excerpt: 'Vacations are where kids fall for golf. How junior golf club sizing works, what a starter set costs, and where Emerald Coast families actually play.',
+    keywords: 'junior golf clubs, kids golf club sets, junior golf club sizing, golf clubs for children, beginner golf set for kids, family golf Destin FL, kids golf Sandestin, par 3 courses Destin',
+    image: 'images/cart-6seat-rear.jpg',
+    intro: 'A Destin vacation is where plenty of kids fall in love with golf \u2014 one morning on a par-3 course with the family and they are hooked. If your child wants clubs of their own, here is how junior sizing works, what a starter set should cost, and where Emerald Coast families actually play.',
+    sections: [
+      ['Size by Height, Not Age', 'Junior sets are cut to height ranges, not birthdays. A set that lets your child address the ball with slightly bent knees and no tiptoeing is right \u2014 when in doubt, size up a little and choke down on the grip until they grow into it.'],
+      ['Start With a Small Set', 'A fairway wood, a 7- or 8-iron, a wedge, a putter, and a lightweight stand bag is a complete junior starter kit \u2014 usually $100\u2013$200. Full 9-club sets make sense only once a kid is playing weekly.'],
+      ['Where Kids Play Around Destin', 'Par-3 courses, driving ranges in Destin and Sandestin, and resort short courses are perfect first rounds \u2014 nine holes before the heat, then the beach. The cart ride is half the fun, so let it be part of the reward.'],
+      ['Roll to the Range Together', 'Families rent our 6-seat street-legal carts to get the whole crew and the clubs to the range or par-3 course \u2014 $99/day, free delivery on 4+ days. Call or text (850) 299-8575 any time, 24/7.'],
+    ],
+    faqs: [
+      ['What size junior golf clubs does my child need?', 'Measure height and match the set\u2019s size chart \u2014 most junior lines cover roughly 39\u201357 inches. Slightly long and choked down beats a set they outgrow mid-season.'],
+      ['Should we buy junior clubs on vacation?', 'If the trip includes more than one range session or round, yes \u2014 a $100\u2013$150 junior starter set covers everything a beginner needs and goes home as a souvenir that actually gets used.'],
+      ['Can kids ride in a rental golf cart in Destin?', 'Yes \u2014 kids ride along on our street-legal carts, and a 6-seat model fits the family plus clubs. Renters must be 18 or older with a valid driver\u2019s license; book 24/7 at (850) 299-8575.'],
+    ],
+  },
 ];
 
 const CLUB_REVIEW_TOPICS = [
