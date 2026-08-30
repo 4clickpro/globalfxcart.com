@@ -315,6 +315,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 48,
+    title: "Weekly Golf Cart Rentals in Destin, FL: Rates, Delivery & How to Book",
+    excerpt: "Book a weekly golf cart rental in Destin, FL and save with free delivery on 4+ days. Here’s how weekly rates work, what’s included, and how to lock in your cart.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-rental-weekly-destin-82.html",
+    date: "August 30, 2026"
+  },
+  {
     id: 47,
     title: "8 Tips for First-Time Golf Cart Renters in Destin, FL",
     excerpt: "New to golf cart rentals? Follow these 8 tips to get the most from your $99/day cart in Destin and Miramar Beach — from booking to your first cruise.",
