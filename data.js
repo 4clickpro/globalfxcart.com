@@ -526,6 +526,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 29,
+    title: "Golf Clubs for Your Destin Vacation: Bring, Rent, or Ship Ahead?",
+    excerpt: "Flying to Destin for golf? Here is how to handle your clubs — travel bags, shipping services, course rentals, or a budget set that stays in Florida.",
+    image: "images/cart-4seat.webp",
+    link: "club-golf-clubs-for-destin-vacation-61.html",
+    date: "August 30, 2026"
+  },
+  {
     id: 28,
     title: "Complete Golf Club Sets vs. Building a Bag: Which Is the Better Buy?",
     excerpt: "Complete golf club sets cost less and get you playing now; building a bag gives you premium clubs. We break down which choice fits your game and budget.",
