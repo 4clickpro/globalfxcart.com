@@ -57,6 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
     amazonCartGrid.innerHTML = cartInventory.map(createPostCard).join('');
   }
 
+  // Cart sales inventory -> homepage + sales page grids
+  const cartSalesGrid = document.getElementById('cart-sales-grid');
+  if (cartSalesGrid) {
+    const cartInventory = reviews.filter(r =>
+      r.link.startsWith('https://www.amazon.com') && !/Piece|Club Set|Golf Set/i.test(r.title)
+    );
+    cartSalesGrid.innerHTML = cartInventory.map(createPostCard).join('');
+  }
+
   // Amazon affiliate golf club inventory → homepage "Golf Club Inventory" section
   const amazonClubGrid = document.getElementById('amazon-club-grid');
   if (amazonClubGrid) {
