@@ -526,6 +526,22 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 31,
+    title: "Review: The Best Game Improvement Irons of 2026 (Tested & Compared)",
+    excerpt: "Wide soles, perimeter weighting, and real forgiveness. We tested the best game improvement irons of 2026 for amateurs who want mishits that still hold greens.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-game-improvement-irons-63.html",
+    date: "August 30, 2026"
+  },
+  {
+    id: 30,
+    title: "Review: The Best Junior Golf Club Sets for Kids in 2026",
+    excerpt: "Vacation golf with the kids? We tested the best junior golf club sets of 2026 — lightweight, height-matched, and tough enough for the trunk all summer.",
+    image: "images/cart-8seat.jpg",
+    link: "club-review-best-junior-golf-club-sets-62.html",
+    date: "August 30, 2026"
+  },
+  {
     id: 29,
     title: "Golf Clubs for Your Destin Vacation: Bring, Rent, or Ship Ahead?",
     excerpt: "Flying to Destin for golf? Here is how to handle your clubs — travel bags, shipping services, course rentals, or a budget set that stays in Florida.",
