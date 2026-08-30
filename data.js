@@ -606,6 +606,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 39,
+    title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
+    excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-complete-golf-club-sets-81.html",
+    date: "August 29, 2026"
+  },
+  {
     id: 38,
     title: "Callaway Strata vs Wilson Profile SGI: Which Beginner Set Wins?",
     excerpt: "The two most popular beginner golf club sets of 2026, head to head. We compare the Callaway Strata and Wilson Profile SGI on forgiveness, value, and what’s in the bag.",
