@@ -255,6 +255,14 @@ const reviews = [
     image: "images/cart-8seat.jpg",
     link: "99-rental-review-8-seat-family-51.html",
     date: "August 29, 2026"
+  },
+  {
+    id: 40,
+    title: "Rental Review: Sunset Cruises and Dinner Runs on the Destin Harbor",
+    excerpt: "Harbor Boardwalk dinners and sunset cruises are minutes away by golf cart. A review of the $99/day rental for Destin Harbor nights.",
+    image: "images/cart-6seat-rear.jpg",
+    link: "99-rental-review-sunset-destin-harbor-65.html",
+    date: "August 31, 2026"
   }];
 
 const blogPosts = [
@@ -533,6 +541,14 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 32,
+    title: "Best Golf Clubs and Grips for Hot, Humid Weather: A Florida Golfer’s Guide",
+    excerpt: "Sweaty hands and 95° fairways change what belongs in your bag. Here are the grips, gloves, and club materials that hold up in Florida heat and humidity.",
+    image: "images/cart-6seat-rear.jpg",
+    link: "club-golf-clubs-hot-humid-weather-guide-66.html",
+    date: "August 31, 2026"
+  },
   {
     id: 31,
     title: "Review: The Best Game Improvement Irons of 2026 (Tested & Compared)",
