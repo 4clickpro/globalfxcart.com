@@ -311,6 +311,14 @@ const reviews = [
     image: "images/cart-4seat.webp",
     link: "99-rental-review-grand-boulevard-79.html",
     date: "August 29, 2026"
+  },
+  {
+    id: 47,
+    title: "Rental Review: Henderson Beach and Crystal Beach Days on a $99/Day Cart",
+    excerpt: "Beach days without the parking lot stress. A review of the $99/day golf cart rental for Henderson Beach and Crystal Beach in Destin, FL.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-henderson-beach-83.html",
+    date: "August 30, 2026"
   }];
 
 const blogPosts = [
@@ -613,6 +621,14 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 40,
+    title: "Cavity Back vs Blade Irons: Which Is Right for Your Game?",
+    excerpt: "Cavity back irons offer forgiveness; blades offer feel. Here’s how to choose between the two styles in 2026 — and why most golfers should pick cavity back.",
+    image: "images/cart-8seat.jpg",
+    link: "club-cavity-back-vs-blade-irons-84.html",
+    date: "August 30, 2026"
+  },
   {
     id: 39,
     title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
