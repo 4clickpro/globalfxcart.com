@@ -542,6 +542,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 33,
+    title: "Review: The Best Golf Rangefinders of 2026 (Slope, Speed, and Value Tested)",
+    excerpt: "Pin-seek accuracy, slope math, and battery life — we tested the best golf rangefinders of 2026 from budget to flagship to find the real value picks.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-golf-rangefinders-67.html",
+    date: "August 31, 2026"
+  },
+  {
     id: 32,
     title: "Best Golf Clubs and Grips for Hot, Humid Weather: A Florida Golfer’s Guide",
     excerpt: "Sweaty hands and 95° fairways change what belongs in your bag. Here are the grips, gloves, and club materials that hold up in Florida heat and humidity.",
