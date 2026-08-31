@@ -319,9 +319,25 @@ const reviews = [
     image: "images/cart-4seat.webp",
     link: "99-rental-review-henderson-beach-83.html",
     date: "August 30, 2026"
+  },
+  {
+    id: 48,
+    title: "Rental Review: 30A and Santa Rosa Beach by $99/Day Golf Cart",
+    excerpt: "Seaside, WaterColor, and Santa Rosa Beach are built for slow cruising. A review of the $99/day golf cart rental for a 30A beach trip.",
+    image: "images/rover-xl6-white.jpg",
+    link: "99-rental-review-30a-santa-rosa-87.html",
+    date: "August 31, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 49,
+    title: "Golf Cart Rentals on 30A: Seaside, Rosemary Beach & Beyond",
+    excerpt: "Thinking about 30A? Here’s how golf cart rentals work from Destin to Rosemary Beach — delivery, street-legal rules, and the best stops along Scenic Highway 30A.",
+    image: "images/rover-xl6-white.jpg",
+    link: "golf-cart-rental-30a-86.html",
+    date: "August 31, 2026"
+  },
   {
     id: 48,
     title: "Weekly Golf Cart Rentals in Destin, FL: Rates, Delivery & How to Book",
