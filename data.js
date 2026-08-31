@@ -622,6 +622,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 41,
+    title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
+    excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-review-best-forgiving-golf-drivers-85.html",
+    date: "August 31, 2026"
+  },
+  {
     id: 40,
     title: "Cavity Back vs Blade Irons: Which Is Right for Your Game?",
     excerpt: "Cavity back irons offer forgiveness; blades offer feel. Here’s how to choose between the two styles in 2026 — and why most golfers should pick cavity back.",
