@@ -638,6 +638,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 43,
+    title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
+    excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
+    image: "images/cart-8seat.jpg",
+    link: "club-review-best-putters-beginners-89.html",
+    date: "September 1, 2026"
+  },
+  {
     id: 42,
     title: "Best Golf Clubs for Beginners in 2026: Complete Sets That Make Learning Easier",
     excerpt: "Complete golf club sets are the fastest way to start playing. Here are the best golf clubs for beginners in 2026 and how to choose your first set.",
