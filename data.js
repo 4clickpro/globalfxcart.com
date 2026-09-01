@@ -558,6 +558,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 34,
+    title: "Golf Club Maintenance in Salt Air: Keeping Your Set Clean on the Emerald Coast",
+    excerpt: "Coastal air is rough on golf equipment. A five-minute post-round routine keeps grips tacky, grooves clean, and rust off your Emerald Coast set.",
+    image: "images/cart-8seat.jpg",
+    link: "club-clean-golf-clubs-salt-air-70.html",
+    date: "September 1, 2026"
+  },
+  {
     id: 33,
     title: "Review: The Best Golf Rangefinders of 2026 (Slope, Speed, and Value Tested)",
     excerpt: "Pin-seek accuracy, slope math, and battery life — we tested the best golf rangefinders of 2026 from budget to flagship to find the real value picks.",
