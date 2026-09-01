@@ -331,6 +331,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 50,
+    title: "6-Passenger Golf Cart Rentals in Destin: Room for the Whole Crew",
+    excerpt: "Need room for the family or a group? Our brand new 6-seat Land Rover style golf cart rentals in Destin, FL seat six with Bluetooth audio and premium seats — from $149/day.",
+    image: "images/rover-xl6-white.jpg",
+    link: "golf-cart-rental-6-passenger-destin-90.html",
+    date: "September 1, 2026"
+  },
+  {
     id: 49,
     title: "Golf Cart Rentals on 30A: Seaside, Rosemary Beach & Beyond",
     excerpt: "Thinking about 30A? Here’s how golf cart rentals work from Destin to Rosemary Beach — delivery, street-legal rules, and the best stops along Scenic Highway 30A.",
