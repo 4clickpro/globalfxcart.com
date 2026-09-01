@@ -627,6 +627,36 @@ const REVIEW_TOPICS = [
     body: 'Four of us plus tackle boxes rode to the Harbor docks at 5am in the cart every morning of our trip. The storage space ate our gear, the ride woke nobody up at the rental, and the cart was waiting charged each day. Free delivery on our 4+ day booking and 24/7 text support made it painless. Best $99 we spent all week.',
     rating: 5,
   },
+  {
+    slug: '99-rental-review-big-kahunas-destin',
+    title: 'Rental Review: Big Kahuna\'s Days Were Easy on a $99/Day Golf Cart',
+    excerpt: 'A Destin family reviews the $99/day golf cart for back-and-forth runs to Big Kahuna\'s — wet towels, dry seats, and zero parking lots.',
+    image: 'images/cart-6seat-rear.jpg',
+    keywords: 'Big Kahuna\'s golf cart, Destin water park golf cart, golf cart rental Destin family review, Big Kahuna\'s Lost Paradise Destin, golf cart to water park Destin, family Destin golf cart rental review',
+    intro: 'Big Kahuna\'s water park is a Destin staple, and this family says the $99/day cart turned a water park day into the easiest day of the trip.',
+    body: 'Wet suits, floaties, snacks, four kids — the 6-seater hauled it all to Big Kahuna\'s and back twice a day without a single parking lot circle. We came home mid-day for lunch and went right back, which is impossible with a car at Destin height of summer. Free delivery on our 4+ day rental, charged every morning, and texting (850) 299-8575 got answers in minutes. The kids ranked the cart above the water slides. High praise.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-gulf-place-30a',
+    title: 'Rental Review: Gulf Place and 30A Evenings on a $99/Day Golf Cart',
+    excerpt: 'A 30A couple reviews the $99/day golf cart — Gulf Place dinners, Seagrove sunsets, and why they never moved the car all week.',
+    image: 'images/cart-4seat.webp',
+    keywords: 'Gulf Place 30A golf cart, 30A golf cart rental review, Santa Rosa Beach golf cart rental review, golf cart 30A restaurants, Gulf Place Santa Rosa Beach, Seagrove Beach golf cart',
+    intro: 'Gulf Place is the 30A hub for groceries, galleries, and patio dinners — this reviewer says a $99/day cart made the whole South Walton week car-free.',
+    body: 'We stayed in Santa Rosa Beach and used the cart for everything: morning coffee at Gulf Place, beach gear hauls to Seagrove, and dinner in Alys Beach without touching the car once. The street-legal setup handled 30A traffic fine and parking at every stop took seconds. Delivery was free on our 4+ day booking and the cart looked brand new. On a $99/day rate we spent less than two nights of valet would have cost.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-fall-week-miramar-beach',
+    title: 'Rental Review: A Fall Week in Miramar Beach on a $99/Day Golf Cart',
+    excerpt: 'Shoulder-season Miramar Beach review — September crowds gone, water still warm, and the $99/day cart as the whole week\'s transportation.',
+    image: 'images/cart-6seat-side.jpg',
+    keywords: 'fall golf cart rental Destin, September golf cart rental Miramar Beach, off season golf cart rental Destin, shoulder season Destin golf cart, weekly golf cart rental fall Miramar Beach',
+    intro: 'Fall is the Emerald Coast\'s quiet secret — warm water, thin crowds, easy reservations. Here\'s how one September week went on a $99/day cart.',
+    body: 'We booked the first week of September and basically had Miramar Beach to ourselves. The cart handled every errand — grocery runs, beach mornings, dinner at the Harbor — and we never needed the car. Booking was one call to (850) 299-8575, delivery was free on our 4+ day rental, and the cart ran all week on daily charges. Shoulder season plus a $99/day cart is the smartest version of this trip.',
+    rating: 5,
+  },
 ];
 
 const CLUB_BLOG_TOPICS = [
