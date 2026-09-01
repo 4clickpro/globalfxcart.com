@@ -638,6 +638,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 42,
+    title: "Best Golf Clubs for Beginners in 2026: Complete Sets That Make Learning Easier",
+    excerpt: "Complete golf club sets are the fastest way to start playing. Here are the best golf clubs for beginners in 2026 and how to choose your first set.",
+    image: "images/cart-4seat.webp",
+    link: "club-best-golf-clubs-for-beginners-88.html",
+    date: "September 1, 2026"
+  },
+  {
     id: 41,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
