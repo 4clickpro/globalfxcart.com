@@ -263,9 +263,25 @@ const reviews = [
     image: "images/cart-6seat-rear.jpg",
     link: "99-rental-review-sunset-destin-harbor-65.html",
     date: "August 31, 2026"
+  },
+  {
+    id: 41,
+    title: "Rental Review: Shopping Runs to Silver Sands on a $99/Day Cart",
+    excerpt: "Silver Sands Premium Outlets is right off Emerald Coast Parkway. A review of using the $99/day golf cart for shopping runs in Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-silver-sands-outlets-69.html",
+    date: "September 1, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 46,
+    title: "Golf Cart Rental in Sandestin: Getting Around the Resort Stress-Free",
+    excerpt: "Sandestin Golf and Beach Resort is huge — a golf cart rental makes Baytowne Wharf, the beach, and the golf courses an easy ride. $99/day, free delivery on 4+ days.",
+    image: "images/cart-4seat.webp",
+    link: "golf-cart-rental-sandestin-68.html",
+    date: "September 1, 2026"
+  },
   {
     id: 45,
     title: "Long-Term and Monthly Golf Cart Rentals in Destin, FL",
