@@ -654,6 +654,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 44,
+    title: "How to Choose Golf Clubs: A Complete Buying Guide for 2026",
+    excerpt: "Forgiveness, shafts, grips, budget — here is exactly how to choose golf clubs that match your swing and skill level in 2026.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-how-to-choose-golf-clubs-92.html",
+    date: "September 2, 2026"
+  },
+  {
     id: 43,
     title: "Review: The Best Putters for Beginners and Mid-Handicappers in 2026",
     excerpt: "Alignment aids, forgiveness, and feel — we tested the best putters of 2026 for beginners and mid-handicappers to help you make more putts.",
