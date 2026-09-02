@@ -327,6 +327,14 @@ const reviews = [
     image: "images/rover-xl6-white.jpg",
     link: "99-rental-review-30a-santa-rosa-87.html",
     date: "August 31, 2026"
+  },
+  {
+    id: 49,
+    title: "Rental Review: The 8-Seat Cart for a Big Family Beach Week",
+    excerpt: "Eight seats, one cart, zero parking fights. A review of the 8-seat golf cart rental for a large family vacation in Destin, FL.",
+    image: "images/cart-8seat.jpg",
+    link: "99-rental-review-8-seat-family-91.html",
+    date: "September 2, 2026"
   }];
 
 const blogPosts = [
