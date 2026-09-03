@@ -271,9 +271,25 @@ const reviews = [
     image: "images/cart-4seat.webp",
     link: "99-rental-review-silver-sands-outlets-69.html",
     date: "September 1, 2026"
+  },
+  {
+    id: 42,
+    title: "Rental Review: A Week on Okaloosa Island with a $99/Day Golf Cart",
+    excerpt: "A Fort Walton Beach customer reviews their $99/day street-legal golf cart week on Okaloosa Island — pier mornings, Boardwalk dinners, easy parking.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-okaloosa-island-73.html",
+    date: "September 3, 2026"
   }];
 
 const blogPosts = [
+  {
+    id: 47,
+    title: "Golf Cart Rental for Okaloosa Island: Your Fort Walton Beach Day Trips",
+    excerpt: "Staying on Okaloosa Island? A street-legal golf cart rental gets you to the fishing pier, The Boardwalk, and Okaloosa Island beaches without parking hassles.",
+    image: "images/cart-6seat-side.jpg",
+    link: "golf-cart-rental-okaloosa-island-72.html",
+    date: "September 3, 2026"
+  },
   {
     id: 46,
     title: "Golf Cart Rental in Sandestin: Getting Around the Resort Stress-Free",
@@ -557,6 +573,14 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 35,
+    title: "Review: The Best Golf Travel Bags and Hard Cases of 2026",
+    excerpt: "Flying to a golf trip? We tested the best golf travel bags and hard cases of 2026 for protection, wheels, and airline-proof durability.",
+    image: "images/cart-8seat.jpg",
+    link: "club-review-best-golf-travel-bags-71.html",
+    date: "September 3, 2026"
+  },
   {
     id: 34,
     title: "Golf Club Maintenance in Salt Air: Keeping Your Set Clean on the Emerald Coast",
