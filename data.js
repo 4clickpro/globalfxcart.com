@@ -347,6 +347,14 @@ const reviews = [
 
 const blogPosts = [
   {
+    id: 52,
+    title: "Golf Cart Rentals for Large Groups and Family Reunions in Destin",
+    excerpt: "Planning a family reunion or group trip to Destin? Here is how 6 and 8-seat golf cart rentals keep big groups together, from beach days to dinner runs.",
+    image: "images/cart-8seat.jpg",
+    link: "golf-cart-rental-large-groups-destin-98.html",
+    date: "September 4, 2026"
+  },
+  {
     id: 51,
     title: "Best Beach Access Points for Golf Carts in Destin & Miramar Beach",
     excerpt: "A golf cart makes every beach day easier. Here are the best beach access points, parking tips, and routes for golf carts in Destin and Miramar Beach.",
