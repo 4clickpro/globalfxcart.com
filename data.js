@@ -670,6 +670,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 47,
+    title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
+    excerpt: "We compared the most popular complete golf club sets of 2026 — forgiveness, value, and what’s included. Here are the best golf club sets for beginners.",
+    image: "images/cart-4seat.webp",
+    link: "club-review-best-complete-golf-club-sets-97.html",
+    date: "September 4, 2026"
+  },
+  {
     id: 46,
     title: "Complete Golf Club Sets vs. Building a Bag: Which Is the Better Buy?",
     excerpt: "Complete golf club sets cost less and get you playing now; building a bag gives you premium clubs. We break down which choice fits your game and budget.",
