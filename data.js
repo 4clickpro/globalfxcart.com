@@ -686,6 +686,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 49,
+    title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
+    excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
+    image: "images/rover-xl6-white.jpg",
+    link: "club-review-best-forgiving-golf-drivers-101.html",
+    date: "September 5, 2026"
+  },
+  {
     id: 48,
     title: "Golf Drivers Explained: Loft, Shaft Flex, and Forgiveness for Every Golfer",
     excerpt: "The driver is the hardest club to hit and the easiest to improve with the right choice. Here is what loft, shaft flex, and head design actually do.",
