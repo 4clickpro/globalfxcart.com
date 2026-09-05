@@ -343,6 +343,14 @@ const reviews = [
     image: "images/rover-xl6-white.jpg",
     link: "99-rental-review-sunset-destin-harbor-95.html",
     date: "September 3, 2026"
+  },
+  {
+    id: 51,
+    title: "Rental Review: Shopping Runs to Silver Sands on a $99/Day Cart",
+    excerpt: "Silver Sands Premium Outlets is right off Emerald Coast Parkway. A review of using the $99/day golf cart for shopping runs in Miramar Beach.",
+    image: "images/cart-4seat.webp",
+    link: "99-rental-review-silver-sands-outlets-99.html",
+    date: "September 5, 2026"
   }];
 
 const blogPosts = [
@@ -677,6 +685,14 @@ const blogPosts = [
 ];
 
 const clubPosts = [
+  {
+    id: 48,
+    title: "Golf Drivers Explained: Loft, Shaft Flex, and Forgiveness for Every Golfer",
+    excerpt: "The driver is the hardest club to hit and the easiest to improve with the right choice. Here is what loft, shaft flex, and head design actually do.",
+    image: "images/cart-4seat.webp",
+    link: "club-golf-drivers-guide-100.html",
+    date: "September 5, 2026"
+  },
   {
     id: 47,
     title: "Review: The Best Complete Golf Club Sets for Beginners in 2026",
