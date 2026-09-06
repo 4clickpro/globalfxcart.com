@@ -702,6 +702,14 @@ const blogPosts = [
 
 const clubPosts = [
   {
+    id: 50,
+    title: "Sandestin Golf Vacation Checklist: What to Book, Pack, and Rent Before You Arrive",
+    excerpt: "Tee times, rental carts, and gear — the checklist we give every visitor planning golf at Sandestin, Miramar Beach, and the 30A corridor.",
+    image: "images/cart-8seat.jpg",
+    link: "club-sandestin-golf-vacation-checklist-104.html",
+    date: "September 6, 2026"
+  },
+  {
     id: 49,
     title: "Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)",
     excerpt: "We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.",
