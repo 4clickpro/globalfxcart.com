@@ -25,6 +25,18 @@ const REPORTS_DIR = path.join(SITE_DIR, 'reports');
 const LOCK_FILE = path.join(SITE_DIR, '.generator.lock');
 const LOCK_STALE_MS = 10 * 60 * 1000; // a lock older than 10 min is considered stale
 
+// FAQPage JSON-LD helper (SEO rich results)
+function faqSchemaHtml(faqs, pageUrl) {
+  if (!faqs || !faqs.length) return '';
+  const entity = faqs.map(([q, a]) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": { "@type": "Answer", "text": a }
+  }));
+  const schema = { "@context": "https://schema.org", "@type": "FAQPage", "url": pageUrl, "mainEntity": entity };
+  return '  <script type="application/ld+json">\n  ' + JSON.stringify(schema) + '\n  </script>\n';
+}
+
 const PHONE = '(850) 299-8575';
 const PHONE_TEL = 'tel:8502998575';
 const BASE = 'https://www.globalfxcart.com';
@@ -35,6 +47,141 @@ const RENTAL_KEYWORDS = 'golf cart rental Destin FL, Destin golf cart rentals, g
 /* ------------------------------------------------------------------ */
 /* Content bank — rotate through these so every post is unique         */
 /* ------------------------------------------------------------------ */
+
+
+// Golf Cart FOR SALE content bank (priority: sell carts)
+const CART_SALES_TOPICS = [
+  {
+    slug: 'golf-carts-for-sale-destin',
+    keywords: 'golf carts for sale Destin FL, golf carts for sale Destin, buy golf cart Destin, new golf carts for sale Destin Florida, street legal golf carts for sale',
+    title: 'Golf Carts for Sale in Destin FL: Street-Legal Carts You Can Buy Today',
+    excerpt: 'Looking for golf carts for sale in Destin, FL? Brand new street-legal 4, 6, and 8-seat carts available now, with delivery across Destin and Miramar Beach.',
+    image: 'images/cart-4seat.webp',
+    intro: 'Renting is great for a week, but if you live on the Emerald Coast or you are a snowbird, owning makes more sense. Here is what is for sale right now at Destin Golf Cart Rentals and Sales, what it costs, and how fast we can deliver.',
+    sections: [
+      ['What Is In Stock', 'Brand new street-legal golf carts in 4-seat, 6-seat Land Rover style, and 8-seat configurations. Every cart ships with headlights, seat belts, turn signals, and full street-legal certification for Walton and Okaloosa County roads.'],
+      ['New vs Used: What to Buy', 'New carts carry full warranty and the latest lithium battery systems, charging costs pennies and range covers a full week of Emerald Coast cruising. Clean used carts cost 30-40 percent less and are inspected battery-to-brakes before we list them.'],
+      ['Delivery to Your Door', 'We deliver purchased carts anywhere in Destin or Miramar Beach, free within 15 miles. Snowbirds: buy in fall, we store and maintain it, and it is waiting charged when you return.'],
+      ['Rent-First, Buy-Later', 'Rent the exact model you are considering for a day at 99 dollars. Love it? We credit your rental fee toward the purchase. Zero-risk test drive.'],
+    ],
+    faqs: [
+      ['How much do golf carts cost in Destin, FL?', 'New street-legal 4-seat carts typically run 8,000 to 12,000 dollars depending on battery and options; 6-8 seat luxury models run higher. Used carts start around 5,000. Call (850) 299-8575 for today inventory and pricing.'],
+      ['Are the carts for sale street legal in Florida?', 'Yes. Every cart we sell is fully street legal with lights, seat belts, and turn signals, ready for roads with 35 mph limits or lower per Florida LSV law.'],
+      ['Do you deliver purchased golf carts?', 'Yes. Free delivery within 15 miles of Destin, covering all of Destin and Miramar Beach. Farther delivery available, call for a quote.'],
+    ],
+  },
+  {
+    slug: 'new-vs-used-golf-cart-buying-guide',
+    keywords: 'new vs used golf cart, buy used golf cart Destin, golf cart buying guide Florida, golf cart prices Destin FL, lithium vs lead acid golf cart',
+    title: 'New vs Used Golf Carts: A Destin Buyer Guide (2026 Prices)',
+    excerpt: 'Should you buy new or used? Real 2026 price ranges, battery comparison (lithium vs lead-acid), inspection checklist, and the hidden costs nobody mentions.',
+    image: 'images/cart-8seat.jpg',
+    intro: 'The golf cart market in Florida is wild, prices swing thousands between sellers for similar carts. Here is how to buy smart in Destin and Miramar Beach, whether new or used.',
+    sections: [
+      ['2026 Price Reality Check', 'New 4-seat electric: 8k to 12k. New 6-seat lifted: 12k to 16k. Used 2-4 year old carts: 5k to 8k. Anything newer than 5 years with lithium batteries holds value shockingly well in coastal markets.'],
+      ['Lithium vs Lead-Acid', 'Lithium costs more upfront but lasts 3x longer, charges in 2 hours, and loses no range on hills. Lead-acid needs water refills and dies in 3-5 years. On the coast, lithium wins, humidity murders lead-acid.'],
+      ['Used Cart Inspection Checklist', 'Battery date codes (anything 4+ years old is a replacement bill), tire wear, brake function, frame rust (coastal killer), and a test drive at full speed. If a seller will not let you test drive, walk away.'],
+      ['Hidden Costs of Ownership', 'Insurance (100 to 300 per year in FL), registration as LSV, charger (often not included used), and storage. Budget 500 per year beyond the sticker.'],
+    ],
+    faqs: [
+      ['What is the average cost of a golf cart in Florida in 2026?', 'New street-legal electric carts average 9,000 to 12,000 dollars; used carts in good condition run 5,000 to 8,000. Lithium battery models command a premium but cost less over 5 years.'],
+      ['Is buying a used golf cart worth it?', 'Yes if the batteries are under 3 years old and the frame is rust-free, you save 30-40 percent. Our inspected used carts include a battery health report.'],
+    ],
+  },
+  {
+    slug: 'street-legal-golf-cart-florida-rules',
+    keywords: 'street legal golf cart Florida, LSV rules Florida, golf cart street legal requirements, low speed vehicle Florida law, drive golf cart on road Destin',
+    title: 'Street-Legal Golf Carts in Florida: LSV Rules Explained (2026)',
+    excerpt: 'What makes a golf cart street legal in Florida? LSV requirements, where you can drive in Destin and Miramar Beach, insurance rules, and licensing.',
+    image: 'images/cart-6seat-front.jpg',
+    intro: 'Florida golf cart law trips up more buyers than anything else. Here is the plain-English version of what is street legal, where you can drive it, and what you need, accurate as of 2026.',
+    sections: [
+      ['Golf Cart vs LSV: The Legal Difference', 'A plain golf cart is only legal on golf courses and designated 30 mph-or-less roads. A Low Speed Vehicle (LSV), what we sell, is federally certified: windshield, VIN, lights, seat belts, mirrors, and 21-25 mph top speed. LSVs drive on any road posted 35 mph or less.'],
+      ['Where You Can Drive in Destin and Miramar Beach', 'Scenic Gulf Drive, most residential streets, and designated crossings are all LSV-legal. US-98 itself is off-limits. Beach driving is prohibited in Okaloosa and Walton County.'],
+      ['License, Registration and Insurance', 'You need a valid driver license to operate an LSV. Registration with the state and insurance are required for LSVs (not plain carts). We handle paperwork guidance at purchase.'],
+      ['Why Buying Certified Matters', 'Selling a non-certified cart with a street legal kit installed is common on Facebook Marketplace, but it is still not an LSV without the federal certification. We only sell properly certified carts.'],
+    ],
+    faqs: [
+      ['Can I drive a golf cart on the road in Destin, Florida?', 'Yes, if it is a certified LSV and the road is posted 35 mph or lower, that covers most of Destin and Miramar Beach streets including Scenic Gulf Drive.'],
+      ['Do golf carts need insurance in Florida?', 'LSVs do, a standard auto policy add-on runs 100 to 300 per year. Plain golf carts on designated roads do not require it but we recommend it.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-delivery-destin-buy-online',
+    keywords: 'golf cart delivery Destin, buy golf cart online Florida, golf cart shipped to condo, golf cart dealer delivery Miramar Beach, snowbird golf cart',
+    title: 'Buy a Golf Cart in Destin and Get It Delivered: How It Works',
+    excerpt: 'From deposit to delivery day, how buying a golf cart remotely works, snowbird storage plans, and what is included with every delivered cart.',
+    image: 'images/cart-4seat.webp',
+    intro: 'You do not need to visit a dealership lot. Most of our sales happen over the phone. Here is the full process from first call to keys in hand, including our snowbird storage program.',
+    sections: [
+      ['The 3-Step Remote Purchase', '1) Call (850) 299-8575, we confirm inventory, specs, and pricing. 2) Small deposit locks your cart. 3) Delivery day: we arrive with the cart charged, walk you through operation, and hand over title paperwork.'],
+      ['Snowbird Storage and Maintenance', 'Leaving for the summer? Store with us: covered storage, monthly battery maintenance charging, and a charged, inspected cart on your return. 75 per month, delivery both ways included.'],
+      ['What Is Included', 'Every purchased cart includes charger, full walkthrough, title and registration guidance, and our local support line, you call the same number for rentals or ownership questions.'],
+      ['Trade-Ins Accepted', 'Have an old cart? We trade, even non-running units. Credit applied against your purchase.'],
+    ],
+    faqs: [
+      ['Can I buy a golf cart without visiting the dealership?', 'Yes, the entire purchase can be done by phone with delivery to your address in Destin or Miramar Beach. Titles are processed and delivered with the cart.'],
+      ['Do you offer storage for golf carts?', 'Yes, 75 per month covered storage with battery maintenance, designed for snowbirds. Includes delivery and pickup both ways.'],
+    ],
+  },
+  {
+    slug: 'lithium-vs-lead-acid-golf-cart-destin',
+    keywords: 'lithium golf cart Destin, lithium vs lead acid golf cart, golf cart batteries Destin FL, buy lithium golf cart Florida, how long do golf cart batteries last, golf cart battery replacement Destin',
+    title: 'Lithium vs Lead-Acid Golf Carts: What to Buy in Destin, FL',
+    excerpt: 'Lithium costs more up front and wins long term. Here is an honest comparison for Destin and Miramar Beach buyers: battery life, charging, weight, and total cost.',
+    image: 'images/cart-4seat.webp',
+    intro: 'The first question every serious buyer asks: lithium or lead-acid? Here is the straight answer for Emerald Coast owners, including what salt air and year-round riding do to each battery type.',
+    sections: [
+      ['The Real Cost Difference', 'Lead-acid carts cost 1,000 to 2,000 dollars less up front. But lead-acid packs last 3 to 5 years and a replacement runs 900 to 1,500 dollars, so a lithium cart usually breaks even by year five, then keeps saving.'],
+      ['Charging, Range, and Weight', 'Lithium charges in 2 to 4 hours with no watering, delivers the same range every cycle, and cuts 200-plus pounds off the cart, which means less tire wear, better braking, and easier loading. Lead-acid needs watering monthly and loses range as it ages.'],
+      ['Salt Air and Battery Life', 'Coastal humidity corrodes lead-acid terminals fast, so keep them cleaned and coated. Sealed lithium packs have no terminals to service, which is why most of our beach-adjacent customers now choose lithium.'],
+      ['Which One We Recommend', 'Riding a few weeks a year? Lead-acid is fine. Full-time residents, snowbirds, and rental owners: go lithium. Call (850) 299-8575 and we will quote both side by side.'],
+    ],
+    faqs: [
+      ['How long do golf cart batteries last in Florida?', 'Lead-acid packs typically last 3 to 5 years with regular maintenance; lithium packs are rated 8 to 10 years or more. Heat and heavy use shorten lead-acid life the most.'],
+      ['Is a lithium golf cart worth the extra cost?', 'For anyone riding year-round or storing long-term, yes. Lower maintenance, faster charging, and 8 to 10 year battery life offset the higher purchase price within a few years.'],
+      ['Can you convert a lead-acid golf cart to lithium?', 'Most modern carts can be converted with a lithium kit and charger, typically 2,500 to 4,000 dollars installed. We will tell you honestly whether your cart is a good candidate before you spend anything.'],
+    ],
+  },
+  {
+    slug: '6-seat-golf-cart-for-sale-miramar-beach',
+    keywords: '6 seat golf cart for sale Miramar Beach, 6 passenger golf cart Destin, street legal 6 seater golf cart, family golf cart for sale Florida, 6 person LSV golf cart price',
+    title: '6-Seat Golf Carts for Sale in Miramar Beach: Street-Legal Family Carts',
+    excerpt: 'A 6-seat street-legal cart moves the whole crew: beach trips, dinners on Scenic Gulf Drive, and golf days, with no second vehicle. Pricing, configs, and delivery.',
+    image: 'images/cart-8seat.jpg',
+    intro: 'For families and vacation-home owners in Miramar Beach, the 6-seater is the sweet spot: everyone rides together, legally, with room left for coolers and beach chairs. Here is what is in stock and what it costs.',
+    sections: [
+      ['Who a 6-Seater Fits', 'Vacation-home owners who host family, households that shuttle kids and guests, and anyone tired of two-vehicle convoys to the beach. The rear seat flips flat into a cargo bed on most models: seats up for people, flat for gear.'],
+      ['Street Legal in Miramar Beach', 'Our 6-passenger carts ship fully LSV-certified with headlights, turn signals, seat belts, mirrors, and VIN, legal on any Walton or Okaloosa County road posted 35 mph or lower, which covers nearly all of Miramar Beach and Destin.'],
+      ['Price and Payment', 'New 6-seat street-legal carts typically run 11,000 to 15,000 dollars depending on lithium battery and trim; clean used units start around 8,000. Ask about current inventory and trade-ins at (850) 299-8575.'],
+      ['Rent the Exact Model First', 'Not sure a 6-seater fits your lifestyle? Rent one for a day or a week at 99 dollars a day and put it through real use. We credit the rental fee toward your purchase if you buy.'],
+    ],
+    faqs: [
+      ['How much is a 6-seat golf cart in Miramar Beach?', 'New street-legal 6-passenger carts generally run 11,000 to 15,000 dollars; inspected used units start near 8,000. Call (850) 299-8575 for today inventory and exact pricing.'],
+      ['Can a 6-seat golf cart go on the road in Florida?', 'Yes. When it is a certified low-speed vehicle like ours, it is legal on roads posted 35 mph or lower throughout Destin, Miramar Beach, and Okaloosa Island.'],
+      ['Do you deliver a purchased 6-seater?', 'Yes. Free delivery within 15 miles of Destin, covering all of Miramar Beach. Farther out, call for a quote.'],
+    ],
+  },
+  {
+    slug: 'snowbird-golf-cart-buyers-guide-destin',
+    keywords: 'snowbird golf cart Destin, buy golf cart winter Florida, golf cart storage Destin FL, snowbird golf cart rental vs buy, seasonal golf cart Florida, winter visitor golf cart Destin',
+    title: 'Destin Snowbird Guide: Buy a Golf Cart in Fall, Store It, Ride All Winter',
+    excerpt: 'The snowbird play: buy your street-legal cart before the winter rush, store and maintain it with us all summer, and it is charged and waiting when you land.',
+    image: 'images/cart-6seat-side.jpg',
+    intro: 'Every winter, thousands of seasonal residents land in Destin and start hunting for a cart in January, when selection is picked over. The smart move happens in October. Here is the snowbird playbook we run with our seasonal customers.',
+    sections: [
+      ['Why Buy in Fall', 'Selection is widest and pricing firmest before the season. By mid-December the best used carts are gone and new-unit lead times stretch. Buying in October or November means you choose the exact color, battery, and seating you want.'],
+      ['Rent a Week First, Then Decide', 'Not ready to commit? Rent the exact model you are eyeing at 99 dollars a day for a week of real use: groceries, beach runs, dinners out. Love it, and we credit the week toward your purchase. It is the lowest-risk way to buy a vehicle we know of.'],
+      ['Summer Storage and Maintenance', 'When you fly north, leave the cart with us: 75 per month covers covered storage, battery maintenance charging, tire checks, and a full inspection. You land next season, call ahead, and we deliver it charged to your door.'],
+      ['Registration, Insurance, and the Law', 'We handle title and registration guidance at purchase. LSV insurance is a simple auto-policy add-on, typically 100 to 300 dollars a year, and your cart is street legal on roads posted 35 mph or lower the day it arrives.'],
+    ],
+    faqs: [
+      ['When should snowbirds buy a golf cart in Destin?', 'October or November, before the winter rush. You get the best selection and pricing; by January the popular configurations are picked over.'],
+      ['What does golf cart storage cost in Destin, FL?', 'Our snowbird program is 75 per month with covered storage, battery maintenance, and an inspection. Delivery and pickup both ways included.'],
+      ['Can I rent a golf cart for the whole winter instead?', 'Yes. Long-term winter rates beat the daily 99 dollar rate for multi-month stays. Call (850) 299-8575 and we will compare monthly rental versus owning for your exact situation.'],
+    ],
+  },
+];
 
 const BLOG_TOPICS = [
   {
@@ -59,7 +206,7 @@ const BLOG_TOPICS = [
     keywords: 'Miramar Beach golf cart rental, golf cart rental Miramar Beach FL, Miramar Beach golf cart rentals, $99 golf cart rental Miramar Beach, Miramar Beach golf cart rentals prices',
     title: 'Renting a Golf Cart in Miramar Beach for $99/Day: What to Expect',
     excerpt: 'Planning a Miramar Beach vacation? Here\u2019s exactly how the $99/day golf cart rental works \u2014 booking, delivery, what\u2019s included, and what to bring.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-rear.jpg',
     intro: 'Miramar Beach is made for golf carts. Wide boulevards, beach access points, and restaurants just off Emerald Coast Parkway \u2014 a cart at $99/day turns the whole area into your playground. Here\u2019s what to expect.',
     sections: [
       ['Booking Takes Two Minutes', 'Call or text ' + PHONE + '. We\u2019ll confirm availability, arrange delivery to your rental address, and have the cart charged and ready when you arrive. Peak-season dates go fast, so book early.'],
@@ -127,7 +274,7 @@ const BLOG_TOPICS = [
     keywords: 'first time golf cart rental Destin, golf cart rental tips, Destin golf cart rental guide, how to rent a golf cart Destin, golf cart rental rules',
     title: '8 Tips for First-Time Golf Cart Renters in Destin, FL',
     excerpt: 'New to golf cart rentals? Follow these 8 tips to get the most from your $99/day cart in Destin and Miramar Beach \u2014 from booking to your first cruise.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-front.jpg',
     intro: 'Renting a golf cart for the first time? It\u2019s easy \u2014 and these tips will make your $99/day rental even better.',
     sections: [
       ['Book Before You Fly', 'Peak season sells out. Reserve as soon as your dates are set and we\u2019ll have your cart waiting.'],
@@ -163,7 +310,7 @@ const BLOG_TOPICS = [
     keywords: 'golf cart rental 30A, 30A golf cart rentals, golf cart rental Santa Rosa Beach, Rosemary Beach golf cart rental, Seaside FL golf cart rental, WaterColor golf cart rental',
     title: 'Golf Cart Rentals on 30A: Seaside, Rosemary Beach & Beyond',
     excerpt: 'Thinking about 30A? Here\u2019s how golf cart rentals work from Destin to Rosemary Beach \u2014 delivery, street-legal rules, and the best stops along Scenic Highway 30A.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-side.jpg',
     intro: 'Scenic Highway 30A is one of the most golf-cart-friendly stretches in Florida \u2014 Seaside, WaterColor, Rosemary Beach, and Alys Beach are built for slow cruising. Here\u2019s how to rent a cart for your 30A trip.',
     sections: [
       ['Where We Deliver on 30A', 'We deliver throughout Destin and Miramar Beach, and can arrange drop-offs for 30A communities like Sandestin, Seascape, and surrounding areas \u2014 call to confirm your exact address.'],
@@ -181,7 +328,7 @@ const BLOG_TOPICS = [
     keywords: '6 passenger golf cart rental Destin, 6 seater golf cart rental Destin, 6 seater golf cart rental Miramar Beach, golf cart rental for 6 people, 6 seat golf cart rental',
     title: '6-Passenger Golf Cart Rentals in Destin: Room for the Whole Crew',
     excerpt: 'Need room for the family or a group? Our brand new 6-seat Land Rover style golf cart rentals in Destin, FL seat six with Bluetooth audio and premium seats \u2014 from $149/day.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-rear.jpg',
     intro: 'Traveling with kids, grandparents, or friends? A 6-passenger golf cart keeps everyone together \u2014 no caravan of cars, no fighting for parking spots. Here\u2019s why our 6-seat Land Rover style cart is the crew favorite.',
     sections: [
       ['Six Seats, One Adventure', 'Our white 6-seater Land Rover style cart seats the whole group with room to spare \u2014 and Bluetooth audio so everyone can pick the soundtrack.'],
@@ -232,7 +379,7 @@ const BLOG_TOPICS = [
     slug: 'golf-cart-rental-long-term-destin',
     title: 'Long-Term and Monthly Golf Cart Rentals in Destin, FL',
     excerpt: 'Staying a month or the whole season? Long-term golf cart rentals in Destin and Miramar Beach come with free delivery and simple monthly rates.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-front.jpg',
     keywords: 'monthly golf cart rental Destin, long term golf cart rental Destin, seasonal golf cart rental Destin, snowbird golf cart rental Destin, golf cart leasing Destin FL',
     intro: 'If you are on the Emerald Coast for a month or more, a long-term golf cart rental is the simplest way to get around. Here is how monthly rentals work in Destin and Miramar Beach.',
     sections: [
@@ -243,6 +390,108 @@ const BLOG_TOPICS = [
     faqs: [
       ['Do you offer monthly golf cart rentals?', 'Yes, we offer long-term and monthly rentals for snowbirds and seasonal visitors. Call ' + PHONE + ' for rates and availability.'],
       ['Is delivery included on long-term rentals?', 'Delivery and pickup are included on long-term bookings. We will confirm your address and schedule when you reserve.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-rental-sandestin',
+    title: 'Golf Cart Rental in Sandestin: Getting Around the Resort Stress-Free',
+    excerpt: 'Sandestin Golf and Beach Resort is huge — a golf cart rental makes Baytowne Wharf, the beach, and the golf courses an easy ride. $99/day, free delivery on 4+ days.',
+    image: 'images/cart-4seat.webp',
+    keywords: 'Sandestin golf cart rental, golf cart rental Sandestin FL, Baytowne Wharf golf cart, Sandestin resort golf cart, golf cart Miramar Beach Sandestin, rent golf cart Sandestin',
+    intro: 'Sandestin covers 2,400 acres between Destin and Miramar Beach — the beach, Baytowne Wharf, four golf courses, and the hotel district. Here is why a street-legal golf cart is the easiest way to see all of it.',
+    sections: [
+      ['Why a Cart Beats Driving Inside Sandestin', 'Parking at Baytowne Wharf and the beach clubs fills up fast in season. A street-legal cart parks in the overflow spots and drops you steps from the door.'],
+      ['Baytowne Wharf Evenings Made Easy', 'Dinner, ice cream, and the village lights are a five-minute cruise from most Sandestin rentals. No circling for parking, no Designated Driver logistics.'],
+      ['Free Delivery to Your Sandestin Rental Home', 'We deliver straight to your Sandestin condo or rental house, charged and ready. Free delivery on bookings of 4 or more days, and pickup is handled at the end.'],
+    ],
+    faqs: [
+      ['Can I drive a golf cart around Sandestin?', 'Yes, street-legal low-speed vehicles can use the roads inside Sandestin and connect to Miramar Beach and Destin. We deliver fully street-legal carts with lights, seat belts, and registration.'],
+      ['How much is a golf cart rental in Sandestin?', 'Our street-legal carts rent for $99/day, with free delivery on 4+ day rentals. Call or text ' + PHONE + ' anytime — we book 24/7.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-rental-okaloosa-island',
+    title: 'Golf Cart Rental for Okaloosa Island: Your Fort Walton Beach Day Trips',
+    excerpt: 'Staying on Okaloosa Island? A street-legal golf cart rental gets you to the fishing pier, The Boardwalk, and Okaloosa Island beaches without parking hassles.',
+    image: 'images/cart-6seat-side.jpg',
+    keywords: 'Okaloosa Island golf cart rental, golf cart rental Fort Walton Beach, golf cart Okaloosa Island FL, Okaloosa Island pier golf cart, Fort Walton Beach golf cart rentals',
+    intro: 'Okaloosa Island sits between Fort Walton Beach and Destin, and it is perfectly connected by the Okaloosa Island side streets a street-legal cart can cruise. Here is how to make the most of a cart week on the Island.',
+    sections: [
+      ['Pier and Boardwalk Runs', 'The Okaloosa Island Fishing Pier and The Boardwalk on Santa Rosa Sound are easy cart rides — park free steps from the sand and grab food without moving the car.'],
+      ['An Easy Hop to Destin', 'With the cart, dinner in Destin or a sunset at the Harbor is a relaxed cruise down Santa Rosa Boulevard and US-98 side roads — no beach traffic stress.'],
+      ['We Deliver to Okaloosa Island Too', 'Free delivery on 4+ day bookings covers Okaloosa Island rentals and condos. The cart arrives charged and street-legal, ready to ride.'],
+    ],
+    faqs: [
+      ['Do you deliver golf carts to Okaloosa Island?', 'Yes, we deliver to Okaloosa Island and Fort Walton Beach rentals. Delivery and pickup are free on bookings of 4 or more days.'],
+      ['How do I book a cart for Okaloosa Island?', 'Call or text ' + PHONE + ' — we answer 24/7 and can usually deliver next day, sometimes same day depending on the schedule.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-rental-fall-off-season-destin',
+    title: 'Fall Golf Cart Rentals in Destin: Off-Season Is the Best Season',
+    excerpt: 'Fewer crowds, cooler rides, open parking — fall in Destin and Miramar Beach is prime golf cart season. Street-legal carts from $99/day with free 4+ day delivery.',
+    image: 'images/cart-4seat.webp',
+    keywords: 'fall golf cart rental Destin, off season Destin golf cart, golf cart rental September Destin, October golf cart rental Destin FL, snowbird golf cart Miramar Beach, Destin fall events golf cart',
+    intro: 'Locals will tell you: fall is the best time on the Emerald Coast. The water is still warm, the crowds are gone, and a street-legal golf cart is the perfect way to enjoy it. Here is what fall looks like on four wheels.',
+    sections: [
+      ['Open Parking Everywhere', 'Summer means circling lots at the Harbor and Baytowne Wharf. In fall, front-row cart parking at fishing spots, beach accesses, and restaurants is the norm.'],
+      ['Cooler Rides, Same Sunshine', 'A cart ride in 80-degree October weather beats a hot car with the AC fighting the sun. Roll down to the beach, the outlets, or a sunset spot any evening.'],
+      ['Book Easy Before the Season Rush', 'Fall inventory is wide open — every cart size from 4 to 8 seats is usually available. Book your dates early anyway for holiday weeks, which fill fast again.'],
+    ],
+    faqs: [
+      ['Is fall a good time to rent a golf cart in Destin?', 'It is the best time. Lighter traffic, easy parking, and pleasant evening rides. Rates stay at $99/day with free delivery on 4+ day rentals.'],
+      ['Do snowbirds rent golf carts in the fall and winter?', 'Yes, long-term fall and winter rentals are popular with seasonal visitors. Call ' + PHONE + ' for monthly rates — we deliver to Destin, Miramar Beach, Sandestin, and Okaloosa Island.'],
+    ],
+  },
+  {
+    slug: 'crab-island-golf-cart-rental-destin',
+    keywords: 'Crab Island golf cart rental, golf cart rental near Crab Island Destin, Crab Island Destin FL, how to get to Crab Island, Destin Harbor golf cart rental',
+    title: 'Crab Island from $99/Day: The Golf Cart + Launch Game Plan',
+    excerpt: 'Crab Island is boat-only — but a $99/day street-legal golf cart solves the launch run. Parking, coolers, and the after-trip dinner cruise home, handled.',
+    image: 'images/cart-6seat-side.jpg',
+    intro: 'Crab Island is the most famous spot in Destin, and the only way onto it is by water. The move locals know: rent a street-legal golf cart at $99/day, park steps from your launch, and spend your day on the water instead of circling for parking. Here is the full plan.',
+    sections: [
+      ['Park Free, Board Fast', 'Launch parking around the Destin Harbor fills by mid-morning in summer, and car spots near the docks go for $20–$40 a day. A street-legal golf cart fits spaces cars cannot, so you unload coolers and kids at the dock instead of the far end of the lot.'],
+      ['One Cart, Both Halves of the Day', 'Morning on the sandbar, afternoon on land. When you are back off the water, the Harbor Boardwalk, Norriego Point, and sunset dinner spots are all a short cart ride away — no second parking fee, no waiting on a shuttle at sunset.'],
+      ['Split the Cost, Keep the Convenience', 'A 4-seat cart at $99/day splits to about $25 per person, and a 6-seat drops under $17 each — with free delivery on 4+ day rentals anywhere in Destin or Miramar Beach. It is the cheapest logistics upgrade your Crab Island day will ever get.'],
+    ],
+    faqs: [
+      ['Can you drive a golf cart to Crab Island?', 'No — Crab Island is a shallow sandbar in Destin and only reachable by boat, pontoon, or paddle craft. A $99/day street-legal golf cart is still the easiest way to move your group and gear to and from any launch in Destin or Miramar Beach.'],
+      ['Which launch works best with a golf cart rental?', 'Public launches and rental docks around the Destin Harbor and Okaloosa Island are all cart-friendly. Call ' + PHONE + ' and we will match your cart to the launch closest to your condo — delivery is free on rentals of 4 days or more.'],
+    ],
+  },
+  {
+    slug: 'destin-harbor-boardwalk-golf-cart-rental',
+    keywords: 'Destin Harbor Boardwalk golf cart, golf cart rental Destin Harbor, Destin Boardwalk parking, things to do Destin Harbor, fireworks Destin Harbor golf cart',
+    title: 'Destin Harbor Boardwalk Evenings Are Better by Golf Cart',
+    excerpt: 'Harbor restaurants, sunset cruises, and fireworks nights — a $99/day street-legal golf cart turns Boardwalk parking from a fight into a non-issue.',
+    image: 'images/red-cart-hero.jpg',
+    intro: 'The Destin Harbor Boardwalk is the best people-watching on the Emerald Coast — and the worst place to park a car. A street-legal golf cart at $99/day flips the math: park close, walk in, and roll home long before the car traffic clears.',
+    sections: [
+      ['Skip the Harbor Parking Hunt', 'Summer evenings pack the lots along Harbor Boulevard. Street-legal carts squeeze into spaces cars cannot use, so dinner at the Boardwalk starts with a two-minute walk instead of a twenty-minute loop for a spot.'],
+      ['Make It a Full Evening Loop', 'Boardwalk stroll, sunset at the harbor, ice cream, then the ride home with the whole crew — 4-seat carts start at $99/day and 8-seaters run $199/day, so nobody gets left at the condo.'],
+      ['Fireworks Nights Without the Gridlock', 'Harbor fireworks nights stall Harbor Boulevard for hours. A cart slips out through side streets while cars idle in line — the single biggest quality-of-life upgrade for Destin nights.'],
+    ],
+    faqs: [
+      ['Is there golf cart parking near Destin Harbor Boardwalk?', 'Yes — street-legal golf carts park in standard spaces, and their smaller footprint makes close-in spots much easier to find than for cars. On fireworks nights, still arrive early.'],
+      ['How much is a golf cart rental for a Destin Harbor evening?', 'Same simple pricing as every day: 4-seat carts are $99/day, 6-seat $149/day, and 8-seat $199/day, with free delivery on 4+ day rentals in Destin and Miramar Beach. Call ' + PHONE + ' to book 24/7.'],
+    ],
+  },
+  {
+    slug: 'golf-cart-rental-silver-sands-outlets',
+    keywords: 'golf cart rental Silver Sands outlets, Silver Sands Premium Outlets golf cart, Destin outlet shopping golf cart, Grand Boulevard golf cart rental Miramar Beach',
+    title: 'Silver Sands & Grand Boulevard Shopping Runs by Golf Cart',
+    excerpt: 'Silver Sands Premium Outlets and Grand Boulevard are one easy cart ride apart. Here is the $99/day plan for a full shopping day in Destin and Miramar Beach — no car needed.',
+    image: 'images/rover-xl6-white.jpg',
+    intro: 'Two of the Emerald Coast\u2019s best shopping destinations sit a short street-legal cart ride apart: Silver Sands Premium Outlets on Highway 98 East and Grand Boulevard in Miramar Beach. Here is how to run both in one afternoon without ever starting a car.',
+    sections: [
+      ['The Route: Outlets to Grand Boulevard', 'Start at Silver Sands — the Southeast\u2019s largest outlet collection — then cruise west on 98 to Grand Boulevard for dinner and boutiques. It is an easy, scenic street-legal run through the heart of the South Walton shopping district.'],
+      ['Park Where Cars Cannot', 'Outlet lots sprawl. A cart parks at the door, and at Grand Boulevard you skip the maze entirely. Load bags between stops and keep the whole day on your schedule instead of the parking map.'],
+      ['Cargo Space You Will Actually Use', 'A 6-seat cart with a rear flip seat is the shopping-day cheat code — bags in back, kids up front. From $99/day with free delivery on 4+ day rentals, it beats feeding parking meters all afternoon.'],
+    ],
+    faqs: [
+      ['Can I park a rental golf cart at Silver Sands Premium Outlets?', 'Yes — street-legal carts park in standard spaces and can take spots close to entrances. Follow posted rules and never block sidewalks or fire lanes.'],
+      ['How far is Grand Boulevard from Silver Sands by golf cart?', 'About a 15–20 minute street-legal cruise along Highway 98 through Miramar Beach. Call ' + PHONE + ' to reserve a cart for your shopping day — delivery is free on rentals of 4 days or more.'],
     ],
   },
 ];
@@ -263,7 +512,7 @@ const REVIEW_TOPICS = [
     keywords: 'Crab Island golf cart, golf cart to Crab Island, Destin golf cart rental review, Crab Island Destin, golf cart rental Destin Harbor',
     title: 'Rental Review: The $99/Day Cart That Got Us to Crab Island',
     excerpt: 'Crab Island trips, sunset cruises, and zero parking fees \u2014 one customer\u2019s week with the $99/day Destin golf cart rental.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-rear.jpg',
     intro: 'Destin\u2019s best day trips are all a short ride from your door when you\u2019ve got a cart. Here\u2019s how one week went.',
     body: 'We booked the 4-seater for a full week. Delivery to our condo was free and the cart was spotless. We hit Crab Island, the Harbor Boardwalk, and dinner spots all week \u2014 never once paid for parking. The staff were great on the phone, and pickup at the end was just as easy. Highly recommend.',
     rating: 5,
@@ -283,7 +532,7 @@ const REVIEW_TOPICS = [
     keywords: 'Sandestin golf cart rental, Baytowne Wharf golf cart, golf cart rental Sandestin FL, Sandestin golf cart, Miramar Beach golf cart review',
     title: 'Rental Review: Sandestin & Baytowne Wharf by Golf Cart',
     excerpt: 'A weekend at Sandestin, dinner at Baytowne Wharf, and zero parking headaches \u2014 one review of the $99/day golf cart rental in Miramar Beach.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-front.jpg',
     intro: 'Sandestin and Baytowne Wharf are made for golf carts. Here\u2019s how one weekend went with a $99/day rental delivered to our Miramar Beach vacation rental.',
     body: 'The cart was delivered to our rental right on time, free on our 4+ day booking. We cruised to Baytowne Wharf for dinner, hit the beach access points all day, and never once hunted for parking. The kids called it the best part of the trip \u2014 and the adults agreed. Pickup at the end took two minutes. Five stars.',
     rating: 5,
@@ -312,7 +561,7 @@ const REVIEW_TOPICS = [
     slug: '99-rental-review-30a-santa-rosa',
     title: 'Rental Review: 30A and Santa Rosa Beach by $99/Day Golf Cart',
     excerpt: 'Seaside, WaterColor, and Santa Rosa Beach are built for slow cruising. A review of the $99/day golf cart rental for a 30A beach trip.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-side.jpg',
     keywords: '30A golf cart rental, Santa Rosa Beach golf cart rental, golf cart rental 30A, Scenic Highway 30A golf cart, golf cart rental Santa Rosa Beach FL',
     intro: 'We split our week between Miramar Beach and the 30A beach towns, and the cart made the whole stretch easy. Here is how it went.',
     body: 'The street-legal cart handled the slower 30A roads perfectly, and we parked free while strolling Seaside and Grayton Beach. Delivery to our Miramar Beach rental was on time and free on our 4+ day booking. The staff explained the roads to stick to and even suggested a few stops. A relaxed, stress-free way to do 30A.',
@@ -332,7 +581,7 @@ const REVIEW_TOPICS = [
     slug: '99-rental-review-sunset-destin-harbor',
     title: 'Rental Review: Sunset Cruises and Dinner Runs on the Destin Harbor',
     excerpt: 'Harbor Boardwalk dinners and sunset cruises are minutes away by golf cart. A review of the $99/day rental for Destin Harbor nights.',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-rear.jpg',
     keywords: 'Destin Harbor golf cart, sunset cruise Destin, Destin Harbor Boardwalk golf cart, dinner Destin Harbor golf cart, golf cart sunset Destin',
     intro: 'Evenings on the Destin Harbor are the best part of a beach trip, and the cart made them effortless. Here is how our week went.',
     body: 'Each night we cruised to the Harbor Boardwalk, parked steps from the restaurants, and watched the boats come in. No ride shares, no parking garage, no waiting. The cart was clean, charged, and delivered free on our 4+ day rental. We will rent again next year.',
@@ -346,6 +595,66 @@ const REVIEW_TOPICS = [
     keywords: 'Silver Sands Premium Outlets, golf cart Silver Sands, shopping Miramar Beach golf cart, golf cart to outlets Destin, Miramar Beach shopping',
     intro: 'We came for the beach but ended up doing plenty of shopping too. The cart made every Silver Sands run quick and easy.',
     body: 'The outlets are a short, easy ride from our Miramar Beach rental, and cart parking is simple. We loaded bags into the storage area and never worried about a full lot. Delivery was free on our 4+ day booking, the cart was spotless, and pickup was two minutes. A great add-on to a beach week.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-okaloosa-island',
+    title: 'Rental Review: A Week on Okaloosa Island with a $99/Day Golf Cart',
+    excerpt: 'A Fort Walton Beach customer reviews their $99/day street-legal golf cart week on Okaloosa Island — pier mornings, Boardwalk dinners, easy parking.',
+    image: 'images/cart-4seat.webp',
+    keywords: 'Okaloosa Island golf cart review, golf cart rental Fort Walton Beach review, Okaloosa Island pier, Santa Rosa Sound golf cart, Fort Walton Beach golf cart',
+    intro: 'This family split their week between the Okaloosa Island Fishing Pier and the Boardwalk on the Sound — all on a $99/day street-legal cart.',
+    body: 'We stayed in a rental house on Santa Rosa Boulevard and the cart changed everything. Morning pier trips with rods in the storage basket, afternoons at the beach accesses, and Boardwalk dinners without moving the car once. Free delivery on our 4+ day booking, and the cart was charged and spotless. Booking at night by text took two minutes.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-norriego-point',
+    title: 'Rental Review: Norriego Point and East Pass Beach Days on a $99/Day Cart',
+    excerpt: 'Review of a Destin week with a $99/day golf cart — Norriego Point afternoons, East Pass sunsets, and no parking stress at the busiest end of town.',
+    image: 'images/cart-6seat-front.jpg',
+    keywords: 'Norriego Point golf cart, East Pass Destin golf cart, Destin golf cart review, golf cart Destin beaches, Holiday Isle golf cart rental',
+    intro: 'The east end of Destin is the busiest end — Norriego Point, the East Pass, and Holiday Isle streets. This reviewer says the cart made it the easy end.',
+    body: 'We hauled chairs, umbrellas, and a cooler to Norriego Point every afternoon in the cart and never fought for parking once. Watching the boats come through East Pass at sunset from the cart was the trip highlight. The cart was delivered free on our 4+ day rental, clean and fully charged, and support answered every text fast.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-destin-charter-fishing-runs',
+    title: 'Rental Review: Early Charter Fishing Runs on a $99/Day Golf Cart',
+    excerpt: 'A Destin fisherman reviews the $99/day golf cart for 5am charter runs to the Harbor docks — gear hauls, dark parking lots, zero drama.',
+    image: 'images/cart-6seat-side.jpg',
+    keywords: 'Destin fishing charter golf cart, Destin Harbor fishing docks, golf cart Destin fishing, charter boat parking Destin, Destin fishing golf cart rental',
+    intro: 'Charter fishing in Destin starts before sunrise, and this reviewer used the $99/day cart to get gear and crew to the docks without waking the whole rental house.',
+    body: 'Four of us plus tackle boxes rode to the Harbor docks at 5am in the cart every morning of our trip. The storage space ate our gear, the ride woke nobody up at the rental, and the cart was waiting charged each day. Free delivery on our 4+ day booking and 24/7 text support made it painless. Best $99 we spent all week.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-big-kahunas-destin',
+    title: 'Rental Review: Big Kahuna\'s Days Were Easy on a $99/Day Golf Cart',
+    excerpt: 'A Destin family reviews the $99/day golf cart for back-and-forth runs to Big Kahuna\'s — wet towels, dry seats, and zero parking lots.',
+    image: 'images/cart-6seat-rear.jpg',
+    keywords: 'Big Kahuna\'s golf cart, Destin water park golf cart, golf cart rental Destin family review, Big Kahuna\'s Lost Paradise Destin, golf cart to water park Destin, family Destin golf cart rental review',
+    intro: 'Big Kahuna\'s water park is a Destin staple, and this family says the $99/day cart turned a water park day into the easiest day of the trip.',
+    body: 'Wet suits, floaties, snacks, four kids — the 6-seater hauled it all to Big Kahuna\'s and back twice a day without a single parking lot circle. We came home mid-day for lunch and went right back, which is impossible with a car at Destin height of summer. Free delivery on our 4+ day rental, charged every morning, and texting (850) 299-8575 got answers in minutes. The kids ranked the cart above the water slides. High praise.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-gulf-place-30a',
+    title: 'Rental Review: Gulf Place and 30A Evenings on a $99/Day Golf Cart',
+    excerpt: 'A 30A couple reviews the $99/day golf cart — Gulf Place dinners, Seagrove sunsets, and why they never moved the car all week.',
+    image: 'images/cart-4seat.webp',
+    keywords: 'Gulf Place 30A golf cart, 30A golf cart rental review, Santa Rosa Beach golf cart rental review, golf cart 30A restaurants, Gulf Place Santa Rosa Beach, Seagrove Beach golf cart',
+    intro: 'Gulf Place is the 30A hub for groceries, galleries, and patio dinners — this reviewer says a $99/day cart made the whole South Walton week car-free.',
+    body: 'We stayed in Santa Rosa Beach and used the cart for everything: morning coffee at Gulf Place, beach gear hauls to Seagrove, and dinner in Alys Beach without touching the car once. The street-legal setup handled 30A traffic fine and parking at every stop took seconds. Delivery was free on our 4+ day booking and the cart looked brand new. On a $99/day rate we spent less than two nights of valet would have cost.',
+    rating: 5,
+  },
+  {
+    slug: '99-rental-review-fall-week-miramar-beach',
+    title: 'Rental Review: A Fall Week in Miramar Beach on a $99/Day Golf Cart',
+    excerpt: 'Shoulder-season Miramar Beach review — September crowds gone, water still warm, and the $99/day cart as the whole week\'s transportation.',
+    image: 'images/cart-6seat-side.jpg',
+    keywords: 'fall golf cart rental Destin, September golf cart rental Miramar Beach, off season golf cart rental Destin, shoulder season Destin golf cart, weekly golf cart rental fall Miramar Beach',
+    intro: 'Fall is the Emerald Coast\'s quiet secret — warm water, thin crowds, easy reservations. Here\'s how one September week went on a $99/day cart.',
+    body: 'We booked the first week of September and basically had Miramar Beach to ourselves. The cart handled every errand — grocery runs, beach mornings, dinner at the Harbor — and we never needed the car. Booking was one call to (850) 299-8575, delivery was free on our 4+ day rental, and the cart ran all week on daily charges. Shoulder season plus a $99/day cart is the smartest version of this trip.',
     rating: 5,
   },
 ];
@@ -375,7 +684,7 @@ const CLUB_BLOG_TOPICS = [
     title: 'How to Choose Golf Clubs: A Complete Buying Guide for 2026',
     excerpt: 'Forgiveness, shafts, grips, budget \u2014 here is exactly how to choose golf clubs that match your swing and skill level in 2026.',
     keywords: 'how to choose golf clubs, golf club buying guide, golf club fitting, choose golf clubs for my swing, golf club shaft flex, steel vs graphite shafts, golf club grips, golf club loft, forgiving golf clubs',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-rear.jpg',
     intro: 'Choosing golf clubs used to mean getting fitted by a pro. Today, a few simple rules of thumb get you 90% of the way there. This golf club buying guide walks through forgiveness, shaft flex, grip size, and budget so you can buy with confidence.',
     sections: [
       ['Match Clubs to Your Skill Level', 'High handicappers and beginners should prioritize forgiveness; low handicaps can chase workability and feel. If in doubt, lean forgiving \u2014 it lowers scores faster.'],
@@ -430,7 +739,7 @@ const CLUB_BLOG_TOPICS = [
     title: "Women's Golf Clubs: How to Choose the Right Set for Your Game",
     excerpt: 'Women\u2019s-specific golf clubs use lighter shafts, softer flexes, and higher lofts to match most women\u2019s swing speeds. Here is how to choose the right set.',
     keywords: "women's golf clubs, best women's golf clubs, women's golf club sets, ladies golf clubs, women's golf set for beginners, women's golf clubs lightweight, ladies complete golf set",
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-front.jpg',
     intro: 'Women\u2019s golf clubs are designed around lighter shafts, softer flex, and higher loft \u2014 specs that match most women\u2019s swing speeds and help launch the ball higher and straighter. Here is how to pick the right set.',
     sections: [
       ['Lighter Shafts, Softer Flex', 'Ladies-flex graphite shafts are lighter and more flexible, which helps generate clubhead speed and gets the ball airborne more easily.'],
@@ -484,7 +793,7 @@ const CLUB_BLOG_TOPICS = [
     title: 'Callaway Strata vs Wilson Profile SGI: Which Beginner Set Wins?',
     excerpt: 'The two most popular beginner golf club sets of 2026, head to head. We compare the Callaway Strata and Wilson Profile SGI on forgiveness, value, and what\u2019s in the bag.',
     keywords: 'Callaway Strata vs Wilson Profile SGI, best beginner golf set comparison, Callaway Strata review, Wilson Profile SGI review, beginner golf club sets compared',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-side.jpg',
     intro: 'If you\u2019re shopping for a beginner golf club set, you\u2019ve seen two names everywhere: the Callaway Strata and the Wilson Profile SGI. Both are excellent \u2014 here\u2019s how they compare and which one to buy.',
     sections: [
       ['Callaway Strata: The All-Rounder', 'The Strata is the best-selling beginner set for good reason \u2014 forgiving irons, a well-balanced hybrid selection, and a putter that actually works. Expect a driver, 3-wood, 4 & 5 hybrids, 6\u2013PW irons, and a stand bag.'],
@@ -515,6 +824,120 @@ const CLUB_BLOG_TOPICS = [
       ['Are cavity back irons easier to hit?', 'Yes \u2014 the perimeter weighting creates a larger sweet spot, so off-center hits lose less distance and stay straighter.'],
     ],
   },
+  {
+    slug: 'club-golf-clubs-for-destin-vacation',
+    title: 'Golf Clubs for Your Destin Vacation: Bring, Rent, or Ship Ahead?',
+    excerpt: 'Flying to Destin for golf? Here is how to handle your clubs \u2014 travel bags, shipping services, course rentals, or a budget set that stays in Florida.',
+    keywords: 'golf clubs for vacation, Destin FL golf courses, travel golf bag, ship golf clubs ahead, golf club rental vs buy, Destin golf trip packing list, Sandestin golf vacation',
+    image: 'images/cart-4seat.webp',
+    intro: 'A Destin golf trip raises the packing question every traveling golfer faces: what do you do with your clubs? Bring them, ship them, rent them, or buy a beach set that waits for you. Here is the honest breakdown from locals who shuttle golfers and their bags every week.',
+    sections: [
+      ['Bring Them: Travel Bags Done Right', 'A padded golf travel bag with a rigid top protects your set on the flight, and most airlines count a golf bag as standard checked luggage. The real costs are convenience: wheeling the case through the airport and finding trunk space at the rental counter.'],
+      ['Ship Ahead: Convenient but Pricey', 'Shipping a set both ways typically runs 80 to 150 dollars round trip with 3 to 5 days of lead time each way. It makes sense for expensive sets; for a mid-range bag it rarely beats checking the clubs.'],
+      ['Rent at the Course', 'Destin-area courses and resorts rent quality name-brand sets for 40 to 60 dollars a round. If you are playing one or two rounds, renting wins on pure math and saves you from hauling a travel case.'],
+      ['The Local Move: A Beach-Bag Set', 'Repeat visitors and snowbirds often keep a budget complete set here full-time. Pair it with a street-legal cart for the week so the whole family rides to dinner after the round \u2014 call (850) 299-8575 and we will have the cart at your condo.'],
+    ],
+    faqs: [
+      ['Can I fly with golf clubs?', 'Yes \u2014 airlines treat a golf bag as checked sports equipment. Use a padded travel bag, pad the driver head or remove it, and stay under the 50 pound limit to avoid oversize fees.'],
+      ['Are there good golf courses near Destin, FL?', 'Yes \u2014 the Destin, Sandestin, and 30A corridor has resort and championship courses within 20 minutes of the beach, from links-style layouts to tight tree-lined tracks. Book tee times early in summer.'],
+      ['How do I get to the course without a car full of gear?', 'Many Destin golfers rent a street-legal 4 or 6 seat cart for the week \u2014 clubs ride in the rear cargo area, parking at the course is easy, and the cart doubles as the beach and dinner ride.'],
+    ],
+  },
+  {
+    slug: 'club-golf-clubs-hot-humid-weather-guide',
+    title: 'Best Golf Clubs and Grips for Hot, Humid Weather: A Florida Golfer\u2019s Guide',
+    excerpt: 'Sweaty hands and 95\u00b0 fairways change what belongs in your bag. Here are the grips, gloves, and club materials that hold up in Florida heat and humidity.',
+    keywords: 'golf grips for humid weather, cord grips sweaty hands, golf gloves for hot weather, Florida summer golf tips, best grips for sweaty hands, humid climate golf equipment, golf club care Florida heat',
+    image: 'images/cart-6seat-rear.jpg',
+    intro: 'Florida golf is a different sport in July \u2014 dew-soaked mornings, 95\u00b0 afternoons, and grips that feel like soap by the back nine. Here is how to build a bag that holds up in heat and humidity, from grips and gloves to how you store everything between rounds.',
+    sections: [
+      ['Grips: Cord or All-Weather', 'Corded rubber grips wick moisture and keep traction when standard rubber gets slick. If your hands sweat heavily, a corded grip is the single best heat upgrade \u2014 regripping a full set costs less than one new wedge.'],
+      ['Gloves: Rotate Two, Pack Four', 'No glove survives a Florida round soaked. Carry at least two and rotate every few holes, clipping the wet one to the bag to dry in the breeze. Synthetic and mesh-back gloves dry far faster than cabretta leather.'],
+      ['Materials That Handle Humidity', 'Graphite shafts and stainless or multi-material heads shrug off humidity; the enemy is storage \u2014 clubs left damp in a closed car or cart cubby can pit and rust. Wipe heads and grips down after the round and let everything air-dry.'],
+      ['Do Not Store Clubs in a Hot Cart', 'A golf cart parked in the Florida sun becomes an oven \u2014 epoxy joints, grips, and even ball compression all suffer. Park in shade, crack the windows on your cart cover, and bring the bag inside overnight.'],
+    ],
+    faqs: [
+      ['What are the best golf grips for humid weather?', 'Corded and all-weather rubber grips top the list \u2014 they maintain traction as hands sweat. Midsize grips can also help by reducing grip pressure and hand tension.'],
+      ['How hot is too hot to leave golf clubs in a cart?', 'Any full-sun Florida afternoon is too hot for hours-long storage \u2014 cabin temps can exceed 130\u00b0F. One round is fine; overnight or all-week storage in a parked cart is what damages epoxy and grips.'],
+      ['Do I need different clubs for Florida golf?', 'No \u2014 the same fitted set works everywhere. The heat changes consumables: grips, gloves, and how you clean and store everything afterward.'],
+    ],
+  },
+  {
+    slug: 'club-clean-golf-clubs-salt-air',
+    title: 'Golf Club Maintenance in Salt Air: Keeping Your Set Clean on the Emerald Coast',
+    excerpt: 'Coastal air is rough on golf equipment. A five-minute post-round routine keeps grips tacky, grooves clean, and rust off your Emerald Coast set.',
+    keywords: 'golf club maintenance, how to clean golf clubs, salt air rust golf clubs, golf club care Florida, rust on golf club heads, golf grip cleaning, golf club storage tips',
+    image: 'images/cart-8seat.jpg',
+    intro: 'Living or vacationing on the Emerald Coast means salt in the air \u2014 and salt is quietly working on your golf clubs between rounds. The good news: five minutes of care after each round keeps a set looking and playing new for years.',
+    sections: [
+      ['The Five-Minute Post-Round Routine', 'Rinse heads in a bucket of warm water (never soak the hosels), scrub grooves with a soft brush, wipe grips with a damp cloth and mild soap, then dry everything before storage. Clean grooves grip the ball and generate real spin \u2014 dirty grooves fly farther and stop less.'],
+      ['Stop Salt Rust Before It Starts', 'Salt air pits chrome and can spot raw wedges within weeks. A light wipe of household oil on a cloth run over the heads once a month, plus storing clubs indoors \u2014 never on a porch or in a beach garage \u2014 prevents most of it.'],
+      ['Grips Are the First to Go', 'Sun and sweat harden grips in a single Florida season. Clean them every few weeks and replace them when they turn glossy \u2014 fresh grips are the cheapest performance upgrade in golf.'],
+      ['Store Smart, Ride Smarter', 'Keep the bag inside, upright, and dry. If you ride to the course in one of our rental carts, use the bag well or rear seat \u2014 and take the clubs inside when you park for the day.'],
+    ],
+    faqs: [
+      ['Do golf clubs rust in Florida?', 'They can \u2014 salt air accelerates pitting on raw wedges and chrome, especially in beachfront storage. Indoor storage and a monthly oiled wipe-down prevent nearly all of it.'],
+      ['How often should I clean my golf clubs?', 'A quick wipe after every round and a full clean of heads, grooves, and grips every 3 to 4 rounds \u2014 more often in coastal humidity.'],
+      ['Can I leave golf clubs in a golf cart overnight?', 'Better not \u2014 overnight heat, dew, and humidity degrade grips and can loosen epoxy over time. Bring the bag indoors, even for a week-long vacation.'],
+    ],
+  },
+  {
+    slug: 'club-flying-with-golf-clubs-30a-destin',
+    title: 'Flying to Destin or 30A with Golf Clubs: Airline Fees, Travel Bags, and When to Rent Instead',
+    excerpt: 'Airline golf bag fees, hard vs soft travel cases, and the honest math on renting clubs for your Destin, Miramar Beach, or 30A golf vacation.',
+    keywords: 'flying with golf clubs, airline golf bag fees, golf travel bag tips, Destin golf vacation, rent golf clubs Destin FL, golf clubs on a plane, 30A golf trip, VPS airport golf clubs',
+    image: 'images/cart-4seat.webp',
+    intro: 'Every Destin, Miramar Beach, and 30A golf vacation starts with the same decision: pay the airline golf bag fees and haul your own set, or rent clubs when you land. Here is the honest math, the gear that keeps your clubs safe, and how the smartest visitors travel light.',
+    sections: [
+      ['What Airlines Charge for Golf Bags', 'Most U.S. airlines count a golf travel bag as one standard checked item when it stays under 50 pounds \u2014 typically $35\u2013$45 each way. Budget carriers vary, and oversize handling can add more, so check your carrier\u2019s policy before you book, not at the counter.'],
+      ['Hard Case vs. Soft Travel Bag', 'Hard-shell cases survive the roughest ramp handling and swallow a full set; padded soft bags with a stiff arm cost less and are fine for a trip or two a year. Either way, wrap club heads in towels and zip nothing loose.'],
+      ['When Renting Clubs Wins', 'One or two rounds? A weeklong rental set in the Destin area often costs about the same as one round-trip checked bag fee \u2014 with zero airport hassle. Rent the clubs, fly with just clothes, and spend the savings on the fun stuff.'],
+      ['Getting Around Once You Land', 'Sandestin, Regatta Bay, and the 30A courses are all short hops from Miramar Beach. A $99/day street-legal rental cart from globalfxcart.com with free delivery on 4+ days covers the course, the beach, and dinner \u2014 call or text (850) 299-8575, 24/7.'],
+    ],
+    faqs: [
+      ['Do airlines charge extra for golf clubs?', 'Most treat one golf bag as a standard checked bag up to 50 pounds; budget airlines vary. Compare the round-trip fee against local rental rates before hauling clubs through VPS.'],
+      ['Can I rent golf clubs in Destin FL?', 'Yes \u2014 courses and shops around Destin, Sandestin, and 30A rent full sets by the day or week. For short trips it usually beats paying airline bag fees both directions.'],
+      ['Is it worth flying with your own golf clubs?', 'If you play several rounds and love your set, yes. For one round on a Destin vacation, rentals usually win on cost, convenience, and baggage-claim peace of mind.'],
+    ],
+  },
+  {
+    slug: 'club-sandestin-golf-vacation-checklist',
+    title: 'Sandestin Golf Vacation Checklist: What to Book, Pack, and Rent Before You Arrive',
+    excerpt: 'Tee times, rental carts, and gear \u2014 the checklist we give every visitor planning golf at Sandestin, Miramar Beach, and the 30A corridor.',
+    keywords: 'Sandestin golf vacation, golf trip checklist Destin, Sandestin golf courses, golf trip packing list, rent golf cart Sandestin, Destin golf trip planning, 30A golf vacation, Miramar Beach golf',
+    image: 'images/cart-8seat.jpg',
+    intro: 'A Sandestin golf trip is easy to overthink and simple to execute. Book the three things that sell out first \u2014 tee times, ride carts, and wheels for the week \u2014 then pack light and let the Emerald Coast do the rest. This is the exact checklist we hand visiting groups.',
+    sections: [
+      ['Book Tee Times Weeks Out', 'Sandestin\u2019s resort courses and the popular public tracks around Destin fill fast from March through August. Reserve morning rounds early; late-afternoon slots are easier to land and cooler in a Florida summer.'],
+      ['Pack the Bag, Rent the Rest', 'Bring your own clubs if you love them \u2014 otherwise rent a set locally and skip the airline fee. Same logic on the ground: a street-legal $99/day rental cart with free delivery on 4+ days covers beach runs, Baytowne Wharf dinners, and the drive to the first tee.'],
+      ['Dress for Emerald Coast Weather', 'Breathable polos, a second glove for sweat, and a light rain layer \u2014 afternoon storms roll through June through September. Sunscreen rides in the cart bag, not back at the condo.'],
+      ['Lock In the Cart for the Whole Week', 'Golf carts run $99/day street legal with free delivery on rentals of 4 or more days across Destin and Miramar Beach. Call or text (850) 299-8575, 24/7, and the cart is at your rental before check-in.'],
+    ],
+    faqs: [
+      ['When should I book a Sandestin golf vacation?', 'For spring and summer trips, reserve tee times and lodging 4\u20136 weeks ahead, and book your golf cart as soon as your dates are set \u2014 peak weeks sell out first.'],
+      ['Do I need a car in Sandestin if I rent a golf cart?', 'In Sandestin, Miramar Beach, and along 30A, a street-legal cart covers most trips \u2014 beach, dining, and golf. Many visitors park the rental car for the week and use the cart instead.'],
+      ['How much does a golf cart cost for a Sandestin golf trip?', 'Street-legal carts are $99/day at globalfxcart.com with free delivery on rentals of 4+ days in Destin and Miramar Beach \u2014 booked 24/7 at (850) 299-8575.'],
+    ],
+  },
+  {
+    slug: 'club-junior-golf-clubs-destin-family',
+    title: 'Junior Golf Clubs: The Right Set for Kids on a Destin Family Vacation',
+    excerpt: 'Vacations are where kids fall for golf. How junior golf club sizing works, what a starter set costs, and where Emerald Coast families actually play.',
+    keywords: 'junior golf clubs, kids golf club sets, junior golf club sizing, golf clubs for children, beginner golf set for kids, family golf Destin FL, kids golf Sandestin, par 3 courses Destin',
+    image: 'images/cart-6seat-rear.jpg',
+    intro: 'A Destin vacation is where plenty of kids fall in love with golf \u2014 one morning on a par-3 course with the family and they are hooked. If your child wants clubs of their own, here is how junior sizing works, what a starter set should cost, and where Emerald Coast families actually play.',
+    sections: [
+      ['Size by Height, Not Age', 'Junior sets are cut to height ranges, not birthdays. A set that lets your child address the ball with slightly bent knees and no tiptoeing is right \u2014 when in doubt, size up a little and choke down on the grip until they grow into it.'],
+      ['Start With a Small Set', 'A fairway wood, a 7- or 8-iron, a wedge, a putter, and a lightweight stand bag is a complete junior starter kit \u2014 usually $100\u2013$200. Full 9-club sets make sense only once a kid is playing weekly.'],
+      ['Where Kids Play Around Destin', 'Par-3 courses, driving ranges in Destin and Sandestin, and resort short courses are perfect first rounds \u2014 nine holes before the heat, then the beach. The cart ride is half the fun, so let it be part of the reward.'],
+      ['Roll to the Range Together', 'Families rent our 6-seat street-legal carts to get the whole crew and the clubs to the range or par-3 course \u2014 $99/day, free delivery on 4+ days. Call or text (850) 299-8575 any time, 24/7.'],
+    ],
+    faqs: [
+      ['What size junior golf clubs does my child need?', 'Measure height and match the set\u2019s size chart \u2014 most junior lines cover roughly 39\u201357 inches. Slightly long and choked down beats a set they outgrow mid-season.'],
+      ['Should we buy junior clubs on vacation?', 'If the trip includes more than one range session or round, yes \u2014 a $100\u2013$150 junior starter set covers everything a beginner needs and goes home as a souvenir that actually gets used.'],
+      ['Can kids ride in a rental golf cart in Destin?', 'Yes \u2014 kids ride along on our street-legal carts, and a 6-seat model fits the family plus clubs. Renters must be 18 or older with a valid driver\u2019s license; book 24/7 at (850) 299-8575.'],
+    ],
+  },
 ];
 
 const CLUB_REVIEW_TOPICS = [
@@ -534,7 +957,7 @@ const CLUB_REVIEW_TOPICS = [
     title: 'Review: The Most Forgiving Golf Drivers of 2026 (Tested & Compared)',
     excerpt: 'We tested the most forgiving golf drivers of 2026 for off-center hits, launch, and distance. Here are the best drivers for amateurs and beginners.',
     keywords: 'best forgiving drivers 2026, forgiving golf driver review, best golf driver for beginners, game improvement driver, golf driver comparison',
-    image: 'images/rover-xl6-white.jpg',
+    image: 'images/cart-6seat-front.jpg',
     intro: 'The driver is where amateurs lose the most strokes \u2014 and where the right club makes the biggest difference. We tested the most forgiving drivers of 2026.',
     body: 'Forgiving drivers combine high MOI, a larger sweet spot, and higher loft to keep off-center hits straighter and longer. For amateurs, adjustability is less important than fit: choose a loft that gets the ball airborne (10.5\u00b0\u201312\u00b0) and a shaft flex matched to your swing speed. Every driver we recommend here excels at turning weak slices into playable fades \u2014 which is exactly what most weekend golfers need.',
     affiliate: 'https://www.amazon.com/s?k=forgiving+golf+drivers+2026&tag=techbot00-20&linkCode=ll2',
@@ -560,6 +983,105 @@ const CLUB_REVIEW_TOPICS = [
     intro: 'You don\u2019t need to spend a fortune to start playing great golf. We tested the best complete golf club sets under $500 to find the ones that truly deliver.',
     body: 'The best complete sets under $500 share the same DNA: forgiving drivers with 10.5\u00b0+ loft, two or three hybrids, perimeter-weighted game-improvement irons, and a putter you can actually make putts with. Brand names matter less than the set makeup \u2014 a $400 set with the right clubs beats a $500 set missing a sand wedge. Every set we recommend includes a stand bag, and all of them are playable straight out of the box for a full season or more.',
     affiliate: 'https://www.amazon.com/s?k=best+complete+golf+club+sets+under+500&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-hybrids-high-handicappers',
+    title: 'Review: The Best Golf Hybrids for High Handicappers in 2026',
+    excerpt: 'Hybrids replace the clubs amateurs fear most. We tested the most forgiving hybrids of 2026 for high handicappers \u2014 easy launch, slice control, real distance.',
+    keywords: 'best golf hybrids 2026, best hybrid clubs for high handicappers, forgiving hybrid review, hybrid vs long iron, golf hybrid comparison 2026',
+    image: 'images/cart-6seat-side.jpg',
+    intro: 'The long iron is where high handicappers bleed strokes. We tested the most forgiving hybrids of 2026 to find the ones that get the ball up and keep it straight.',
+    body: 'A good hybrid does what a 3-iron never could: launches high from fairway and rough, resists the slice, and lands soft. The best hybrids for high handicappers share shallow faces, lightweight graphite shafts, and generous sole camber that glides through turf. We tested the leading 2026 models for carry consistency and mis-hit forgiveness \u2014 the top picks turned weak pushes into playable draws all round long.',
+    affiliate: 'https://www.amazon.com/s?k=golf+hybrids+for+high+handicappers&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-junior-golf-club-sets',
+    title: 'Review: The Best Junior Golf Club Sets for Kids in 2026',
+    excerpt: 'Vacation golf with the kids? We tested the best junior golf club sets of 2026 \u2014 lightweight, height-matched, and tough enough for the trunk all summer.',
+    keywords: 'best junior golf club sets 2026, kids golf clubs review, junior golf set for vacation, youth golf clubs Destin, golf clubs for children beginner',
+    image: 'images/cart-8seat.jpg',
+    intro: 'Gulf Coast family trips end at the course sooner or later \u2014 and the right junior set keeps the kids asking for another nine. We tested the best junior sets of 2026.',
+    body: 'Junior clubs live or die on weight and length: a set that is cut-down adult steel will ruin a kid\u2019s swing in a week, while a lightweight graphite junior set builds it. We tested the leading 2026 junior sets for build quality, height ranges, and bag durability \u2014 the winners all matched club length to height bands and included forgiving cavity-back irons and easy-launch drivers. Bring the set on vacation and ride a cart to the first tee.',
+    affiliate: 'https://www.amazon.com/s?k=junior+golf+club+sets+for+kids&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-game-improvement-irons',
+    title: 'Review: The Best Game Improvement Irons of 2026 (Tested & Compared)',
+    excerpt: 'Wide soles, perimeter weighting, and real forgiveness. We tested the best game improvement irons of 2026 for amateurs who want mishits that still hold greens.',
+    keywords: 'best game improvement irons 2026, forgiving irons review, best irons for beginners, high handicap irons tested, golf iron comparison 2026',
+    image: 'images/cart-4seat.webp',
+    intro: 'Irons are where forgiveness pays off every single shot. We tested the best game improvement irons of 2026 for distance, launch, and mishit performance.',
+    body: 'The best game improvement irons of 2026 combine wide, low-CG soles with strong lofts and perimeter weighting \u2014 the formula that turns thin and toe strikes into shots that still find the green. We tested the leading sets on carry-distance spread and mishit retention: the top performers kept more than eighty percent of their carry on off-center hits. If your scores stall in the 90s, the right iron set is the fastest equipment upgrade in golf.',
+    affiliate: 'https://www.amazon.com/s?k=best+game+improvement+irons+2026&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-golf-rangefinders',
+    title: 'Review: The Best Golf Rangefinders of 2026 (Slope, Speed, and Value Tested)',
+    excerpt: 'Pin-seek accuracy, slope math, and battery life \u2014 we tested the best golf rangefinders of 2026 from budget to flagship to find the real value picks.',
+    keywords: 'best golf rangefinders 2026, golf rangefinder review, slope rangefinder, laser rangefinder golf, budget golf rangefinder, golf GPS vs rangefinder',
+    image: 'images/cart-4seat.webp',
+    intro: 'A rangefinder is the fastest confidence upgrade in golf \u2014 one number, no guessing. We tested 2026\u2019s leading laser rangefinders for pin-seek reliability, slope accuracy, and real-world speed on the course.',
+    body: 'The best rangefinders of 2026 share three traits: fast, stable pin-seek with lock vibration on flags out to 250 yards, accurate slope compensation you can switch off for tournament play, and a battery that lasts a full season. Our testing found that a quality laser in the $150 class now matches flaggers costing twice as much on speed and accuracy \u2014 the premium models win on build quality and eye relief, not on numbers. Whichever you buy, keep it on the cart console between shots, respect the slope switch-off rule in competition, and your club selection tightens immediately.',
+    affiliate: 'https://www.amazon.com/s?k=golf+rangefinder+slope&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-golf-travel-bags',
+    title: 'Review: The Best Golf Travel Bags and Hard Cases of 2026',
+    excerpt: 'Flying to a golf trip? We tested the best golf travel bags and hard cases of 2026 for protection, wheels, and airline-proof durability.',
+    keywords: 'best golf travel bags 2026, golf travel case review, hard case golf travel bag, flying with golf clubs, airline golf bag protection, soft vs hard golf travel case',
+    image: 'images/cart-8seat.jpg',
+    intro: 'A travel bag is insurance for the most expensive thing you pack. We tested the leading hard-shell and padded soft cases of 2026 on protection, wheelability, and packing volume for trip after trip.',
+    body: 'Hard cases offer the best impact protection and roll beautifully, but cost more and store bulky; padded soft travel bags cost less, fold into a closet, and protect plenty well when you stuff towels around the heads. In our 2026 testing, the deciding factors were wheel quality (skate-style wheels beat plastic skids on long concourses), a rigid top bar that keeps bag weight off your driver, and internal straps that stop clubs migrating. Whichever style you choose, remove or pad the driver head, strap everything down inside, and photograph the packed bag before check-in in case you ever need to file a claim.',
+    affiliate: 'https://www.amazon.com/s?k=golf+travel+bag+hard+case&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-golf-gloves-hot-weather',
+    title: 'Review: The Best Golf Gloves for Hot Weather and Sweaty Hands (2026)',
+    excerpt: 'Cabretta leather, synthetic mesh, or hybrid? We tested the best hot-weather golf gloves of 2026 for grip when soaked, breathability, and drying speed.',
+    keywords: 'best golf gloves hot weather, golf gloves for sweaty hands, breathable golf glove review, mesh golf gloves 2026, all weather golf glove, best golf glove for humidity',
+    image: 'images/cart-6seat-rear.jpg',
+    intro: 'In Florida heat, your glove fails before your swing does. We tested the top hot-weather golf gloves of 2026 for traction when soaked, breathability, and how fast they dry clipped to the bag.',
+    body: 'The best hot-weather gloves of 2026 split into two camps: premium cabretta leather that feels perfect for six holes before sweat takes over, and synthetic-mesh hybrids that grip nearly as well soaked and dry in minutes on the cart. For humid climates our testers favored hybrids \u2014 carry two, rotate every few holes, and replace at the first sign of shine on the palm. Pair the rotation with corded grips and you keep full control of the club through the steamiest back nine of a Destin summer.',
+    affiliate: 'https://www.amazon.com/s?k=golf+gloves+for+hot+weather&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-golf-wedges-beginners',
+    title: 'Review: The Best Golf Wedges for Beginners and High Handicappers in 2026',
+    excerpt: 'Bounce, loft gaps, and forgiveness — we tested the best beginner-friendly wedges of 2026 for bunker escapes, chips, and full shots inside 100 yards.',
+    keywords: 'best golf wedges 2026, best wedges for beginners, forgiving golf wedge review, high bounce sand wedge, cavity back wedge, best wedge for bunkers',
+    image: 'images/cart-4seat.webp',
+    intro: 'Most strokes are lost inside 100 yards, yet beginners spend their budget on drivers. We tested the most beginner-friendly wedges of 2026 for sand performance, chip consistency, and full-shot control.',
+    body: 'Beginner wedges live or die on two specs: loft and bounce. A 56 degree sand wedge with 10–14 degrees of bounce pops out of fluffy lies and glides through bunker sand instead of digging. Cavity-back and game-improvement wedges add perimeter weighting that keeps slightly thin chips airborne — something blade wedges simply will not do for you. Our 2026 testing favored wide-soled designs with milled faces for predictable spin, and every pick here costs a fraction of a premium lob wedge. Fit two or three lofts across your gaps (typically pitching wedge, sand wedge, and optionally a 60 degree) instead of chasing one do-everything club, and your scoring clubs will finally match the rest of your bag.',
+    affiliate: 'https://www.amazon.com/s?k=golf+wedges+for+beginners&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-ladies-golf-club-sets',
+    title: 'Review: The Best Women\u2019s Golf Club Sets of 2026 (Lightweight & Forgiving)',
+    excerpt: 'Lighter shafts, easier launch, real forgiveness — we compared the best women\u2019s complete golf club sets of 2026 from starter boxes to premium packages.',
+    keywords: 'best women\u2019s golf club sets 2026, ladies complete golf set review, best golf clubs for women beginners, lightweight ladies golf clubs, women\u2019s golf set comparison',
+    image: 'images/cart-6seat-front.jpg',
+    intro: 'The right women\u2019s set is engineered around lighter shafts, softer grips, and lofts that launch the ball effortlessly. We compared the leading 2026 packages on total weight, forgiveness, and honest value.',
+    body: 'A great women\u2019s set starts with total weight: graphite shafts in ladies or senior flex, lighter grips, and a 12–13 degree driver that launches without heroics. The 2026 standouts all share three traits — hybrids replacing hard-to-hit long irons (the single best upgrade in any boxed set), perimeter-weighted irons with wide soles, and putters with clear alignment lines. Skip sets padded with fifteen clubs you will never hit; eleven to thirteen well-chosen pieces beat fifteen confusing ones. Every set we recommend suits brand-new golfers and improving mid-handicappers alike, and all of it travels easily for vacation rounds in Destin, Sandestin, or along 30A.',
+    affiliate: 'https://www.amazon.com/s?k=womens+golf+club+sets&tag=techbot00-20&linkCode=ll2',
+    rating: 4.5,
+  },
+  {
+    slug: 'club-review-best-golf-stand-bags',
+    title: 'Review: The Best Golf Stand Bags of 2026 (Walkers & Cart Players)',
+    excerpt: 'Weight, leg stability, and strap comfort — we tested the best stand bags of 2026 for golfers who walk 18 but still want cart-day convenience.',
+    keywords: 'best golf stand bags 2026, lightweight stand bag review, best golf bag for walking, stand bag vs cart bag, ultralight golf stand bag',
+    image: 'images/cart-8seat.jpg',
+    intro: 'A stand bag is the do-everything carry: light enough to walk 18, sturdy enough on a cart rail. We tested the best 2026 stand bags on weight, leg stability, and strap comfort.',
+    body: 'The stand-bag trade-off is weight versus structure. Ultralight bags under four pounds carry beautifully, but thin legs chatter on sidehill lies and pockets shrink to nothing; around five pounds you gain stable wide-stance legs, a 14-way top, and pockets that actually hold rain gear. Our 2026 favorites pair aluminum legs that never flex, hip padding that survives 36-hole days, and straps that convert cleanly to cart use. Before buying, check the top dividers: four-way tops tangle long clubs, while a 14-way system protects your graphite shafts for years of vacation golf — from Miramar Beach mornings to mountain trips — and everything in between.',
+    affiliate: 'https://www.amazon.com/s?k=golf+stand+bag+lightweight&tag=techbot00-20&linkCode=ll2',
     rating: 4.5,
   },
 ];
@@ -641,6 +1163,7 @@ function nextClubReviewTopic(state) {
 
 function articleHtml(topic, filename) {
   const sections = topic.sections.map(([h, p]) => `    <h3>${h}</h3>\n    <p>${p}</p>`).join('\n\n');
+  const faqSchema = faqSchemaHtml(topic.faqs, BASE + '/' + filename);
   const faqs = topic.faqs.map(([q, a]) => `      <details class="faq-item">\n        <summary>${q}</summary>\n        <p>${a}</p>\n      </details>`).join('\n');
   return `<!DOCTYPE html>
 <html lang="en">
@@ -696,13 +1219,14 @@ function articleHtml(topic, filename) {
     }
   }
   </script>
+  ${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">
-        <h1>Destin Golf Cart Rentals</h1>
+        <h1>globalfxcart.com — Destin Golf Cart Rentals</h1>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -759,12 +1283,19 @@ ${faqs}
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <!-- Sticky mobile call bar (24/7 booking) -->
+  <div class="sticky-call-bar">
+    <a href="tel:8502998575" class="call-now">📞 Call to Book — 24/7</a>
+    <a href="sms:8502998575" class="text-now">💬 Text</a>
+  </div>
+
 </body>
 </html>
 `;
 }
 
 function reviewHtml(topic, filename) {
+  const faqSchema = faqSchemaHtml(topic.faqs, BASE + '/' + filename);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -804,13 +1335,14 @@ function reviewHtml(topic, filename) {
     "datePublished": "${isoDate()}"
   }
   </script>
+  ${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">
-        <h1>Destin Golf Cart Rentals</h1>
+        <h1>globalfxcart.com — Destin Golf Cart Rentals</h1>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -859,6 +1391,12 @@ function reviewHtml(topic, filename) {
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <!-- Sticky mobile call bar (24/7 booking) -->
+  <div class="sticky-call-bar">
+    <a href="tel:8502998575" class="call-now">📞 Call to Book — 24/7</a>
+    <a href="sms:8502998575" class="text-now">💬 Text</a>
+  </div>
+
 </body>
 </html>
 `;
@@ -866,6 +1404,7 @@ function reviewHtml(topic, filename) {
 
 function clubArticleHtml(topic, filename) {
   const sections = topic.sections.map(([h, p]) => `    <h3>${h}</h3>\n    <p>${p}</p>`).join('\n\n');
+  const faqSchema = faqSchemaHtml(topic.faqs, BASE + '/' + filename);
   const faqs = topic.faqs.map(([q, a]) => `      <details class="faq-item">\n        <summary>${q}</summary>\n        <p>${a}</p>\n      </details>`).join('\n');
   return `<!DOCTYPE html>
 <html lang="en">
@@ -920,13 +1459,14 @@ function clubArticleHtml(topic, filename) {
     }
   }
   </script>
+  ${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">
-        <h1>Destin Golf Cart Rentals</h1>
+        <h1>globalfxcart.com — Destin Golf Cart Rentals</h1>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -983,12 +1523,19 @@ ${faqs}
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <!-- Sticky mobile call bar (24/7 booking) -->
+  <div class="sticky-call-bar">
+    <a href="tel:8502998575" class="call-now">📞 Call to Book — 24/7</a>
+    <a href="sms:8502998575" class="text-now">💬 Text</a>
+  </div>
+
 </body>
 </html>
 `;
 }
 
 function clubReviewHtml(topic, filename) {
+  const faqSchema = faqSchemaHtml(topic.faqs, BASE + '/' + filename);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1028,13 +1575,14 @@ function clubReviewHtml(topic, filename) {
     "datePublished": "${isoDate()}"
   }
   </script>
+  ${faqSchema}
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">
-        <h1>Destin Golf Cart Rentals</h1>
+        <h1>globalfxcart.com — Destin Golf Cart Rentals</h1>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -1084,6 +1632,12 @@ function clubReviewHtml(topic, filename) {
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <!-- Sticky mobile call bar (24/7 booking) -->
+  <div class="sticky-call-bar">
+    <a href="tel:8502998575" class="call-now">📞 Call to Book — 24/7</a>
+    <a href="sms:8502998575" class="text-now">💬 Text</a>
+  </div>
+
 </body>
 </html>
 `;
@@ -1325,11 +1879,22 @@ const KIND_CYCLE = ['cartBlog', 'cartReview', 'clubBlog', 'clubReview'];
 // Publish one article per the rotation. Returns a short summary.
 function publishOne(state) {
   if (state.kindIdx === undefined) state.kindIdx = 0;
-  const kind = KIND_CYCLE[state.kindIdx % KIND_CYCLE.length];
-  state.kindIdx = (state.kindIdx + 1) % KIND_CYCLE.length;
+  let kind;
+  if (state.priorityKinds && state.priorityKinds.length) {
+    kind = state.priorityKinds.shift();
+    state.kindIdx = (KIND_CYCLE.indexOf(kind) + 1) % KIND_CYCLE.length;
+  } else {
+    kind = KIND_CYCLE[state.kindIdx % KIND_CYCLE.length];
+    state.kindIdx = (state.kindIdx + 1) % KIND_CYCLE.length;
+  }
 
   let topic, kindLabel, target, isClub;
-  if (kind === 'cartBlog') {
+  if (kind === 'cartSales') {
+    topic = nextUnusedTopic(state, CART_SALES_TOPICS, 'salesIdx');
+    kindLabel = 'cart-sales';
+    target = 'blogPosts';
+    isClub = false;
+  } else if (kind === 'cartBlog') {
     topic = nextBlogTopic(state);
     kindLabel = 'blog';
     target = 'blogPosts';
@@ -1356,7 +1921,7 @@ function publishOne(state) {
   const uniqueFilename = `${topic.slug}-${state.postCounter}.html`;
 
   let html;
-  if (kind === 'cartBlog') html = articleHtml(topic, uniqueFilename);
+  if (kind === 'cartBlog' || kind === 'cartSales') html = articleHtml(topic, uniqueFilename);
   else if (kind === 'cartReview') html = reviewHtml(topic, uniqueFilename);
   else if (kind === 'clubBlog') html = clubArticleHtml(topic, uniqueFilename);
   else html = clubReviewHtml(topic, uniqueFilename);

@@ -3,7 +3,7 @@ function createPostCard(post) {
     <article class="card">
       <a href="${post.link}" ${post.link === '#' ? 'onclick="return false"' : ''}>
         <div class="card-image">
-          <img src="${post.image}" alt="${post.title}" loading="lazy" onerror="this.onerror=null;this.src='images/rover-xl6-white.jpg';this.alt='Golf cart'">
+          <img src="${post.image}" alt="${post.title}" loading="lazy" onerror="this.onerror=null;this.src='images/cart-6seat-side.jpg';this.alt='Golf cart'">
         </div>
         <div class="card-body">
           <span class="card-date">${post.date}</span>
@@ -45,6 +45,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const clubGrid = document.getElementById('club-grid');
   if (clubGrid) {
     clubGrid.innerHTML = clubPosts.map(createPostCard).join('');
+  }
+
+  // Amazon affiliate cart inventory → homepage "EZ-GO & More" section
+  // Carts = Amazon-linked review entries, excluding golf club set reviews
+  const amazonCartGrid = document.getElementById('amazon-cart-grid');
+  if (amazonCartGrid) {
+    const cartInventory = reviews.filter(r =>
+      r.link.startsWith('https://www.amazon.com') && !/Piece|Club Set|Golf Set/i.test(r.title)
+    );
+    amazonCartGrid.innerHTML = cartInventory.map(createPostCard).join('');
+  }
+
+  // Cart sales inventory -> homepage + sales page grids
+  const cartSalesGrid = document.getElementById('cart-sales-grid');
+  if (cartSalesGrid) {
+    const cartInventory = reviews.filter(r =>
+      r.link.startsWith('https://www.amazon.com') && !/Piece|Club Set|Golf Set/i.test(r.title)
+    );
+    cartSalesGrid.innerHTML = cartInventory.map(createPostCard).join('');
+  }
+
+  // Amazon affiliate golf club inventory → homepage "Golf Club Inventory" section
+  const amazonClubGrid = document.getElementById('amazon-club-grid');
+  if (amazonClubGrid) {
+    const clubInventory = reviews.filter(r =>
+      r.link.startsWith('https://www.amazon.com') && /Piece|Club Set|Golf Set/i.test(r.title)
+    );
+    amazonClubGrid.innerHTML = clubInventory.map(createPostCard).join('');
   }
 
   // Scroll animations
